@@ -15,6 +15,22 @@ public class Behaviour {
 
 	[XmlArray("dialogs")]
 	[XmlArrayItem("dialog")]
-	public List<string> dialogs;
+	public List<Dialog> dialogs;
+
+}
+
+public class Dialog
+{
+	[XmlElement("dialog")]
+	[XmlArrayItem("speech")]
+	public List<Speech> speechs;
+}
+
+public class Speech
+{
+	////[XmlElement("speech")]
+	public string speech;
+	[XmlElementAttribute("player")]
+	public bool isPlayer;
 
 }

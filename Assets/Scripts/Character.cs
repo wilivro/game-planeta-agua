@@ -16,6 +16,8 @@ public class Character : MonoBehaviour {
 	private bool initialInteractionCondition;
 	private Behaviour myBehaviour;
 
+	private DialogWindow dialogWindow;
+
 	bool LoadBehaviour() {
 		if(behaviourFile == null){
 			return false;
@@ -26,6 +28,10 @@ public class Character : MonoBehaviour {
 			MemoryStream stream = new MemoryStream(behaviourFile.bytes);
 	 		myBehaviour = serializer.Deserialize(stream) as Behaviour;
 	 		initialInteractionCondition = myBehaviour.canInteract;
+
+	 		print(myBehaviour.dialogs[0].speechs.Count);
+
+	 		dialogWindow = new DialogWindow(myBehaviour.charName, "Characters/Leo/face");
 	 		return true;
  		} catch {
  			return false;
@@ -58,12 +64,15 @@ public class Character : MonoBehaviour {
 		if(Input.GetKey("space") && myBehaviour.canInteract) {
 			myBehaviour.canInteract = false;
 			print("Oi eu sou "+ myBehaviour.charName);
+			dialogWindow.Show(myBehaviour.dialogs[0].speechs[0]);
+
 			//TODO Open window;
 			return;
 		}
 
 		if(Input.GetKey("escape") && !myBehaviour.canInteract) {
 			myBehaviour.canInteract = true;
+			dialogWindow.Destroy();
 			//TODO close window;
 			return;
 		}
@@ -88,6 +97,7 @@ public class Character : MonoBehaviour {
     	actualColider = null;
 
     	if(isNPC){
+    		dialogWindow.Destroy();
     		myBehaviour.canInteract = initialInteractionCondition;
     	}
     }
