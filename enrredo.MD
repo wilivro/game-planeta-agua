@@ -27,39 +27,37 @@
 
 ## Anexos:
 
-  1. Cartilha da Agua
-    - \\192.168.1.150\wifiles\Design\Cartilhas\cartilha-agua
-  1. Cartilha da água de Alagoas
-    - \\192.168.1.150\wifiles\Design\Cartilhas\cartilha-agua-versao-alagoas\versao - 1
+1. Cartilha da Agua
+	- \\192.168.1.150\wifiles\Design\Cartilhas\cartilha-agua
+1. Cartilha da água de Alagoas
+	- \\192.168.1.150\wifiles\Design\Cartilhas\cartilha-agua-versao-alagoas\versao - 1
 
 ## Quests:
 
-  ### Casa
+	1. ### Casa
    
-    *Léo acorda e tem um pesadelo relacionado ao planeta destruido devido a falta de água.*
-  
-    #### Quest 001 - Buscando Conhecimento
+		*Léo acorda e tem um pesadelo relacionado ao planeta destruido devido a falta de água.*
+		
+		#### Quest 001 - Buscando Conhecimento
       
-      - Busca de conhecimento (Estante de livros, computadores)
-      - Conhece Guto
+			- Busca de conhecimento (Estante de livros, computadores)
+			- Conhece Guto
     
     #### Quest 002 - Tutorial (Pag 30)
-	    
+			
       - Fazer as tarefas diarias aprendendo a jogar e recebendo ajuda de Guto e visualizando a pontuação recebida. 
       - Graça manda fazer suas tarefas 
-      
         - Escovar os dentes 
         - Tomar banho
         - Lavar louça 
 		
 		#### Quest 003 - Saindo da casa 
-
+		
       - Léo vai para fora da sua casa fazer mais tarefas diárias.
-      
         - Lavar o carro
         - Limpar a calçada
 
-  ### Cidade
+  1. ### Cidade
 
     Lembrança do pesadelo e desejo de ajudar o mundo, devem ocorrer  andando na cidade e achando novos problemas relacionados a água.
 	
