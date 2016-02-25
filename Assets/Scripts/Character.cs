@@ -44,9 +44,12 @@ public class Character : MonoBehaviour {
 
 		if(!isNPC){
 			if(!PlayerPrefs.HasKey("Quest")) {
-				PlayerPrefs.SetInt("Quest", 0);
+				PlayerPrefs.SetInt("Quest", 1);
+			}
+			if(!PlayerPrefs.HasKey("SubQuest")) {
 				PlayerPrefs.SetInt("SubQuest", 0);
 			}
+			PlayerPrefs.Save();	
 		}
 	}
 
@@ -63,12 +66,12 @@ public class Character : MonoBehaviour {
 	int GetDialogIndex() {
 		int quest = PlayerPrefs.GetInt("Quest");
 		int subQuest = PlayerPrefs.GetInt("SubQuest");
-		return (myBehaviour.subQuest.CompareTo(subQuest) +1)*Convert.ToInt32(myBehaviour.quest==quest);
+
+		return (subQuest.CompareTo(myBehaviour.subQuest) +2)*Convert.ToInt32(myBehaviour.quest==quest);
 
 	}
 
 	Speech GetDialog(){
-		
 		int dialog = GetDialogIndex(); 
 
 		return myBehaviour.dialogs[dialog].speechs[actualSpeech];
@@ -104,6 +107,7 @@ public class Character : MonoBehaviour {
 		}
 
 		if(Input.GetKey("escape") && !myBehaviour.canInteract) {
+			actualSpeech = 0;
 			myBehaviour.canInteract = true;
 			dialogWindow.Destroy();
 			//TODO close window;
