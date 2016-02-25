@@ -10,7 +10,7 @@ public class Behaviour {
 	[XmlElement("characterName")]
 	public string charName;
 
-	[XmlElement("canInteract")]
+	[XmlElement("interacatle")]
 	public bool canInteract;
 
 	[XmlElement("quest")]
@@ -36,11 +36,25 @@ public class Dialog
 
 public class Speech
 {
-	[XmlTextAttribute()]
+	[XmlElement("text")]
 	public string text;
+
 	[XmlAttribute("player")]
 	public bool isPlayer;
+
 	[XmlAttribute("expression")]
 	public int expression;
 
+	[XmlElement("choice")]
+	public List<choice> choices;
+
+}
+
+public class choice
+{
+	[XmlTextAttribute()]
+	public string text;
+
+	[XmlAttribute("correct")]
+	public bool correct;
 }

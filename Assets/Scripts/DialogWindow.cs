@@ -18,21 +18,81 @@ public class DialogWindow : MonoBehaviour
 		name = _name;
 	}
 
+	private string formatText(string input) {
+		string formatted = input.Replace("{name}", name);
+		formatted = formatted.Replace("\t", "");
+		formatted = formatted.Trim();
+
+		return formatted;
+	}
+
 	public void Show(Speech s) {
 		instatiation = GameObject.Instantiate(win, new Vector3(67,11,0), Quaternion.identity) as GameObject;
 
-		string formatted = s.text.Replace("{name}", name);
-		instatiation.transform.Find("Text").GetComponent<UnityEngine.UI.Text>().text = formatted;
+		string formatted = formatText(s.text);
+		Transform ctx = instatiation.transform.Find("ContainerText");
+		Transform ctxName = ctx.Find("NamePanel");
+		ctx.transform.Find("Text").GetComponent<UnityEngine.UI.Text>().text = formatted;
+
+		ctxName.transform.Find("Name").GetComponent<UnityEngine.UI.Text>().text = s.isPlayer ? "Leo" : name;
+		ctx.transform.Find("Face").GetComponent<UnityEngine.UI.Image>().sprite = s.isPlayer ? facePlayer[s.expression] : face[s.expression];
+
+		Transform ctxChoices = ctx.transform.Find("Choices");
+
+		if(s.choices.Count == 0){
+			GameObject.Destroy(ctxChoices.gameObject);
+			return;
+		}
+
+		RectTransform rtCtx = ctxChoices.GetComponent (typeof (RectTransform)) as RectTransform;
+		rtCtx.sizeDelta = new Vector2(rtCtx.sizeDelta.x, s.choices.Count*30 +20);
+
+		RectTransform rtOriginal;
+		RectTransform rt;
+
+		Transform button = ctxChoices.Find("Button");
+		button.Find("Text").GetComponent<UnityEngine.UI.Text>().text = s.choices[0].text;
+		rtOriginal = button.GetComponent (typeof (RectTransform)) as RectTransform;
+
+		UnityEngine.UI.Button btn = button.GetComponent<UnityEngine.UI.Button>();
+
+		btn.onClick.AddListener(delegate { OnChoice(s.choices[0].correct); });
 
 
-		instatiation.transform.Find("Name").GetComponent<UnityEngine.UI.Text>().text = s.isPlayer ? "Leo" : name;
-		instatiation.transform.Find("Face").GetComponent<UnityEngine.UI.Image>().sprite = s.isPlayer ? facePlayer[s.expression] : face[s.expression];
+		for(int i = 1; i < s.choices.Count; i++) {
+			print(s.choices[i].correct);
 
-		instatiation.transform.position = new Vector3(67,11,0);
+			GameObject newButtonObject = Instantiate(button.gameObject) as GameObject;
+			Transform newButton = newButtonObject.transform;
+
+			newButton.SetParent(ctxChoices);
+
+			newButton.Find("Text").GetComponent<UnityEngine.UI.Text>().text = s.choices[i].text;
+			rt = newButton.GetComponent (typeof (RectTransform)) as RectTransform;
+
+			rt.sizeDelta = new Vector2(246, 30);
+			rt.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Top, ((-30*i) - 10)*(-1), 30);
+			rt.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Right, 10, 0);
+			rt.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Left, 10, -20);
+
+			rt.localScale = new Vector3(1,1,0);
+			rt.anchorMin = new Vector2(0,1);
+			rt.anchorMax = new Vector2(1,1);
+			rt.pivot = new Vector2(0,1);
+
+			bool arg = s.choices[i].correct;
+
+			newButtonObject.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(delegate { OnChoice(arg); });
+
+		}
 	}
 
 	public void Destroy() {
 		GameObject.Destroy(instatiation);
+	}
+
+	public void OnChoice(bool correct) {
+		print(correct);
 	}
 
 }
