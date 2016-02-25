@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="32" tileheight="32" nextobjectid="3">
+ <tileset firstgid="1" name="pisos" tilewidth="32" tileheight="32" tilecount="64" columns="8">
+  <image source="//192.168.1.150/wifiles/Design/Sprites/Objetos/pisos.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="banheiro" tilewidth="32" tileheight="32" tilecount="25" columns="5">
+  <image source="//192.168.1.150/wifiles/Design/Sprites/Objetos/banheiro.png" width="160" height="160"/>
+ </tileset>
+ <tileset firstgid="90" name="parede" tilewidth="32" tileheight="32" tilecount="72" columns="9">
+  <image source="//192.168.1.150/wifiles/Design/Sprites/Objetos/parede.png" width="288" height="256"/>
+ </tileset>
+ <tileset firstgid="162" name="paredes" tilewidth="32" tileheight="32" tilecount="576" columns="32">
+  <image source="//192.168.1.150/wifiles/Design/Sprites/Objetos/paredes.png" width="1024" height="576"/>
+ </tileset>
+ <tileset firstgid="738" name="2" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="//192.168.1.150/wifiles/Design/Sprites/Objetos/2.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="994" name="12" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="//192.168.1.150/wifiles/Design/Sprites/Objetos/12.png" width="512" height="512"/>
+  <tile id="134">
+   <objectgroup draworder="index">
+    <object id="0" x="2.875" y="14.875" width="29.0625" height="17.0625"/>
+   </objectgroup>
+  </tile>
+  <tile id="135">
+   <objectgroup draworder="index">
+    <object id="0" x="0" y="14.9375" width="28.875" height="17.125"/>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <tileset firstgid="1250" name="13" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="//192.168.1.150/wifiles/Design/Sprites/Objetos/13.png" width="512" height="512"/>
+  <tile id="0">
+   <objectgroup draworder="index">
+    <object id="0" x="32" y="14.75">
+     <polyline points="0,0 -13.625,1 -23.75,3.6875 -29.9375,7.25 -30.0625,17.0625 -0.1875,17.0625 0,-0.25"/>
+    </object>
+   </objectgroup>
+  </tile>
+  <tile id="1">
+   <objectgroup draworder="index">
+    <object id="0" x="0" y="14.75">
+     <polyline points="0,0 10.25,0.1875 18.1875,1.8125 25.5625,4 29.75,6.8125 29.875,17.25 0.0625,17.25 0.0625,0.0625"/>
+    </object>
+   </objectgroup>
+  </tile>
+  <tile id="87">
+   <objectgroup draworder="index">
+    <object id="0" x="-0.0625" y="26.5" width="23" height="5.375"/>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <tileset firstgid="1506" name="1" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="//192.168.1.150/wifiles/Design/Sprites/Objetos/1.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="1762" name="15" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="//192.168.1.150/wifiles/Design/Sprites/Objetos/15.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="2018" name="3" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="//192.168.1.150/wifiles/Design/Sprites/Objetos/3.png" width="512" height="512"/>
+ </tileset>
+ <layer name="chao" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt1jEKwCAMRmFP0LvUrT1Bl97/OtUtSE1dCvn1fRAyhwdiSsA/tpepjjLnwI6id8deJg/sKFbpoeKrhzq1Hj22x+1MdLaH0h2XmUq1R3uHao8W71Usyj28P4gS70+oZJYeAAAAAAAAAABgXQ+kjhqU
+  </data>
+ </layer>
+ <layer name="sombra" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt1DEOgCAQRUGOyf1PYm9CiKvgspmpiPnFvsbWYI3+8Pvb7So6YttVdMS2u/XBe7bNRse/7rfoOFfmjor/3S+3O0TvOa0j270jVTpmdORSpQMAAAAAgBwuPuoP0Q==
+  </data>
+ </layer>
+ <layer name="parede" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt1EEKgCAQhWGbA9ZN9CZ6jdrUFQsaETKhFoET/wcPRFyMi3nO/Ucc6rTuW297kIY6rfvWWwD2WeirJ3rvKy/OrXKeZymxJh4zbzr3IiUACq87kbt00h4ajfVr1H/kLg06t7/06yp1gsFe2KROMvgP4C1/s8MW9zne7DD7DAAAAAAAAAD40g7xcjmV
+  </data>
+ </layer>
+ <layer name="moveis" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt1r1Og1AcBfAbLh91rR/strxAlUWnQsSPzu1QX0SXzu5deB8fpg66uODYQ4QANwUTB/lLzi85ody2yfkn97YoNSw73bzmrhylrhHXVsqzq3XzXooXdJ2iV4BkmCNwv9cfsL5AzrDu13rX7/PvSpGiyyV6hUW3sJhjjfXHH3qmguYgee6wP+6LPbIZ8F7Z1mb7tJR6x+/Bh27/vFTn6HyDTBAL0YiNOAJnmXe8N0PfJXKBjJFj5AQ5FThHgkRIfOC9SGDfNgvktu8Sf+gJ/5fPAp9Lhix2q9evo/56/FbmVs+JpcTYQ2+6eZXoyKueE0srY44v3bxK5Ht9N6ChMs+x5PPcxTzHks8zEREREREREREREf1ve6uTHrI=
+  </data>
+ </layer>
+ <layer name="sobreMoveis" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt1rEBQDAURdEUwZRGMILZ7BIbsAALUEVCnNP+5t3uh8Dbzf31LcUQ1lhuy1O2s2FvoAMAoKTU1V6Qx3Lz737FONRekMfUSAcAAAAAAPBfBzIeBsI=
+  </data>
+ </layer>
+ <layer name="personagem" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAAAAAAAAAADg3wAnEAAB
+  </data>
+ </layer>
+ <layer name="moveisSobrePersonagem" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt1LEJgEAQBMAF/3vSjrQF7cFKtEcfxMxMMPkZOLhgg+OCTYBejDWZ6r3v9T1zlGQdkq3NWf67rUfPn4Fv5tZVi74CAAAAAAAAoLkAPb8FPw==
+  </data>
+ </layer>
+ <layer name="topoParede" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt1sEKgkAQxvF5wV7DugTdijqo6Km6Re+bgktLzrgKum71/8EHsUHMaLO7mYgcldyMdS07WV/Z5KAkN9a1lNGr7rNqyGf4jZisGqbURh/z+ac+Mhner05LFjjSmD5Ce9eUPWEpV9HPC/8Zh+pMoY+H6OeF/z5C//8U5sP5fKb0sa5f6aOdd3/Wt926++zugxsl+9jFDmjnvZL3nBfdeuGtnZtcpH9+3OOWGlSN+L5W8ly4rqm+aQ6G0Eda3B3FSmrzbHF3FCupzTMAAAAAAAAAAKl4AWxBTG0=
+  </data>
+ </layer>
+ <layer name="topoParedeSuper" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt1DEOABEARFGHswUX2naPLk5AgkXyXj3FVD8E+Ffs2DzLX4xLHZu8/AVAW+3uDV1tqd3V1XO8uw9M8u0+AAAAAAAAAExVAL7HAzA=
+  </data>
+ </layer>
+ <layer name="colisao" width="50" height="50" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt1W0KgCAQRVG3OfvfSPgjEPGrGuxN3QNhCtG8bMpSSuZwvM0jAzn8WDFatd6qcXVtN6/7q+a4UpfSfljnvJxH6I/RepQcs9oi5Dj9KcfoWhVPnqtajt589t9Ty9F6r1b6QClHtpJDvc+zu/uhplerVaO6SN/Xka/liNLPAAAAAAAAAADA1wGzG0Ma
+  </data>
+ </layer>
+</map>

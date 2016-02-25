@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="19" height="22" tilewidth="32" tileheight="32" nextobjectid="3">
+ <tileset firstgid="1" name="pisos" tilewidth="32" tileheight="32" tilecount="64" columns="8">
+  <image source="//192.168.1.150/wifiles/Design/Sprites/Objetos/pisos.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="banheiro" tilewidth="32" tileheight="32" tilecount="25" columns="5">
+  <image source="//192.168.1.150/wifiles/Design/Sprites/Objetos/banheiro.png" width="160" height="160"/>
+ </tileset>
+ <tileset firstgid="90" name="parede" tilewidth="32" tileheight="32" tilecount="72" columns="9">
+  <image source="//192.168.1.150/wifiles/Design/Sprites/Objetos/parede.png" width="288" height="256"/>
+ </tileset>
+ <tileset firstgid="162" name="paredes" tilewidth="32" tileheight="32" tilecount="576" columns="32">
+  <image source="//192.168.1.150/wifiles/Design/Sprites/Objetos/paredes.png" width="1024" height="576"/>
+ </tileset>
+ <tileset firstgid="738" name="2" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="//192.168.1.150/wifiles/Design/Sprites/Objetos/2.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="994" name="12" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="//192.168.1.150/wifiles/Design/Sprites/Objetos/12.png" width="512" height="512"/>
+  <tile id="134">
+   <objectgroup draworder="index">
+    <object id="0" x="2.875" y="14.875" width="29.0625" height="17.0625"/>
+   </objectgroup>
+  </tile>
+  <tile id="135">
+   <objectgroup draworder="index">
+    <object id="0" x="0" y="14.9375" width="28.875" height="17.125"/>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <tileset firstgid="1250" name="13" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="//192.168.1.150/wifiles/Design/Sprites/Objetos/13.png" width="512" height="512"/>
+  <tile id="0">
+   <objectgroup draworder="index">
+    <object id="0" x="32" y="14.75">
+     <polyline points="0,0 -13.625,1 -23.75,3.6875 -29.9375,7.25 -30.0625,17.0625 -0.1875,17.0625 0,-0.25"/>
+    </object>
+   </objectgroup>
+  </tile>
+  <tile id="1">
+   <objectgroup draworder="index">
+    <object id="0" x="0" y="14.75">
+     <polyline points="0,0 10.25,0.1875 18.1875,1.8125 25.5625,4 29.75,6.8125 29.875,17.25 0.0625,17.25 0.0625,0.0625"/>
+    </object>
+   </objectgroup>
+  </tile>
+  <tile id="87">
+   <objectgroup draworder="index">
+    <object id="0" x="-0.0625" y="26.5" width="23" height="5.375"/>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <tileset firstgid="1506" name="1" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="//192.168.1.150/wifiles/Design/Sprites/Objetos/1.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="1762" name="15" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="//192.168.1.150/wifiles/Design/Sprites/Objetos/15.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="2018" name="3" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="//192.168.1.150/wifiles/Design/Sprites/Objetos/3.png" width="512" height="512"/>
+ </tileset>
+ <layer name="chao" width="19" height="22">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgZgA8LBgFLILYigibGLEMgNiKCHih3kQIIuYsagBx34QLI7vLFg0l1F6lmeSBhSt2FbhYl7kIHQyEeKdGPjSYV4MvHA+mu4QgALAwalA==
+  </data>
+ </layer>
+ <layer name="sombra" width="19" height="22">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgZIIJEcXxqR80izSxi5ElRO5jNwscfSLMoAdS0i9ZmketvcswaKH9TatdgNAsAtQUP0Q==
+  </data>
+ </layer>
+ <layer name="parede" width="19" height="22">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAu6GPExLjEcamFgX5GTIxLHJfaUUA7QGw8EgOIicc8JgaGdUwQ9gomBCbL7UB966F6VzIh8CjAD/KgYQSLZ39o/PiREfd9ULNg8ZwP1ZuHFvfrmDBxPplxtZ4JE/eP0HjPwxKu5IZxH5ZwJSWMAcplOZU=
+  </data>
+ </layer>
+ <layer name="moveis" width="19" height="22">
+  <data encoding="base64" compression="zlib">
+   eJxjYKA+eM6MSoOAFSsDgzUQs7EwMLCzIMTR+cigA6heBSinCsTfgWapskHEvYDi3kAsBhQXR9KLzAfpRQYzgHwToJwpVN4UalYUUDwaTS06mEFAfjABD6BbPaHuraOxuycjmf+JiYHhDTCO3jLjVo8PKAH1uQKxMhAzATEzELMAMSsO8xzxmGUE1BMKxMZALATEwkAsAsSiOMxyA2InIHbGIudEon+8gdidNC0Ugwpgmq7EkYdoDZzZEOzDHOSZ8Z0NkbdhwA3NPy+YUWlcgJMdkbdhIAzNrB/MqDQuIM6OX364APSwJRTG+AB62BIKYxgAAJ0XHrI=
+  </data>
+ </layer>
+ <layer name="sobreMoveis" width="19" height="22">
+  <data encoding="base64" compression="zlib">
+   eJxjYBg6oJYNt9wjFgaGxyzUsecT0JzPVDJrFIyCUUAYPGKlnln78ZQTpIBYduqYAwK5VDRrOAIACXEGwg==
+  </data>
+ </layer>
+ <layer name="personagem" width="19" height="22">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMAoGDgAABogAAQ==
+  </data>
+ </layer>
+ <layer name="moveisSobrePersonagem" width="19" height="22">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFAw0sWBkYLFkh7D5W7GrWsDAwVDEzMFQD8VoW+rgLZt8ooD7IAMZhJp3icRSMgsEOAKcqBT8=
+  </data>
+ </layer>
+ <layer name="topoParede" width="19" height="22">
+  <data encoding="base64" compression="zlib">
+   eJzdU9EKQEAQnB/0G3hR3ogHxBPe5H+52Fxn1iVJmZrS7DV3ZndDABnhoOiMMTY0K1PCStEZG8uLoVJ0Bp+Xpv/VK8R1H/MbXr6eSp968HnKHa8rSH0Cnyf7Xb7s3Lp79x+9TA/s/KNdl2/Z4YAwcbxMD1oc2de7XltasbLEeb5G8tbW8y+m3hHO5OzdXJ6c/cpL9kkjy1iD7JNGlvFbWAAvAkxt
+  </data>
+ </layer>
+ <layer name="topoParedeSuper" width="19" height="22">
+  <data encoding="base64" compression="zlib">
+   eJxjYBjZwIUINa5EmuVJhBovIs0aBQMHQGmC2DgnBEBpYjDGeTkVzWqgolmjYGQCAOQNAzA=
+  </data>
+ </layer>
+ <layer name="colisao" width="19" height="22" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzVk1EKACAIQ3dN73+R/sUtF0Y06KNRb2kVAGJgYIhzi4Xk5QwUfuVl/1SK5WSwvlUZbr/UuSbu0WWp9TdZTJ1301XFYvNdbrdG1RfGYvuc/+iyulIZrBaXlZmvWE6Pf9ACnf5DGg==
+  </data>
+ </layer>
+</map>
