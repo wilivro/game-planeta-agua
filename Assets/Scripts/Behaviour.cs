@@ -13,6 +13,15 @@ public class Behaviour {
 	[XmlElement("canInteract")]
 	public bool canInteract;
 
+	[XmlElement("quest")]
+	public int quest;
+
+	[XmlElement("subQuest")]
+	public int subQuest;
+
+	[XmlElement("dismissible")]
+	public bool dismissible;
+
 	[XmlArray("dialogs")]
 	[XmlArrayItem("dialog")]
 	public List<Dialog> dialogs;
@@ -21,16 +30,17 @@ public class Behaviour {
 
 public class Dialog
 {
-	[XmlElement("dialog")]
-	[XmlArrayItem("speech")]
+	[XmlElement("speech")]
 	public List<Speech> speechs;
 }
 
 public class Speech
 {
-	////[XmlElement("speech")]
-	public string speech;
-	[XmlElementAttribute("player")]
+	[XmlTextAttribute()]
+	public string text;
+	[XmlAttribute("player")]
 	public bool isPlayer;
+	[XmlAttribute("expression")]
+	public int expression;
 
 }

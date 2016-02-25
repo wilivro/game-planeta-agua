@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml;
@@ -18,6 +19,8 @@ public class Character : MonoBehaviour {
 
 	private DialogWindow dialogWindow;
 
+	private int actualSpeech;
+
 	bool LoadBehaviour() {
 		if(behaviourFile == null){
 			return false;
@@ -29,8 +32,6 @@ public class Character : MonoBehaviour {
 	 		myBehaviour = serializer.Deserialize(stream) as Behaviour;
 	 		initialInteractionCondition = myBehaviour.canInteract;
 
-	 		print(myBehaviour.dialogs[0].speechs.Count);
-
 	 		dialogWindow = new DialogWindow(myBehaviour.charName, "Characters/Leo/face");
 	 		return true;
  		} catch {
@@ -41,10 +42,11 @@ public class Character : MonoBehaviour {
 	void Start () {
 		isNPC = LoadBehaviour();
 
-		if(isNPC){
-			transform.position = new Vector3(5, 0, 0);
-		} else {
-			transform.position = new Vector3(-5, 0, 0);
+		if(!isNPC){
+			if(!PlayerPrefs.HasKey("Quest")) {
+				PlayerPrefs.SetInt("Quest", 0);
+				PlayerPrefs.SetInt("SubQuest", 0);
+			}
 		}
 	}
 
@@ -57,16 +59,47 @@ public class Character : MonoBehaviour {
             transform.Translate(2*Time.deltaTime, 0,0);
         }
 	}
+
+	int GetDialogIndex() {
+		int quest = PlayerPrefs.GetInt("Quest");
+		int subQuest = PlayerPrefs.GetInt("SubQuest");
+		return (myBehaviour.subQuest.CompareTo(subQuest) +1)*Convert.ToInt32(myBehaviour.quest==quest);
+
+	}
+
+	Speech GetDialog(){
+		
+		int dialog = GetDialogIndex(); 
+
+		return myBehaviour.dialogs[dialog].speechs[actualSpeech];
+	}
+
+	bool DialogEnd(){
+		int dialog = GetDialogIndex();
+
+		return actualSpeech == myBehaviour.dialogs[dialog].speechs.Count;
+	}
 	
 	void WaitInteraction() {
 		if(actualColider == null || actualColider.tag != "Player") return;
 
 		if(Input.GetKey("space") && myBehaviour.canInteract) {
+			dialogWindow.Destroy();
 			myBehaviour.canInteract = false;
-			print("Oi eu sou "+ myBehaviour.charName);
-			dialogWindow.Show(myBehaviour.dialogs[0].speechs[0]);
+			
+			if(DialogEnd()) {
+				actualSpeech = 0;
+				dialogWindow.Destroy();
+				print("end");
+			} else {
+				dialogWindow.Show(GetDialog());
+				actualSpeech++;
+			}
+			return;
+		}
 
-			//TODO Open window;
+		if(Input.GetKeyUp("space") && !myBehaviour.canInteract) {
+			myBehaviour.canInteract = true;
 			return;
 		}
 

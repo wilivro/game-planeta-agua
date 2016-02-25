@@ -2,18 +2,16 @@
 <Behaviour xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <characterName>João</characterName>
   <canInteract>true</canInteract>
+  <quest>1</quest>
+  <subQuest>0</subQuest>
+  <dismissible>true</dismissible>
   <dialogs>
 
       <dialog>
-      	<speech player="true">Ola mundo</speech>
-      	<speech player="true">Ola mundo player</speech>
-      	<speech player="true">Ola mundo player</speech>
-      	<speech player="true">Ola mundo player</speech>
-      </dialog>
-
-      <dialog>
-      	<speech player="true">Ola mundo</speech>
-      	<speech player="true">Ola mundo player</speech>
+        <speech player="false" expression="0">Oi eu sou {name}, mas pode me chamar de {name} mesmo.</speech>
+        <speech player="true"  expression="0">Tudo bom {name} mesmo</speech>
+        <speech player="false" expression="3">Tudo tranquilo, kkkkkkkkkk</speech>
+      	<speech player="true"  expression="0">E Favorável ¬¬</speech>
       </dialog>
       
   </dialogs>

@@ -8,21 +8,25 @@ public class DialogWindow : MonoBehaviour
 	GameObject win;
 	GameObject instatiation;
 	Sprite[] face;
+	Sprite[] facePlayer;
 	string name;
 
 	public DialogWindow(string _name, string _facePath) {
 		win = Resources.Load("Prefabs/UI/DialogWindow") as GameObject;
 		face = Resources.LoadAll<Sprite>(_facePath);
+		facePlayer = Resources.LoadAll<Sprite>("Characters/Leo/face");
 		name = _name;
-		print(face);
 	}
 
 	public void Show(Speech s) {
-		print(s.isPlayer);
 		instatiation = GameObject.Instantiate(win, new Vector3(67,11,0), Quaternion.identity) as GameObject;
-		instatiation.transform.Find("Text").GetComponent<UnityEngine.UI.Text>().text = s.speech;
-		instatiation.transform.Find("Name").GetComponent<UnityEngine.UI.Text>().text = s.isPlayer ? name : "Leo";
-		instatiation.transform.Find("Face").GetComponent<UnityEngine.UI.Image>().sprite = face[0];
+
+		string formatted = s.text.Replace("{name}", name);
+		instatiation.transform.Find("Text").GetComponent<UnityEngine.UI.Text>().text = formatted;
+
+
+		instatiation.transform.Find("Name").GetComponent<UnityEngine.UI.Text>().text = s.isPlayer ? "Leo" : name;
+		instatiation.transform.Find("Face").GetComponent<UnityEngine.UI.Image>().sprite = s.isPlayer ? facePlayer[s.expression] : face[s.expression];
 
 		instatiation.transform.position = new Vector3(67,11,0);
 	}
