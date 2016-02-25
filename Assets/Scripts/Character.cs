@@ -41,16 +41,6 @@ public class Character : MonoBehaviour {
 
 	void Start () {
 		isNPC = LoadBehaviour();
-
-		if(!isNPC){
-			if(!PlayerPrefs.HasKey("Quest")) {
-				PlayerPrefs.SetInt("Quest", 1);
-			}
-			if(!PlayerPrefs.HasKey("SubQuest")) {
-				PlayerPrefs.SetInt("SubQuest", 0);
-			}
-			PlayerPrefs.Save();	
-		}
 	}
 
 	void Movement() {
@@ -93,7 +83,10 @@ public class Character : MonoBehaviour {
 			if(DialogEnd()) {
 				actualSpeech = 0;
 				dialogWindow.Destroy();
-				print("end");
+				int subQuest = PlayerPrefs.GetInt("SubQuest");
+				if(myBehaviour.subQuest == subQuest){
+					PlayerPrefs.SetInt("SubQuest", subQuest+1);
+				}
 			} else {
 				dialogWindow.Show(GetDialog());
 				actualSpeech++;

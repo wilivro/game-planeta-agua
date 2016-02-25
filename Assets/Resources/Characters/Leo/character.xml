@@ -2,8 +2,8 @@
 <Behaviour xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <characterName>João</characterName>
   <canInteract>true</canInteract>
-  <quest>1</quest>
-  <subQuest>1</subQuest>
+  <quest>0</quest>
+  <subQuest>0</subQuest>
   <dismissible>true</dismissible>
   <dialogs>
 
