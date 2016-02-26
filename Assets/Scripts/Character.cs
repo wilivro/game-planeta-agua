@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml;
@@ -9,6 +10,9 @@ using System.Text;
 
 public class Character : MonoBehaviour {
 
+	Rigidbody2D rbody;
+	Animator anim;
+
 	public TextAsset behaviourFile;
 	public bool isNPC;
 
@@ -16,6 +20,7 @@ public class Character : MonoBehaviour {
 	private bool initialInteractionCondition;
 	private Behaviour myBehaviour;
 
+	
 	bool LoadBehaviour() {
 		if(behaviourFile == null){
 			return false;
@@ -35,21 +40,35 @@ public class Character : MonoBehaviour {
 	void Start () {
 		isNPC = LoadBehaviour();
 
-		if(isNPC){
-			transform.position = new Vector3(5, 0, 0);
-		} else {
-			transform.position = new Vector3(-5, 0, 0);
-		}
+		rbody = GetComponent<Rigidbody2D>();
+		anim = GetComponent<Animator>();
+		
 	}
 
 	void Movement() {
-		if (Input.GetKey("left")){
-            transform.Translate(-2*Time.deltaTime, 0,0);
-		}
-        
-        if (Input.GetKey("right")){
-            transform.Translate(2*Time.deltaTime, 0,0);
+		Vector2 movement_vector = new Vector2();
+		Vector2 axis = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+
+		if (Input.GetMouseButtonDown(0) && axis == Vector2.zero) {
+            Vector3 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            print(mouse);
+            //movement_vector = new Vector2(mouse.x, mouse.y);
+        } else if(axis != Vector2.zero){
+        	movement_vector = axis;
+        } else {
+        	//movement_vector = new Vector2(Math.Sign(nav.velocity.x), Math.Sign(nav.velocity.y));
         }
+
+		if(movement_vector != Vector2.zero) {
+			anim.SetBool("isWalking", true);
+			anim.SetFloat("input_x", movement_vector.x);
+			anim.SetFloat("input_y", movement_vector.y);
+		} else {
+			anim.SetBool("isWalking", false);
+		}
+
+		rbody.MovePosition(rbody.position + movement_vector*Time.deltaTime);
+
 	}
 	
 	void WaitInteraction() {
