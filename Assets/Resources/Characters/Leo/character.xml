@@ -26,11 +26,9 @@
 	    	<text>
 	    		Oi eu sou {name}, mas pode me chamar de {name} mesmo.
 	    	</text>
-	    	<choice correct="true">sim</choice>
-	    	<choice correct="false">não</choice>
-	    	<choice correct="true">não</choice>
-	    	<choice correct="false">não</choice>
-	    	<choice correct="true">não</choice>
+	    	<choice correct="true"  addScore="10"  goto="1">sim</choice>
+	    	<choice correct="false" addScore="-5"  goto="2">não</choice>
+	    	<choice correct="false" addScore="-8"  goto="3">sei la mano</choice>
 	    </speech>
 
 	    <speech player="true"  expression="1">

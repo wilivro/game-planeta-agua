@@ -19,7 +19,10 @@ public class Character : MonoBehaviour {
 
 	private DialogWindow dialogWindow;
 
-	private int actualSpeech;
+	public int actualSpeech;
+	public bool inChoice;
+
+	private bool wait;
 
 	bool LoadBehaviour() {
 		if(behaviourFile == null){
@@ -41,6 +44,7 @@ public class Character : MonoBehaviour {
 
 	void Start () {
 		isNPC = LoadBehaviour();
+		wait = false;
 	}
 
 	void Movement() {
@@ -61,7 +65,7 @@ public class Character : MonoBehaviour {
 
 	}
 
-	Speech GetDialog(){
+	public Speech GetDialog(){
 		int dialog = GetDialogIndex(); 
 
 		return myBehaviour.dialogs[dialog].speechs[actualSpeech];
@@ -88,8 +92,8 @@ public class Character : MonoBehaviour {
 					PlayerPrefs.SetInt("SubQuest", subQuest+1);
 				}
 			} else {
-				dialogWindow.Show(GetDialog());
-				actualSpeech++;
+				bool hasChioces = dialogWindow.Show(this);
+				if(!hasChioces) actualSpeech++;
 			}
 			return;
 		}
@@ -99,7 +103,7 @@ public class Character : MonoBehaviour {
 			return;
 		}
 
-		if(Input.GetKey("escape") && !myBehaviour.canInteract) {
+		if(Input.GetKey("escape")) {
 			actualSpeech = 0;
 			myBehaviour.canInteract = true;
 			dialogWindow.Destroy();

@@ -46,15 +46,21 @@ public class Speech
 	public int expression;
 
 	[XmlElement("choice")]
-	public List<choice> choices;
+	public List<Choice> choices;
 
 }
 
-public class choice
+public class Choice
 {
 	[XmlTextAttribute()]
 	public string text;
 
 	[XmlAttribute("correct")]
 	public bool correct;
+
+	[XmlAttribute("addScore")]
+	public int addScore;
+
+	[XmlAttribute("goto")]
+	public int gotoSpeech;
 }
