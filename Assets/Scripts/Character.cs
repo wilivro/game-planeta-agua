@@ -67,7 +67,7 @@ public class Character : MonoBehaviour {
 			anim.SetBool("isWalking", false);
 		}
 
-		rbody.MovePosition(rbody.position + movement_vector*50*Time.deltaTime);
+		rbody.MovePosition(rbody.position + movement_vector*Time.deltaTime);
 
 	}
 	
