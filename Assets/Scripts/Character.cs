@@ -10,6 +10,9 @@ using System.Text;
 
 public class Character : MonoBehaviour {
 
+	Rigidbody2D rbody;
+	Animator anim;
+
 	public TextAsset behaviourFile;
 	public bool isNPC;
 
@@ -44,17 +47,36 @@ public class Character : MonoBehaviour {
 
 	void Start () {
 		isNPC = LoadBehaviour();
-		wait = false;
+
+		rbody = GetComponent<Rigidbody2D>();
+		anim = GetComponent<Animator>();
+
 	}
 
 	void Movement() {
-		if (Input.GetKey("left")){
-            transform.Translate(-2*Time.deltaTime, 0,0);
-		}
-        
-        if (Input.GetKey("right")){
-            transform.Translate(2*Time.deltaTime, 0,0);
+		Vector2 movement_vector = new Vector2();
+		Vector2 axis = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+
+		if (axis == Vector2.zero) {
+            //Vector3 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            //print(mouse);
+            //movement_vector = new Vector2(mouse.x, mouse.y);
+        } else if(axis != Vector2.zero){
+        	movement_vector = axis;
+        } else {
+        	//movement_vector = new Vector2(Math.Sign(nav.velocity.x), Math.Sign(nav.velocity.y));
         }
+
+		if(movement_vector != Vector2.zero) {
+			anim.SetBool("isWalking", true);
+			anim.SetFloat("input_x", movement_vector.x);
+			anim.SetFloat("input_y", movement_vector.y);
+		} else {
+			anim.SetBool("isWalking", false);
+		}
+
+		rbody.MovePosition(rbody.position + movement_vector*Time.deltaTime);
+
 	}
 
 	int GetDialogIndex() {
@@ -121,12 +143,12 @@ public class Character : MonoBehaviour {
 		}
 	}
 
-	void OnCollisionEnter (Collision col)
+	void OnCollisionEnter2D (Collision2D col)
     {
         actualColider = col.gameObject;
     }
 
-    void OnCollisionExit (Collision col)
+    void OnCollisionExit2D (Collision2D col)
     {
     	actualColider = null;
 

@@ -96,6 +96,7 @@ public class DialogWindow : MonoBehaviour
 	}
 
 	public void OnChoice(Choice ch, Character c) {
+		print ("oi");
 		int score = PlayerPrefs.GetInt("Score");
 		PlayerPrefs.SetInt("Score", score+ch.addScore);
 		c.actualSpeech = ch.gotoSpeech;
