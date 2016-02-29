@@ -11,7 +11,7 @@ using System.Text;
 public class Character : MonoBehaviour {
 
 	Rigidbody2D rbody;
-	Animator anim;
+	public Animator anim;
 
 	public TextAsset behaviourFile;
 	public bool isNPC;
@@ -50,6 +50,7 @@ public class Character : MonoBehaviour {
 
 		rbody = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
+		//if(isNPC) StartCoroutine("Idle");
 
 	}
 
@@ -140,18 +141,80 @@ public class Character : MonoBehaviour {
 		}
 	}
 
+
+	int compare(WalkPoint v1, WalkPoint v2){
+		float distance1 = Vector3.Distance(v1.from, v1.to);
+		float distance2 = Vector3.Distance(v2.from, v2.to);
+		return distance2.CompareTo(distance1);
+	}
+
+	void Idle() {
+
+		RaycastHit2D hitUp;
+		RaycastHit2D hitDown;
+		RaycastHit2D hitLeft;
+		RaycastHit2D hitRight;
+
+		WalkPoint newPosition;
+
+		List<WalkPoint> tests = new List<WalkPoint>();
+
+			tests.Clear();
+
+			hitUp    = Physics2D.Raycast(transform.position + new Vector3(0, 0.2f, 0), Vector2.up);
+			hitDown  = Physics2D.Raycast(transform.position + new Vector3(0, -0.4f, 0), Vector2.down);
+			hitLeft  = Physics2D.Raycast(transform.position + new Vector3(-0.4f, 0, 0), Vector2.left);
+			hitRight = Physics2D.Raycast(transform.position + new Vector3(0.4f, 0, 0), Vector2.right);
+
+			if (hitUp.collider != null) {
+			Debug.DrawLine(transform.position + new Vector3(0, 0.2f, 0), hitUp.point);
+			tests.Add(new WalkPoint(transform.position, hitUp.point, Vector2.up));
+			}
+			if (hitDown.collider != null) {
+				Debug.DrawLine(transform.position + new Vector3(0, -0.4f, 0), hitDown.point);
+			tests.Add(new WalkPoint(transform.position, hitDown.point, Vector2.down));
+			}
+			if (hitLeft.collider != null) {
+				Debug.DrawLine(transform.position + new Vector3(-0.4f, 0, 0), hitLeft.point);
+			tests.Add(new WalkPoint(transform.position, hitLeft.point, Vector2.left));
+			}
+			if (hitRight.collider != null) {
+				Debug.DrawLine(transform.position + new Vector3(0.4f, 0, 0), hitRight.point);
+			tests.Add(new WalkPoint(transform.position, hitRight.point, Vector2.right));
+			}
+
+			tests.Sort(compare);
+
+			newPosition = tests[0];
+			print(newPosition.dir);
+
+			rbody.MovePosition(transform.position + newPosition.dir*Time.deltaTime);
+
+	}
+
 	// Update is called once per frame
 	void Update () {
 		if(!isNPC){
 			Movement();
 		} else {
-			WaitInteraction();
+			if(actualColider){
+				StopCoroutine("Idle");
+				Vector3 lookAt = actualColider.transform.position-transform.position;
+				anim.SetBool("isWalking", false);
+				anim.SetFloat("input_x", lookAt.x);
+				anim.SetFloat("input_y", lookAt.y);
+				WaitInteraction();
+			} else {
+				Idle();
+			}
 		}
 	}
 
 	void OnCollisionEnter2D (Collision2D col)
     {
-        actualColider = col.gameObject;
+		if(col.gameObject.tag == "Player"){
+        	actualColider = col.gameObject;
+		}
     }
 
     void OnCollisionExit2D (Collision2D col)
@@ -163,4 +226,17 @@ public class Character : MonoBehaviour {
     		myBehaviour.canInteract = initialInteractionCondition;
     	}
     }
+}
+
+public class WalkPoint
+{
+	public Vector3 from;
+	public Vector3 to;
+	public Vector3 dir;
+
+	public WalkPoint(Vector3 _from, Vector3 _to, Vector3 _dir){
+		from = _from;
+		to = _to;
+		dir = _dir;
+	}
 }
