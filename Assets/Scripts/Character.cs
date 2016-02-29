@@ -54,6 +54,12 @@ public class Character : MonoBehaviour {
 	}
 
 	void Movement() {
+
+		if(SmoothCamera.isFading) {
+			anim.SetBool("isWalking", false);
+			return;
+		};
+
 		Vector2 movement_vector = new Vector2();
 		Vector2 axis = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 

@@ -47,8 +47,6 @@ public class DialogWindow : MonoBehaviour
 			return false;
 		}
 
-		Time.timeScale = 0;
-
 		RectTransform rtCtx = ctxChoices.GetComponent (typeof (RectTransform)) as RectTransform;
 		rtCtx.sizeDelta = new Vector2(rtCtx.sizeDelta.x, s.choices.Count*30 +20);
 

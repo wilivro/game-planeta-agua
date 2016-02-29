@@ -9,5 +9,7 @@ public class InitGame : MonoBehaviour
 		PlayerPrefs.SetInt("Quest", 0);
 		PlayerPrefs.SetInt("SubQuest", 0);
 		PlayerPrefs.Save();
+
+		Time.timeScale = 1;
 	}
 }

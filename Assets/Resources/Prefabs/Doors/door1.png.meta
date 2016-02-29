@@ -1,0 +1,1578 @@
+fileFormatVersion: 2
+guid: f85925e52fe5d874a868fed349383737
+timeCreated: 1456756140
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: door1_0
+    21300002: door1_1
+    21300004: door1_2
+    21300006: door1_3
+    21300008: door1_4
+    21300010: door1_5
+    21300012: door1_6
+    21300014: door1_7
+    21300016: door1_8
+    21300018: door1_9
+    21300020: door1_10
+    21300022: door1_11
+    21300024: door1_12
+    21300026: door1_13
+    21300028: door1_14
+    21300030: door1_15
+    21300032: door1_16
+    21300034: door1_17
+    21300036: door1_18
+    21300038: door1_19
+    21300040: door1_20
+    21300042: door1_21
+    21300044: door1_22
+    21300046: door1_23
+    21300048: door1_24
+    21300050: door1_25
+    21300052: door1_26
+    21300054: door1_27
+    21300056: door1_28
+    21300058: door1_29
+    21300060: door1_30
+    21300062: door1_31
+    21300064: door1_32
+    21300066: door1_33
+    21300068: door1_34
+    21300070: door1_35
+    21300072: door1_36
+    21300074: door1_37
+    21300076: door1_38
+    21300078: door1_39
+    21300080: door1_40
+    21300082: door1_41
+    21300084: door1_42
+    21300086: door1_43
+    21300088: door1_44
+    21300090: door1_45
+    21300092: door1_46
+    21300094: door1_47
+    21300096: door1_48
+    21300098: door1_49
+    21300100: door1_50
+    21300102: door1_51
+    21300104: door1_52
+    21300106: door1_53
+    21300108: door1_54
+    21300110: door1_55
+    21300112: door1_56
+    21300114: door1_57
+    21300116: door1_58
+    21300118: door1_59
+    21300120: door1_60
+    21300122: door1_61
+    21300124: door1_62
+    21300126: door1_63
+    21300128: door1_64
+    21300130: door1_65
+    21300132: door1_66
+    21300134: door1_67
+    21300136: door1_68
+    21300138: door1_69
+    21300140: door1_70
+    21300142: door1_71
+    21300144: door1_72
+    21300146: door1_73
+    21300148: door1_74
+    21300150: door1_75
+    21300152: door1_76
+    21300154: door1_77
+    21300156: door1_78
+    21300158: door1_79
+    21300160: door1_80
+    21300162: door1_81
+    21300164: door1_82
+    21300166: door1_83
+    21300168: door1_84
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: door1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 28}
+        - {x: -16, y: 28}
+        - {x: -16, y: -32}
+        - {x: -1, y: -32}
+        - {x: 11, y: -28}
+        - {x: 11, y: 26}
+    - name: door1_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 26}
+        - {x: -11, y: -28}
+        - {x: -3, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -9, y: 28}
+    - name: door1_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 7, y: -32}
+        - {x: 7, y: 26}
+        - {x: 5, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 28}
+        - {x: -16, y: 28}
+        - {x: -16, y: -32}
+        - {x: -3, y: -32}
+        - {x: 9, y: -28}
+        - {x: 11, y: -26}
+        - {x: 11, y: 26}
+    - name: door1_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 28}
+        - {x: -11, y: -30}
+        - {x: 1, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+    - name: door1_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 7, y: -32}
+        - {x: 7, y: 26}
+        - {x: 5, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_19
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_21
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 28}
+        - {x: -16, y: 28}
+        - {x: -16, y: -32}
+        - {x: -2, y: -32}
+        - {x: 11, y: -27}
+        - {x: 11, y: 26}
+    - name: door1_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 28}
+        - {x: -10, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+    - name: door1_23
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 7, y: -32}
+        - {x: 7, y: 26}
+        - {x: 5, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 28}
+        - {x: -16, y: -32}
+        - {x: -13, y: -32}
+        - {x: 1, y: -19}
+        - {x: 1, y: 26}
+        - {x: -1, y: 28}
+    - name: door1_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: 26}
+        - {x: -1, y: -20}
+        - {x: 12, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: 1, y: 28}
+    - name: door1_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: -2, y: -32}
+        - {x: -2, y: 26}
+        - {x: -4, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 28}
+        - {x: -16, y: -32}
+        - {x: -13, y: -32}
+        - {x: 1, y: -18}
+        - {x: 1, y: 26}
+        - {x: -1, y: 28}
+    - name: door1_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: 26}
+        - {x: -1, y: -18}
+        - {x: 13, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: 1, y: 28}
+    - name: door1_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: -2, y: -32}
+        - {x: -2, y: 26}
+        - {x: -4, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 28}
+        - {x: -16, y: 28}
+        - {x: -16, y: -32}
+        - {x: 16, y: -32}
+    - name: door1_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 28}
+        - {x: -16, y: 28}
+        - {x: -16, y: -32}
+        - {x: 16, y: -32}
+    - name: door1_32
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_33
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 28}
+        - {x: -16, y: -32}
+        - {x: -13, y: -32}
+        - {x: 1, y: -18}
+        - {x: 1, y: 26}
+        - {x: -1, y: 28}
+    - name: door1_34
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: 26}
+        - {x: -1, y: -20}
+        - {x: 12, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: 1, y: 28}
+    - name: door1_35
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: -2, y: -32}
+        - {x: -2, y: 26}
+        - {x: -4, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_36
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: -8, y: -32}
+        - {x: -8, y: 26}
+        - {x: -10, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_37
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: -9, y: -32}
+        - {x: -9, y: 26}
+        - {x: -11, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_39
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_40
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_41
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: -10, y: -32}
+        - {x: -10, y: 26}
+        - {x: -12, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_43
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_44
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_45
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_46
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_47
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_48
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_49
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_50
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_51
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_52
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_53
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 28}
+        - {x: -16, y: 28}
+        - {x: -16, y: -32}
+        - {x: -3, y: -32}
+        - {x: 8, y: -28}
+        - {x: 10, y: -26}
+        - {x: 10, y: 26}
+    - name: door1_55
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 28}
+        - {x: -10, y: -30}
+        - {x: 2, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+    - name: door1_56
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: -2, y: -32}
+        - {x: -2, y: 26}
+        - {x: -4, y: 28}
+        - {x: -16, y: 28}
+      - - {x: 2, y: 26}
+        - {x: 2, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: 4, y: 28}
+    - name: door1_57
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 28}
+        - {x: -16, y: -32}
+        - {x: -2, y: -32}
+        - {x: -2, y: 28}
+      - - {x: 1, y: 26}
+        - {x: 1, y: -27}
+        - {x: 8, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: 3, y: 28}
+    - name: door1_58
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 28}
+        - {x: -16, y: -32}
+        - {x: -2, y: -32}
+        - {x: -2, y: 28}
+      - - {x: -2, y: 26}
+        - {x: -2, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: 0, y: 28}
+    - name: door1_59
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: -2, y: -32}
+        - {x: -2, y: 26}
+        - {x: -4, y: 28}
+        - {x: -16, y: 28}
+      - - {x: 2, y: 26}
+        - {x: 2, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: 4, y: 28}
+    - name: door1_60
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 28}
+        - {x: -16, y: 28}
+        - {x: -16, y: -32}
+        - {x: -11, y: -32}
+        - {x: -6, y: -30}
+        - {x: -2, y: -26}
+        - {x: -2, y: 26}
+      - - {x: 1, y: 26}
+        - {x: 1, y: -27}
+        - {x: 8, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: 3, y: 28}
+    - name: door1_61
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 1, y: -32}
+        - {x: 1, y: 26}
+        - {x: -1, y: 28}
+        - {x: -16, y: 28}
+      - - {x: 1, y: 26}
+        - {x: 1, y: -27}
+        - {x: 8, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: 3, y: 28}
+    - name: door1_62
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: -2, y: -32}
+        - {x: -2, y: 26}
+        - {x: -4, y: 28}
+        - {x: -16, y: 28}
+      - - {x: 2, y: 26}
+        - {x: 2, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: 4, y: 28}
+    - name: door1_63
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 28}
+        - {x: -16, y: -32}
+        - {x: 9, y: -32}
+        - {x: 10, y: -24}
+        - {x: 10, y: 28}
+    - name: door1_64
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 28}
+        - {x: -10, y: -31}
+        - {x: -3, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+    - name: door1_65
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 7, y: -32}
+        - {x: 7, y: 26}
+        - {x: 5, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 28}
+        - {x: -16, y: 28}
+        - {x: -16, y: -32}
+        - {x: -12, y: -32}
+        - {x: 2, y: -19}
+        - {x: 2, y: 26}
+    - name: door1_67
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 26}
+        - {x: -2, y: -19}
+        - {x: 12, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: 0, y: 28}
+    - name: door1_68
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: -6, y: -32}
+        - {x: -6, y: 26}
+        - {x: -8, y: 28}
+        - {x: -16, y: 28}
+      - - {x: 6, y: 26}
+        - {x: 6, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: 8, y: 28}
+    - name: door1_69
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 28}
+        - {x: -16, y: -32}
+        - {x: -12, y: -32}
+        - {x: -6, y: -26}
+        - {x: -6, y: 26}
+        - {x: -8, y: 28}
+      - - {x: 5, y: 26}
+        - {x: 5, y: -27}
+        - {x: 11, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: 7, y: 28}
+    - name: door1_70
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 28}
+        - {x: -16, y: -32}
+        - {x: -12, y: -32}
+        - {x: -6, y: -26}
+        - {x: -6, y: 26}
+        - {x: -8, y: 28}
+      - - {x: -2, y: 26}
+        - {x: -2, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: 0, y: 28}
+    - name: door1_71
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: -6, y: -32}
+        - {x: -6, y: 26}
+        - {x: -8, y: 28}
+        - {x: -16, y: 28}
+      - - {x: 6, y: 26}
+        - {x: 6, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: 8, y: 28}
+    - name: door1_72
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 28}
+        - {x: -16, y: -32}
+        - {x: -12, y: -32}
+        - {x: -6, y: -26}
+        - {x: -6, y: 26}
+        - {x: -8, y: 28}
+      - - {x: 4, y: 26}
+        - {x: 4, y: -27}
+        - {x: 11, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: 6, y: 28}
+    - name: door1_73
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 1, y: -32}
+        - {x: 1, y: 26}
+        - {x: -1, y: 28}
+        - {x: -16, y: 28}
+      - - {x: 4, y: 26}
+        - {x: 4, y: -27}
+        - {x: 11, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: 6, y: 28}
+    - name: door1_74
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: -6, y: -32}
+        - {x: -6, y: 26}
+        - {x: -8, y: 28}
+        - {x: -16, y: 28}
+      - - {x: 6, y: 26}
+        - {x: 6, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: 8, y: 28}
+    - name: door1_75
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 28}
+        - {x: -16, y: 28}
+        - {x: -16, y: -32}
+        - {x: -11, y: -32}
+        - {x: 2, y: -20}
+        - {x: 2, y: 26}
+    - name: door1_76
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 26}
+        - {x: -3, y: -19}
+        - {x: 11, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: -1, y: 28}
+    - name: door1_77
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: -2, y: -32}
+        - {x: -2, y: 26}
+        - {x: -4, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_78
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: -10, y: -32}
+        - {x: -10, y: 26}
+        - {x: -12, y: 28}
+        - {x: -16, y: 28}
+      - - {x: 10, y: 26}
+        - {x: 10, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: 12, y: 28}
+    - name: door1_79
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 26}
+        - {x: -2, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: 0, y: 28}
+    - name: door1_80
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: -10, y: -32}
+        - {x: -10, y: 26}
+        - {x: -12, y: 28}
+        - {x: -16, y: 28}
+      - - {x: 10, y: 26}
+        - {x: 10, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: 12, y: 28}
+    - name: door1_81
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: 1, y: -32}
+        - {x: 1, y: 26}
+        - {x: -1, y: 28}
+        - {x: -16, y: 28}
+    - name: door1_82
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: -10, y: -32}
+        - {x: -10, y: 26}
+        - {x: -12, y: 28}
+        - {x: -16, y: 28}
+      - - {x: 10, y: 26}
+        - {x: 10, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: 12, y: 28}
+    - name: door1_83
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 28}
+        - {x: 13, y: 27}
+    - name: door1_84
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -32}
+        - {x: -9, y: -32}
+        - {x: -9, y: 26}
+        - {x: -11, y: 28}
+        - {x: -16, y: 28}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

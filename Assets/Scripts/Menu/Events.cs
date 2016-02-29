@@ -5,6 +5,12 @@ public class Events : MonoBehaviour
 {
 
 	public void OnClickNewGameButton() {
-		Application.LoadLevel("cena1");
+		Application.LoadLevel("cidade");
 	}
+
+	void fadeComplete() {
+		Time.timeScale = 1;
+		SmoothCamera.isFading = false;
+	}
+
 }
