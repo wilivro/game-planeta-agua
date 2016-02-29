@@ -13,7 +13,17 @@ public class Door : MonoBehaviour {
 		anim.SetTrigger("Open");
 	}
 
+	void Close() {
+		anim.SetTrigger("Close");
+	}
+
 	void OnTriggerEnter2D(Collider2D col) {
 		Open();
 	}
+
+	void OnTriggerExit2D(Collider2D col) {
+		Close();
+	}
+
 }
+
