@@ -198,14 +198,14 @@ public class Character : MonoBehaviour {
 			Movement();
 		} else {
 			if(actualColider){
-				StopCoroutine("Idle");
+				//StopCoroutine("Idle");
 				Vector3 lookAt = actualColider.transform.position-transform.position;
 				anim.SetBool("isWalking", false);
 				anim.SetFloat("input_x", lookAt.x);
 				anim.SetFloat("input_y", lookAt.y);
 				WaitInteraction();
 			} else {
-				Idle();
+				//Idle();
 			}
 		}
 	}
