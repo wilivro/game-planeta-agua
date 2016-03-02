@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Behaviour xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <characterName>João</characterName>
+  <characterName>Mark</characterName>
   <interacatle>true</interacatle>
   <quest>0</quest>
   <subQuest>0</subQuest>

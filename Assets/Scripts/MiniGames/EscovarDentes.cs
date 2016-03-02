@@ -95,6 +95,5 @@ public class EscovarDentes : MonoBehaviour {
 			}
 		}
 
-		score = (score*100)/(template.Length*10);
 	}
 }
