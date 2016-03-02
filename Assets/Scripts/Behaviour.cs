@@ -45,6 +45,9 @@ public class Speech
 	[XmlAttribute("expression")]
 	public int expression;
 
+	[XmlAttribute("long")]
+	public bool isLong;
+
 	[XmlElement("choice")]
 	public List<Choice> choices;
 

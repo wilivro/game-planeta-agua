@@ -39,7 +39,10 @@ public class Character : MonoBehaviour {
 	 		myBehaviour = serializer.Deserialize(stream) as Behaviour;
 	 		initialInteractionCondition = myBehaviour.canInteract;
 
-	 		dialogWindow = new DialogWindow(myBehaviour.charName, "Characters/Leo/face");
+	 		//dialogWindow = new DialogWindow(myBehaviour.charName, "Characters/Leo/face");
+	 		dialogWindow = gameObject.AddComponent<DialogWindow>() as DialogWindow;
+	 		dialogWindow.Config(myBehaviour.charName, "Characters/Leo/face");
+
 	 		return true;
  		} catch {
  			return false;
@@ -53,7 +56,11 @@ public class Character : MonoBehaviour {
 		anim = GetComponent<Animator>();
 		//if(isNPC) StartCoroutine("Idle");
 
+		PlayerPrefs.SetInt("Quest", 0);
+		PlayerPrefs.SetInt("SubQuest", 0);
+
 	}
+
 
 	void Movement() {
 
@@ -111,14 +118,16 @@ public class Character : MonoBehaviour {
 		if(actualColider == null || actualColider.tag != "Player") return;
 
 		if(Input.GetKey("space") && myBehaviour.canInteract) {
+
 			dialogWindow.Destroy();
 			myBehaviour.canInteract = false;
 			
 			if(DialogEnd()) {
 				actualSpeech = 0;
 				dialogWindow.Destroy();
+				int quest = PlayerPrefs.GetInt("Quest");
 				int subQuest = PlayerPrefs.GetInt("SubQuest");
-				if(myBehaviour.subQuest == subQuest){
+				if(myBehaviour.subQuest == subQuest && myBehaviour.quest == quest){
 					PlayerPrefs.SetInt("SubQuest", subQuest+1);
 				}
 			} else {
@@ -199,14 +208,16 @@ public class Character : MonoBehaviour {
 			Movement();
 		} else {
 			if(actualColider){
-				StopCoroutine("Idle");
-				Vector3 lookAt = actualColider.transform.position-transform.position;
-				anim.SetBool("isWalking", false);
-				anim.SetFloat("input_x", lookAt.x);
-				anim.SetFloat("input_y", lookAt.y);
+				if(anim){
+					Vector3 lookAt = actualColider.transform.position-transform.position;
+					anim.SetBool("isWalking", false);
+					anim.SetFloat("input_x", lookAt.x);
+					anim.SetFloat("input_y", lookAt.y);
+				}
+
 				WaitInteraction();
 			} else {
-				Idle();
+				//Idle();
 			}
 		}
 	}

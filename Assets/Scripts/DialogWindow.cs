@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -6,13 +7,15 @@ public class DialogWindow : MonoBehaviour
 {
 
 	GameObject win;
+	GameObject winLong;
 	GameObject instatiation;
 	Sprite[] face;
 	Sprite[] facePlayer;
-	string name;
+	public string name;
 
-	public DialogWindow(string _name, string _facePath) {
+	public void Config(string _name, string _facePath) {
 		win = Resources.Load("Prefabs/UI/DialogWindow") as GameObject;
+		winLong = Resources.Load("Prefabs/UI/DialogWindowLong") as GameObject;
 		face = Resources.LoadAll<Sprite>(_facePath);
 		facePlayer = Resources.LoadAll<Sprite>("Characters/Leo/face");
 		name = _name;
@@ -29,15 +32,20 @@ public class DialogWindow : MonoBehaviour
 	public bool Show(Character c) {
 		Speech s = c.GetDialog();
 
-		instatiation = GameObject.Instantiate(win, new Vector3(67,11,0), Quaternion.identity) as GameObject;
+		instatiation = GameObject.Instantiate(s.isLong ? winLong : win) as GameObject;
 
 		string formatted = formatText(s.text);
 		Transform ctx = instatiation.transform.Find("ContainerText");
 		Transform ctxName = ctx.Find("NamePanel");
-		ctx.transform.Find("Text").GetComponent<UnityEngine.UI.Text>().text = formatted;
 
-		ctxName.transform.Find("Name").GetComponent<UnityEngine.UI.Text>().text = s.isPlayer ? "Leo" : name;
-		ctx.transform.Find("Face").GetComponent<UnityEngine.UI.Image>().sprite = s.isPlayer ? facePlayer[s.expression] : face[s.expression];
+		object[] parms = new object[2]{formatted, ctx.transform.Find("Text").GetComponent<UnityEngine.UI.Text>()};
+		StartCoroutine(Write(parms));
+
+		ctxName.transform.Find("Name").GetComponent<Text>().text = s.isPlayer ? "Leo" : name;
+
+		if(s.isLong) return false;
+
+		ctx.transform.Find("Face").GetComponent<Image>().sprite = s.isPlayer ? facePlayer[s.expression] : face[s.expression];
 
 		Transform ctxChoices = ctx.transform.Find("Choices");
 
@@ -54,10 +62,10 @@ public class DialogWindow : MonoBehaviour
 		RectTransform rt;
 
 		Transform button = ctxChoices.Find("Button");
-		button.Find("Text").GetComponent<UnityEngine.UI.Text>().text = s.choices[0].text;
+		button.Find("Text").GetComponent<Text>().text = s.choices[0].text;
 		rtOriginal = button.GetComponent (typeof (RectTransform)) as RectTransform;
 
-		UnityEngine.UI.Button btn = button.GetComponent<UnityEngine.UI.Button>();
+		Button btn = button.GetComponent<Button>();
 
 		btn.onClick.AddListener(delegate { OnChoice(s.choices[0], c); });
 
@@ -67,7 +75,7 @@ public class DialogWindow : MonoBehaviour
 
 			newButton.SetParent(ctxChoices);
 
-			newButton.Find("Text").GetComponent<UnityEngine.UI.Text>().text = s.choices[i].text;
+			newButton.Find("Text").GetComponent<Text>().text = s.choices[i].text;
 			rt = newButton.GetComponent (typeof (RectTransform)) as RectTransform;
 
 			rt.sizeDelta = new Vector2(246, 30);
@@ -82,11 +90,22 @@ public class DialogWindow : MonoBehaviour
 
 			Choice arg = s.choices[i];
 
-			newButton.gameObject.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(delegate { OnChoice(arg, c); });
+			newButton.gameObject.GetComponent<Button>().onClick.AddListener(delegate { OnChoice(arg, c); });
 
 		}
 
 		return true;
+	}
+
+	public IEnumerator Write(object[] parms) {
+
+		string text = (string)parms[0];
+		Text ctx = (Text)parms[1];
+
+		for(int i = 0; i < text.Length; i++){
+			yield return new WaitForSeconds(0.05f);
+			ctx.text += text[i];
+		}
 	}
 
 	public void Destroy() {
@@ -94,7 +113,6 @@ public class DialogWindow : MonoBehaviour
 	}
 
 	public void OnChoice(Choice ch, Character c) {
-		print ("oi");
 		int score = PlayerPrefs.GetInt("Score");
 		PlayerPrefs.SetInt("Score", score+ch.addScore);
 		c.actualSpeech = ch.gotoSpeech;
