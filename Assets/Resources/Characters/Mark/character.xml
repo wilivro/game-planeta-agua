@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Behaviour xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <characterName>João</characterName>
+  <interacatle>true</interacatle>
+  <quest>0</quest>
+  <subQuest>0</subQuest>
+  <dismissible>true</dismissible>
+
+  <dialogs>
+
+  	<dialog>
+      <speech player="false" expression="2">
+      	<text>Não quero nada com vc agora.</text>
+      </speech>
+    </dialog>
+
+    <dialog>
+      <speech player="false" expression="0">
+      	<text>Fale com fulano.</text>
+      </speech>
+    </dialog>
+
+	  <dialog>
+
+	    <speech player="false" expression="0">
+	    	<text>
+	    		Oi eu sou {name}, mas pode me chamar de {name} mesmo.
+	    	</text>
+	    	<choice correct="true"  addScore="10"  goto="1">sim</choice>
+	    	<choice correct="false" addScore="-5"  goto="2">não</choice>
+	    	<choice correct="false" addScore="-8"  goto="3">sei la mano</choice>
+	    </speech>
+
+	    <speech player="true"  expression="1">
+	    	<text>Tudo bom {name} mesmo.</text>
+	    </speech>
+
+	    <speech player="false" expression="3">
+	    	<text>Tudo tranquilo, kkkkkkkkkk.</text>
+	    </speech>
+
+	  	<speech player="true"  expression="6">
+	  		<text>E Favorável. ¬¬</text>
+	  	</speech>
+
+	  </dialog>
+
+	  <dialog>
+      <speech player="false" expression="4">
+      	<text>Ja falei com vc viado.</text>
+      </speech>
+    </dialog>
+      
+  </dialogs>
+
+</Behaviour>
+  
