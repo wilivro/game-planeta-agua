@@ -117,7 +117,7 @@ public class Character : MonoBehaviour {
 	void WaitInteraction() {
 		if(actualColider == null || actualColider.tag != "Player") return;
 
-		if(Input.GetKey("space") && myBehaviour.canInteract) {
+		if(CrossPlatformInputManager.GetButton("A") && myBehaviour.canInteract) {
 
 			dialogWindow.Destroy();
 			myBehaviour.canInteract = false;
@@ -137,12 +137,12 @@ public class Character : MonoBehaviour {
 			return;
 		}
 
-		if(Input.GetKeyUp("space") && !myBehaviour.canInteract) {
+		if(CrossPlatformInputManager.GetButtonUp("A") && !myBehaviour.canInteract) {
 			myBehaviour.canInteract = true;
 			return;
 		}
 
-		if(Input.GetKey("escape")) {
+		if(CrossPlatformInputManager.GetButton("B")) {
 			actualSpeech = 0;
 			myBehaviour.canInteract = true;
 			dialogWindow.Destroy();
@@ -204,7 +204,9 @@ public class Character : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if(!isNPC){
+        print(CrossPlatformInputManager.GetButton("A"));
+
+        if (!isNPC){
 			Movement();
 		} else {
 			if(actualColider){
