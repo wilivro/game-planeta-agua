@@ -46,7 +46,8 @@
 	- Diálogo Livro: A Terra é um planeta quase todo coberto por água: água dos oceanos, água dos mares, rios e lagos, água das calotas polares, água da chuva, muita, muita água...Quando visto de cima, nosso planeta tem uma grande quantidade de cor azul. Essa cor representa as nossas águas, que cobrem 70% da nossa superfície. Por isso, algumas pessoas chamam a Terra de Planeta Azul e
 até mesmo Planeta Água! Mas lembre-se, a maior parte de nossas águas é salgada.
 
-	 Guto aparece -  Devido a isso, devemos economizar e saber fazer seu uso consciente, e devemos começar agora.
+*Guto aparece*
+-  Devido a isso, devemos economizar e saber fazer seu uso consciente, e devemos começar agora.
 
 #### Quest 002 - Tutorial (Pag 30)
 
@@ -65,7 +66,7 @@ até mesmo Planeta Água! Mas lembre-se, a maior parte de nossas águas é salga
 - Diálogo Mãe: Léo, vá lá fora e lave o carro e limpe a calçada, depois pode brincar!
 - Diálogo Léo: Eu que faço tudo aqui..
 
-- Léo vai para fora da sua casa fazer mais tarefas diárias.
+*Léo vai para fora da sua casa fazer mais tarefas diárias.*
 	- Lavar o carro
 	- Limpar a calçada
 
@@ -93,7 +94,7 @@ Durante todo o trajeto Léo pode ir recolhendo lixo, guardando ou jogando em uma
 - Diálogo Léo: É mesmo, nunca tinha percebido quanto lixo tem aqui no chão também, poderiamos ajudar de alguma.
 - Diálogo Guto: Verdade, vamos jogar esse lixo no local correto!
 
-    // Quando for jogar um objeto no lixo, seria necessário escolher a lixeira correta para ganhar mais pontos //
+// Quando for jogar um objeto no lixo, seria necessário escolher a lixeira correta para ganhar mais pontos //
     
 #### Quest 006 - Cachorro (Optativa)
 
