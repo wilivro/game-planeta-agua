@@ -67,8 +67,8 @@ até mesmo Planeta Água! Mas lembre-se, a maior parte de nossas águas é salga
 - Diálogo Léo: Eu que faço tudo aqui..
 
 *Léo vai para fora da sua casa fazer mais tarefas diárias.*
-	- Lavar o carro
-	- Limpar a calçada
+- Lavar o carro
+- Limpar a calçada
 
 ---
 
@@ -110,15 +110,15 @@ Durante todo o trajeto Léo pode ir recolhendo lixo, guardando ou jogando em uma
 
 - Diálogo NPC1: Se você quer alimentos assim, deveria comprar a pêra, é o alimento aqui que mais contém água!
 - Diálogo NPC2: Claro que não, a melhor opção aqui é o tomate!
-// Esse diálogo abaixo depende se Léo acertar o alimento correto. //
-- Diálogo Léo: Calma amigos, ambos estão errados, nessa feira, a melancia é o que mais contém água, e mais delicioso também.
 
+//Esse diálogo abaixo depende se Léo acertar o alimento correto.//
+
+- Diálogo Léo: Calma amigos, ambos estão errados, nessa feira, a melancia é o que mais contém água, e mais delicioso também.
 - Diálogo Siqueira: O rapazinho está correto colegas, inclusive, na minha banca tem uma ótima melancia, gostariam de provar alguns pedaços?
 - Diálogo Siqueira: Você quase acertou, porém a melancia é o alimento aqui que contém mais água, gostariam de provar alguns pedaços?
-
 - Diálogo Guto: Eu quero!
 - Diálogo Léo: Eu também!
-  		- tempo comendo -
+  		* tempo comendo *
 - Diálogo Léo: Caramba, que melancia boa! O senhor que produz?
 - Diálogo Siqueira: Sim, eu mesmo cultivo na minha fazenda, usando boas práticas agrícolas e minimo uso de defensivos agrícolas!
 - Diálogo Léo: wow! O senhor sabe mesmo com produzir bons alimentos.
