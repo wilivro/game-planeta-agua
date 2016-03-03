@@ -22,6 +22,12 @@ public class Behaviour {
 	[XmlElement("dismissible")]
 	public bool dismissible;
 
+	[XmlElement("collectable")]
+	public bool isCollectable;
+
+	[XmlElement("item")]
+	public bool isItem;
+
 	[XmlArray("dialogs")]
 	[XmlArrayItem("dialog")]
 	public List<Dialog> dialogs;

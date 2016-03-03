@@ -6,6 +6,7 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.IO;
 using System.Text;
+using UnityStandardAssets.CrossPlatformInput;
 
 
 public class Character : MonoBehaviour {
@@ -18,7 +19,7 @@ public class Character : MonoBehaviour {
 
 	private GameObject actualColider;
 	private bool initialInteractionCondition;
-	private Behaviour myBehaviour;
+	public Behaviour myBehaviour;
 
 	private DialogWindow dialogWindow;
 
@@ -55,8 +56,10 @@ public class Character : MonoBehaviour {
 		anim = GetComponent<Animator>();
 		//if(isNPC) StartCoroutine("Idle");
 
-		PlayerPrefs.SetInt("Quest", 0);
-		PlayerPrefs.SetInt("SubQuest", 0);
+		if(!isNPC){
+			PlayerPrefs.SetInt("Quest", 0);
+			PlayerPrefs.SetInt("SubQuest", 0);
+		}
 
 	}
 
@@ -69,9 +72,9 @@ public class Character : MonoBehaviour {
 		};
 
 		Vector2 movement_vector = new Vector2();
-		Vector2 axis = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        Vector2 axis = new Vector2(CrossPlatformInputManager.GetAxis("Horizontal"), CrossPlatformInputManager.GetAxis("Vertical"));
 
-		if (axis == Vector2.zero) {
+        if (axis == Vector2.zero) {
             //Vector3 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             //print(mouse);
             //movement_vector = new Vector2(mouse.x, mouse.y);
@@ -116,7 +119,7 @@ public class Character : MonoBehaviour {
 	void WaitInteraction() {
 		if(actualColider == null || actualColider.tag != "Player") return;
 
-		if(Input.GetKey("space") && myBehaviour.canInteract) {
+		if(CrossPlatformInputManager.GetButton("Submit") && myBehaviour.canInteract) {
 
 			dialogWindow.Destroy();
 			myBehaviour.canInteract = false;
@@ -128,6 +131,7 @@ public class Character : MonoBehaviour {
 				int subQuest = PlayerPrefs.GetInt("SubQuest");
 				if(myBehaviour.subQuest == subQuest && myBehaviour.quest == quest){
 					PlayerPrefs.SetInt("SubQuest", subQuest+1);
+					PlayerPrefs.Save();
 				}
 			} else {
 				bool hasChioces = dialogWindow.Show(this);
@@ -136,12 +140,12 @@ public class Character : MonoBehaviour {
 			return;
 		}
 
-		if(Input.GetKeyUp("space") && !myBehaviour.canInteract) {
-			myBehaviour.canInteract = true;
-			return;
-		}
+		// if(CrossPlatformInputManager.GetButtonUp("A") && !myBehaviour.canInteract) {
+		// 	myBehaviour.canInteract = true;
+		// 	return;
+		// }
 
-		if(Input.GetKey("escape")) {
+		if(CrossPlatformInputManager.GetButton("Cancel")) {
 			actualSpeech = 0;
 			myBehaviour.canInteract = true;
 			dialogWindow.Destroy();
@@ -203,9 +207,27 @@ public class Character : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if(!isNPC){
+
+        if (!isNPC){
 			Movement();
+			int subQuest = PlayerPrefs.GetInt("SubQuest");
+			print(subQuest);
 		} else {
+			
+			if(myBehaviour.isItem){
+				print(GetDialogIndex());
+				if(GetDialogIndex() < 2){
+					gameObject.GetComponent<BoxCollider2D>().enabled = false;
+					Transform glow = gameObject.transform.Find("Glow");
+					if(glow) glow.gameObject.active = false;
+					return;
+				} else {
+					gameObject.GetComponent<BoxCollider2D>().enabled = true;
+					Transform glow = gameObject.transform.Find("Glow");
+					if(glow) glow.gameObject.active = true;
+				}
+			}
+
 			if(actualColider){
 				if(anim){
 					Vector3 lookAt = actualColider.transform.position-transform.position;
@@ -224,6 +246,7 @@ public class Character : MonoBehaviour {
 	void OnCollisionEnter2D (Collision2D col)
     {
 		if(col.gameObject.tag == "Player"){
+			GameObject.Find("Buttons").GetComponent<Animator>().SetTrigger("FadeIN");
         	actualColider = col.gameObject;
 		}
     }
@@ -232,7 +255,8 @@ public class Character : MonoBehaviour {
     {
     	actualColider = null;
 
-    	if(isNPC){
+    	if(isNPC && col.gameObject.tag == "Player"){
+    		GameObject.Find("Buttons").GetComponent<Animator>().SetTrigger("FadeOUT");
     		dialogWindow.Destroy();
     		myBehaviour.canInteract = initialInteractionCondition;
     	}

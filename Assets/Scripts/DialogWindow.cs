@@ -11,6 +11,7 @@ public class DialogWindow : MonoBehaviour
 	GameObject instatiation;
 	Sprite[] face;
 	Sprite[] facePlayer;
+	Canvas joyCanvas;
 	public string name;
 
 	public void Config(string _name, string _facePath) {
@@ -18,6 +19,7 @@ public class DialogWindow : MonoBehaviour
 		winLong = Resources.Load("Prefabs/UI/DialogWindowLong") as GameObject;
 		face = Resources.LoadAll<Sprite>(_facePath);
 		facePlayer = Resources.LoadAll<Sprite>("Characters/Leo/face");
+		joyCanvas = GameObject.Find("Joystick").GetComponent<Canvas>();
 		name = _name;
 	}
 
@@ -32,13 +34,15 @@ public class DialogWindow : MonoBehaviour
 	public bool Show(Character c) {
 		Speech s = c.GetDialog();
 
+		joyCanvas.transform.Find("MobileJoystick").GetComponent<Image>().enabled = false;
+
 		instatiation = GameObject.Instantiate(s.isLong ? winLong : win) as GameObject;
 
 		string formatted = formatText(s.text);
 		Transform ctx = instatiation.transform.Find("ContainerText");
 		Transform ctxName = ctx.Find("NamePanel");
 
-		object[] parms = new object[2]{formatted, ctx.transform.Find("Text").GetComponent<UnityEngine.UI.Text>()};
+		object[] parms = new object[3]{formatted, ctx.transform.Find("Text").GetComponent<UnityEngine.UI.Text>(), c};
 		StartCoroutine(Write(parms));
 
 		ctxName.transform.Find("Name").GetComponent<Text>().text = s.isPlayer ? "Leo" : name;
@@ -101,14 +105,20 @@ public class DialogWindow : MonoBehaviour
 
 		string text = (string)parms[0];
 		Text ctx = (Text)parms[1];
+		Character c = (Character)parms[2];
+
 
 		for(int i = 0; i < text.Length; i++){
+			if(!ctx) yield return null;
 			yield return new WaitForSeconds(0.05f);
 			ctx.text += text[i];
 		}
+
+		c.myBehaviour.canInteract = true;
 	}
 
 	public void Destroy() {
+		joyCanvas.transform.Find("MobileJoystick").GetComponent<Image>().enabled = true;
 		GameObject.Destroy(instatiation);
 	}
 

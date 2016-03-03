@@ -2,9 +2,11 @@
 <Behaviour xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <characterName>Cartilha Planeta Agua</characterName>
   <interacatle>true</interacatle>
-  <quest>-1</quest>
-  <subQuest>0</subQuest>
+  <quest>0</quest>
+  <subQuest>1</subQuest>
   <dismissible>true</dismissible>
+  <collectable>false</collectable>
+  <item>true</item>
 
   <dialogs>
 
