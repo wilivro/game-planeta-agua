@@ -3,10 +3,10 @@
   <characterName>Cartilha Planeta Agua</characterName>
   <interacatle>true</interacatle>
   <quest>0</quest>
-  <subQuest>1</subQuest>
+  <subQuest>0</subQuest>
   <dismissible>true</dismissible>
   <collectable>false</collectable>
-  <item>true</item>
+  <isItem>true</isItem>
 
   <dialogs>
 

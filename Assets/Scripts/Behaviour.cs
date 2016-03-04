@@ -25,7 +25,7 @@ public class Behaviour {
 	[XmlElement("collectable")]
 	public bool isCollectable;
 
-	[XmlElement("item")]
+	[XmlElement("isItem")]
 	public bool isItem;
 
 	[XmlArray("dialogs")]
@@ -38,6 +38,18 @@ public class Dialog
 {
 	[XmlElement("speech")]
 	public List<Speech> speechs;
+
+	[XmlElement("questLoad")]
+	public List<QuestItem> questLog;
+}
+
+public class QuestItem
+{
+	[XmlElement("item")]
+	public string text;
+
+	[XmlAttribute("score")]
+	public int score;
 }
 
 public class Speech
