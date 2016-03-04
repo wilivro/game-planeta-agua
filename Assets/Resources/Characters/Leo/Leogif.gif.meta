@@ -1,0 +1,564 @@
+fileFormatVersion: 2
+guid: b32d8346d55abb742a4d90b34c26c1f5
+timeCreated: 1457125299
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Leogif_0
+    21300002: Leogif_1
+    21300004: Leogif_2
+    21300006: Leogif_3
+    21300008: Leogif_4
+    21300010: Leogif_5
+    21300012: Leogif_6
+    21300014: Leogif_7
+    21300016: Leogif_8
+    21300018: Leogif_9
+    21300020: Leogif_10
+    21300022: Leogif_11
+    21300024: Leogif_12
+    21300026: Leogif_13
+    21300028: Leogif_14
+    21300030: Leogif_15
+    21300032: Leogif_16
+    21300034: Leogif_17
+    21300036: Leogif_18
+    21300038: Leogif_19
+    21300040: Leogif_20
+    21300042: Leogif_21
+    21300044: Leogif_22
+    21300046: Leogif_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Leogif_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 22}
+        - {x: -19.5, y: 8}
+        - {x: -19.5, y: -7}
+        - {x: -9.5, y: -32}
+        - {x: 12.5, y: -32}
+        - {x: 24.5, y: -19}
+        - {x: 24.5, y: 11}
+        - {x: 19.5, y: 22}
+    - name: Leogif_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 22}
+        - {x: -22.5, y: 14}
+        - {x: -22.5, y: -15}
+        - {x: -8.5, y: -32}
+        - {x: 6.5, y: -32}
+        - {x: 7.5, y: -31}
+        - {x: 20.5, y: -7}
+        - {x: 20.5, y: 16}
+        - {x: 7.5, y: 22}
+    - name: Leogif_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.5, y: 21}
+        - {x: -26.5, y: 21}
+        - {x: -26.5, y: -32}
+        - {x: -0.5, y: -32}
+        - {x: 8.5, y: -23}
+        - {x: 17.5, y: -11}
+        - {x: 17.5, y: 7}
+    - name: Leogif_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4.5, y: 24}
+        - {x: -18.5, y: 24}
+        - {x: -24.5, y: 19}
+        - {x: -24.5, y: -8}
+        - {x: -18.5, y: -31}
+        - {x: 5.5, y: -31}
+        - {x: 19.5, y: -8}
+        - {x: 19.5, y: 16}
+        - {x: 14.5, y: 23}
+    - name: Leogif_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 24}
+        - {x: -20.5, y: 19}
+        - {x: -20.5, y: -4}
+        - {x: -14.5, y: -27}
+        - {x: -10.5, y: -31}
+        - {x: 10.5, y: -31}
+        - {x: 23.5, y: -12}
+        - {x: 23.5, y: 19}
+        - {x: 13.5, y: 24}
+    - name: Leogif_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.5, y: 24}
+        - {x: -21.5, y: 19}
+        - {x: -21.5, y: -16}
+        - {x: -14.5, y: -31}
+        - {x: 6.5, y: -31}
+        - {x: 21.5, y: -12}
+        - {x: 21.5, y: 18}
+        - {x: 18.5, y: 24}
+    - name: Leogif_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6.5, y: 24}
+        - {x: -8.5, y: 24}
+        - {x: -23.5, y: 17}
+        - {x: -23.5, y: -7}
+        - {x: -10.5, y: -31}
+        - {x: 12.5, y: -31}
+        - {x: 20.5, y: -6}
+        - {x: 20.5, y: 14}
+        - {x: 16.5, y: 20}
+      - - {x: -2.5, y: 25}
+        - {x: 0.5, y: 26}
+        - {x: 0.5, y: 29}
+        - {x: -2.5, y: 30}
+        - {x: -4.5, y: 28}
+    - name: Leogif_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 23}
+        - {x: -22.5, y: 18}
+        - {x: -22.5, y: -26}
+        - {x: -16.5, y: -32}
+        - {x: 18.5, y: -32}
+        - {x: 21.5, y: -27}
+        - {x: 21.5, y: 14}
+        - {x: 13.5, y: 23}
+    - name: Leogif_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.5, y: 23}
+        - {x: -15.5, y: 23}
+        - {x: -22.5, y: 20}
+        - {x: -22.5, y: -4}
+        - {x: -17.5, y: -24}
+        - {x: -4.5, y: -31}
+        - {x: 13.5, y: -31}
+        - {x: 18.5, y: -27}
+        - {x: 20.5, y: -19}
+        - {x: 20.5, y: 18}
+    - name: Leogif_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 25}
+        - {x: -22.5, y: 17}
+        - {x: -22.5, y: 6}
+        - {x: -13.5, y: -29}
+        - {x: 6.5, y: -29}
+        - {x: 21.5, y: -9}
+        - {x: 21.5, y: 16}
+        - {x: 17.5, y: 25}
+    - name: Leogif_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.5, y: 25}
+        - {x: -18.5, y: 25}
+        - {x: -22.5, y: 20}
+        - {x: -22.5, y: -10}
+        - {x: -12.5, y: -29}
+        - {x: 17.5, y: -29}
+        - {x: 20.5, y: -20}
+        - {x: 20.5, y: 23}
+        - {x: 18.5, y: 23}
+    - name: Leogif_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.5, y: 24}
+        - {x: 2.5, y: 25}
+        - {x: -15.5, y: 25}
+        - {x: -22.5, y: 13}
+        - {x: -22.5, y: -21}
+        - {x: -10.5, y: -29}
+        - {x: 14.5, y: -29}
+        - {x: 19.5, y: -24}
+        - {x: 21.5, y: -13}
+        - {x: 21.5, y: 20}
+    - name: Leogif_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 24}
+        - {x: -17.5, y: 21}
+        - {x: -23.5, y: 16}
+        - {x: -23.5, y: -10}
+        - {x: -8.5, y: -30}
+        - {x: 11.5, y: -30}
+        - {x: 20.5, y: -8}
+        - {x: 20.5, y: 20}
+        - {x: 14.5, y: 24}
+      - - {x: -7.5, y: 27}
+        - {x: -6.5, y: 24}
+        - {x: 2.5, y: 24}
+        - {x: 4.5, y: 26}
+        - {x: 3.5, y: 29}
+        - {x: -5.5, y: 29}
+    - name: Leogif_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 23}
+        - {x: -22.5, y: 19}
+        - {x: -22.5, y: -14}
+        - {x: -11.5, y: -31}
+        - {x: 13.5, y: -31}
+        - {x: 20.5, y: -10}
+        - {x: 20.5, y: 22}
+        - {x: 19.5, y: 23}
+    - name: Leogif_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: 23}
+        - {x: -22.5, y: 17}
+        - {x: -22.5, y: -11}
+        - {x: -12.5, y: -31}
+        - {x: 12.5, y: -31}
+        - {x: 21.5, y: -4}
+        - {x: 21.5, y: 20}
+        - {x: 19.5, y: 23}
+    - name: Leogif_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 22}
+        - {x: -23.5, y: 15}
+        - {x: -23.5, y: -1}
+        - {x: -9.5, y: -32}
+        - {x: 4.5, y: -32}
+        - {x: 20.5, y: -14}
+        - {x: 20.5, y: 9}
+        - {x: 14.5, y: 22}
+    - name: Leogif_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.5, y: 22}
+        - {x: -11.5, y: 20}
+        - {x: -23.5, y: 13}
+        - {x: -23.5, y: -1}
+        - {x: -17.5, y: -32}
+        - {x: 10.5, y: -32}
+        - {x: 20.5, y: -13}
+        - {x: 20.5, y: 7}
+        - {x: 14.5, y: 22}
+    - name: Leogif_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: 22}
+        - {x: -26.5, y: 11}
+        - {x: -26.5, y: -5}
+        - {x: -12.5, y: -32}
+        - {x: 6.5, y: -32}
+        - {x: 17.5, y: -17}
+        - {x: 17.5, y: 10}
+        - {x: 10.5, y: 22}
+    - name: Leogif_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.5, y: 19}
+        - {x: 9.5, y: 20}
+        - {x: -16.5, y: 20}
+        - {x: -23.5, y: 6}
+        - {x: -23.5, y: -16}
+        - {x: -7.5, y: -32}
+        - {x: 5.5, y: -32}
+        - {x: 17.5, y: -12}
+        - {x: 20.5, y: 0}
+        - {x: 20.5, y: 11}
+    - name: Leogif_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 20}
+        - {x: -23.5, y: 6}
+        - {x: -23.5, y: -16}
+        - {x: -12.5, y: -32}
+        - {x: 11.5, y: -32}
+        - {x: 20.5, y: -22}
+        - {x: 20.5, y: 13}
+        - {x: 18.5, y: 20}
+    - name: Leogif_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.5, y: 20}
+        - {x: -10.5, y: 20}
+        - {x: -21.5, y: 5}
+        - {x: -21.5, y: -10}
+        - {x: -11.5, y: -32}
+        - {x: 14.5, y: -32}
+        - {x: 22.5, y: -3}
+        - {x: 22.5, y: 12}
+        - {x: 13.5, y: 19}
+    - name: Leogif_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.5, y: 23}
+        - {x: -16.5, y: 23}
+        - {x: -23.5, y: 9}
+        - {x: -23.5, y: -9}
+        - {x: -9.5, y: -30}
+        - {x: 8.5, y: -30}
+        - {x: 20.5, y: -10}
+        - {x: 20.5, y: 7}
+        - {x: 14.5, y: 22}
+    - name: Leogif_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 23}
+        - {x: -22.5, y: 9}
+        - {x: -22.5, y: -11}
+        - {x: -12.5, y: -28}
+        - {x: -7.5, y: -30}
+        - {x: 8.5, y: -30}
+        - {x: 20.5, y: -13}
+        - {x: 20.5, y: 12}
+        - {x: 17.5, y: 23}
+    - name: Leogif_23
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 24}
+        - {x: -22.5, y: 6}
+        - {x: -22.5, y: 0}
+        - {x: -9.5, y: -27}
+        - {x: -8.5, y: -29}
+        - {x: 12.5, y: -29}
+        - {x: 21.5, y: -9}
+        - {x: 21.5, y: 21}
+        - {x: 17.5, y: 24}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

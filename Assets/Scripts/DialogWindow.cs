@@ -12,7 +12,7 @@ public class DialogWindow : MonoBehaviour
 	Sprite[] face;
 	Sprite[] facePlayer;
 	Canvas joyCanvas;
-	public string name;
+	public string NpcName;
 
 	public void Config(string _name, string _facePath) {
 		win = Resources.Load("Prefabs/UI/DialogWindow") as GameObject;
@@ -20,19 +20,19 @@ public class DialogWindow : MonoBehaviour
 		face = Resources.LoadAll<Sprite>(_facePath);
 		facePlayer = Resources.LoadAll<Sprite>("Characters/Leo/face");
 		joyCanvas = GameObject.Find("Joystick").GetComponent<Canvas>();
-		name = _name;
+		NpcName = _name;
 	}
 
 	private string formatText(string input) {
-		string formatted = input.Replace("{name}", name);
+		string formatted = input.Replace("{name}", NpcName);
 		formatted = formatted.Replace("\t", "");
 		formatted = formatted.Trim();
 
 		return formatted;
 	}
 
-	public bool Show(Character c) {
-		Speech s = c.GetDialog();
+	public bool Show(Communicative c) {
+		Speech s = c.GetSpeech();
 
 		joyCanvas.transform.Find("MobileJoystick").GetComponent<Image>().enabled = false;
 
@@ -45,7 +45,7 @@ public class DialogWindow : MonoBehaviour
 		object[] parms = new object[3]{formatted, ctx.transform.Find("Text").GetComponent<UnityEngine.UI.Text>(), c};
 		StartCoroutine(Write(parms));
 
-		ctxName.transform.Find("Name").GetComponent<Text>().text = s.isPlayer ? "Leo" : name;
+		ctxName.transform.Find("Name").GetComponent<Text>().text = s.isPlayer ? "Leo" : NpcName;
 
 		if(s.isLong) return false;
 
@@ -105,7 +105,7 @@ public class DialogWindow : MonoBehaviour
 
 		string text = (string)parms[0];
 		Text ctx = (Text)parms[1];
-		Character c = (Character)parms[2];
+		Communicative c = (Communicative)parms[2];
 
 
 		for(int i = 0; i < text.Length; i++){
@@ -122,7 +122,7 @@ public class DialogWindow : MonoBehaviour
 		GameObject.Destroy(instatiation);
 	}
 
-	public void OnChoice(Choice ch, Character c) {
+	public void OnChoice(Choice ch, Communicative c) {
 		int score = PlayerPrefs.GetInt("Score");
 		PlayerPrefs.SetInt("Score", score+ch.addScore);
 		c.actualSpeech = ch.gotoSpeech;

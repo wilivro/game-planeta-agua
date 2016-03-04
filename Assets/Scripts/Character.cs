@@ -9,48 +9,22 @@ using System.Text;
 using UnityStandardAssets.CrossPlatformInput;
 
 
-public class Character : MonoBehaviour {
+public class Character : Interactable {
 
 	Rigidbody2D rbody;
 	public Animator anim;
 
-	public TextAsset behaviourFile;
-	public bool isNPC;
-
-	private GameObject actualColider;
-	private bool initialInteractionCondition;
-	public Behaviour myBehaviour;
-
-	private DialogWindow dialogWindow;
-
-	public int actualSpeech;
-	public bool inChoice;
-
+	
 	private bool wait;
 
-	bool LoadBehaviour() {
-		if(behaviourFile == null){
-			return false;
-		}
-
-		try {
-			XmlSerializer serializer = new XmlSerializer(typeof(Behaviour));
-			MemoryStream stream = new MemoryStream(behaviourFile.bytes);
-	 		myBehaviour = serializer.Deserialize(stream) as Behaviour;
-	 		initialInteractionCondition = myBehaviour.canInteract;
-
-	 		//dialogWindow = new DialogWindow(myBehaviour.charName, "Characters/Leo/face");
-	 		dialogWindow = gameObject.AddComponent<DialogWindow>() as DialogWindow;
-	 		dialogWindow.Config(myBehaviour.charName, "Characters/Leo/face");
-
-	 		return true;
- 		} catch {
- 			return false;
- 		}
-	}
+	
 
 	void Start () {
-		isNPC = LoadBehaviour();
+		//isNPC = LoadBehaviour();
+
+		base.Start();
+
+		print(isNPC);
 
 		rbody = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
@@ -96,182 +70,41 @@ public class Character : MonoBehaviour {
 
 	}
 
-	int GetDialogIndex() {
-		int quest = PlayerPrefs.GetInt("Quest");
-		int subQuest = PlayerPrefs.GetInt("SubQuest");
-
-		return (subQuest.CompareTo(myBehaviour.subQuest) +2)*Convert.ToInt32(myBehaviour.quest==quest);
-
-	}
-
-	public Speech GetDialog(){
-		int dialog = GetDialogIndex(); 
-
-		return myBehaviour.dialogs[dialog].speechs[actualSpeech];
-	}
-
-	bool DialogEnd(){
-		int dialog = GetDialogIndex();
-
-		return actualSpeech == myBehaviour.dialogs[dialog].speechs.Count;
-	}
-	
-	void WaitInteraction() {
-		if(actualColider == null || actualColider.tag != "Player") return;
-
-		if(CrossPlatformInputManager.GetButton("Submit") && myBehaviour.canInteract) {
-
-			dialogWindow.Destroy();
-			myBehaviour.canInteract = false;
-			
-			if(DialogEnd()) {
-				actualSpeech = 0;
-				dialogWindow.Destroy();
-				int quest = PlayerPrefs.GetInt("Quest");
-				int subQuest = PlayerPrefs.GetInt("SubQuest");
-				if(myBehaviour.subQuest == subQuest && myBehaviour.quest == quest){
-					PlayerPrefs.SetInt("SubQuest", subQuest+1);
-					PlayerPrefs.Save();
-				}
-			} else {
-				bool hasChioces = dialogWindow.Show(this);
-				if(!hasChioces) actualSpeech++;
-			}
-			return;
-		}
-
-		// if(CrossPlatformInputManager.GetButtonUp("A") && !myBehaviour.canInteract) {
-		// 	myBehaviour.canInteract = true;
-		// 	return;
-		// }
-
-		if(CrossPlatformInputManager.GetButton("Cancel")) {
-			actualSpeech = 0;
-			myBehaviour.canInteract = true;
-			dialogWindow.Destroy();
-			//TODO close window;
-			return;
-		}
-	}
-
-
-	int compare(WalkPoint v1, WalkPoint v2){
-		float distance1 = Vector3.Distance(v1.from, v1.to);
-		float distance2 = Vector3.Distance(v2.from, v2.to);
-		return distance2.CompareTo(distance1);
-	}
-
-	void Idle() {
-
-		RaycastHit2D hitUp;
-		RaycastHit2D hitDown;
-		RaycastHit2D hitLeft;
-		RaycastHit2D hitRight;
-
-		WalkPoint newPosition;
-
-		List<WalkPoint> tests = new List<WalkPoint>();
-
-			tests.Clear();
-
-			hitUp    = Physics2D.Raycast(transform.position + new Vector3(0, 0.2f, 0), Vector2.up);
-			hitDown  = Physics2D.Raycast(transform.position + new Vector3(0, -0.4f, 0), Vector2.down);
-			hitLeft  = Physics2D.Raycast(transform.position + new Vector3(-0.4f, 0, 0), Vector2.left);
-			hitRight = Physics2D.Raycast(transform.position + new Vector3(0.4f, 0, 0), Vector2.right);
-
-			if (hitUp.collider != null) {
-			Debug.DrawLine(transform.position + new Vector3(0, 0.2f, 0), hitUp.point);
-			tests.Add(new WalkPoint(transform.position, hitUp.point, Vector2.up));
-			}
-			if (hitDown.collider != null) {
-				Debug.DrawLine(transform.position + new Vector3(0, -0.4f, 0), hitDown.point);
-			tests.Add(new WalkPoint(transform.position, hitDown.point, Vector2.down));
-			}
-			if (hitLeft.collider != null) {
-				Debug.DrawLine(transform.position + new Vector3(-0.4f, 0, 0), hitLeft.point);
-			tests.Add(new WalkPoint(transform.position, hitLeft.point, Vector2.left));
-			}
-			if (hitRight.collider != null) {
-				Debug.DrawLine(transform.position + new Vector3(0.4f, 0, 0), hitRight.point);
-			tests.Add(new WalkPoint(transform.position, hitRight.point, Vector2.right));
-			}
-
-			tests.Sort(compare);
-
-			newPosition = tests[0];
-			print(newPosition.dir);
-
-			rbody.MovePosition(transform.position + newPosition.dir*Time.deltaTime);
-
-	}
-
 	// Update is called once per frame
 	void Update () {
 
         if (!isNPC){
 			Movement();
-			int subQuest = PlayerPrefs.GetInt("SubQuest");
-			print(subQuest);
+			//int subQuest = PlayerPrefs.GetInt("SubQuest");
+			// print(subQuest);
 		} else {
 			
-			if(myBehaviour.isItem){
-				print(GetDialogIndex());
-				if(GetDialogIndex() < 2){
-					gameObject.GetComponent<BoxCollider2D>().enabled = false;
-					Transform glow = gameObject.transform.Find("Glow");
-					if(glow) glow.gameObject.active = false;
-					return;
-				} else {
-					gameObject.GetComponent<BoxCollider2D>().enabled = true;
-					Transform glow = gameObject.transform.Find("Glow");
-					if(glow) glow.gameObject.active = true;
-				}
-			}
+			// if(myBehaviour.isItem){
+			// 	if(GetDialogIndex() < 2){
+			// 		gameObject.GetComponent<BoxCollider2D>().enabled = false;
+			// 		Transform glow = gameObject.transform.Find("Glow");
+			// 		if(glow) glow.gameObject.active = false;
+			// 		return;
+			// 	} else {
+			// 		gameObject.GetComponent<BoxCollider2D>().enabled = true;
+			// 		Transform glow = gameObject.transform.Find("Glow");
+			// 		if(glow) glow.gameObject.active = true;
+			// 	}
+			// }
 
-			if(actualColider){
-				if(anim){
-					Vector3 lookAt = actualColider.transform.position-transform.position;
-					anim.SetBool("isWalking", false);
-					anim.SetFloat("input_x", lookAt.x);
-					anim.SetFloat("input_y", lookAt.y);
-				}
+			// if(actualColider){
+			// 	if(anim){
+			// 		Vector3 lookAt = actualColider.transform.position-transform.position;
+			// 		anim.SetBool("isWalking", false);
+			// 		anim.SetFloat("input_x", lookAt.x);
+			// 		anim.SetFloat("input_y", lookAt.y);
+			// 	}
 
-				WaitInteraction();
-			} else {
-				//Idle();
-			}
+			// 	WaitInteraction();
+			// } else {
+			// 	//Idle();
+			// }
 		}
 	}
 
-	void OnCollisionEnter2D (Collision2D col)
-    {
-		if(col.gameObject.tag == "Player"){
-			GameObject.Find("Buttons").GetComponent<Animator>().SetTrigger("FadeIN");
-        	actualColider = col.gameObject;
-		}
-    }
-
-    void OnCollisionExit2D (Collision2D col)
-    {
-    	actualColider = null;
-
-    	if(isNPC && col.gameObject.tag == "Player"){
-    		GameObject.Find("Buttons").GetComponent<Animator>().SetTrigger("FadeOUT");
-    		dialogWindow.Destroy();
-    		myBehaviour.canInteract = initialInteractionCondition;
-    	}
-    }
-}
-
-public class WalkPoint
-{
-	public Vector3 from;
-	public Vector3 to;
-	public Vector3 dir;
-
-	public WalkPoint(Vector3 _from, Vector3 _to, Vector3 _dir){
-		from = _from;
-		to = _to;
-		dir = _dir;
-	}
 }
