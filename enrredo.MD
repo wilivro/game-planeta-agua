@@ -12,10 +12,10 @@
   Ensino fundamental 2 (11 a 15 anos)
 
 ## Personagens:
-- Léo: Personagem principal.
-- Guto: Gota d'agua que dá dicas para o Léo.
-- Angela: Mae do Léo.
-- Mica: Rival do Léo que atrapalha.
+- Leo: Personagem principal.
+- Guto: Gota d'água que dá dicas para o Leo.
+- Angela: Mae do Leo.
+- Mica: Rival do Leo que atrapalha.
 - Nilo: Agente conscientizador.
 - Siqueira: Fazendeiro.
 - Sérgio: Personagem que ajuda a apagar o fogo.
@@ -44,29 +44,29 @@
 
 - Busca de conhecimento (Estante de livros, computadores)
 	- Diálogo Livro: A Terra é um planeta quase todo coberto por água: água dos oceanos, água dos mares, rios e lagos, água das calotas polares, água da chuva, muita, muita água...Quando visto de cima, nosso planeta tem uma grande quantidade de cor azul. Essa cor representa as nossas águas, que cobrem 70% da nossa superfície. Por isso, algumas pessoas chamam a Terra de Planeta Azul e
-até mesmo Planeta Água! Mas lembre-se, a maior parte de nossas águas é salgada.
+até mesmo Planeta Água! 
 
 *Guto aparece*
--  Devido a isso, devemos economizar e saber fazer seu uso consciente, e devemos começar agora.
+-  Mas lembre-se, a maior parte de nossas águas é salgada. Por isso, devemos economizar e fazer seu uso consciente.
 
 #### Quest 002 - Tutorial (Pag 30)
 
-- Diálogo Léo: Mãe, posso ir brincar?
-- Diálogo Mãe: Você tem que acabar suas tarefas primeiro filho, está na hora, vá se arrumar e fazer suas atividades.
-- Diálogo Léo: Caramba, eu só queria brincar.
-- Diálogo Guto: Informa quais são as tarefas (estilo lista com ✓)
+- Diálogo Leo: Mãe, posso brincar lá fora?
+- Diálogo Mãe: Agora, não. Hoje é o seu dia de fazer as tarefas, esqueceu? Mãos à obra!
+- Diálogo Leo: Poxa, eu só queria brincar.
+    * Informar quais são as tarefas (estilo lista com ✓) *
 
-- Fazer as tarefas diarias aprendendo a jogar e recebendo ajuda de Guto e visualizando a pontuação recebida. 
+- Fazer as tarefas diárias aprendendo a jogar e recebendo ajuda de Guto e visualizando a pontuação recebida. 
 	- Escovar os dentes 
 	- Tomar banho
-	- Lavar louça 
+	- Lavar a louça 
 
 #### Quest 003 - Saindo da casa 
 
-- Diálogo Mãe: Léo, vá lá fora e lave o carro e limpe a calçada, depois pode brincar!
-- Diálogo Léo: Eu que faço tudo aqui..
+- Diálogo Mãe: Leo, vá lá fora lavar o carro e limpar a calçada, depois pode brincar!
+- Diálogo Leo: Tudo eu, tudo eu...
 
-*Léo vai para fora da sua casa fazer mais tarefas diárias.*
+*Leo vai para fora da sua casa fazer mais tarefas diárias.*
 - Lavar o carro
 - Limpar a calçada
 
@@ -78,27 +78,28 @@ até mesmo Planeta Água! Mas lembre-se, a maior parte de nossas águas é salga
 	
 #### Quest 004 - Recebendo Cartazes (Optativa)
 
-Durante o momento que Léo esta na calçada da sua casa, passa o Nilo e distribui cartazes para que Léo o ajude a colocar na cidade. (cartazes - ultima página)
+Durante o momento que Leo está na calçada da sua casa, passa o Nilo e distribui cartazes para que Leo o ajude a colocar na cidade. (cartazes - ultima página)
 
-- Diálogo Nilo: Bom dia menino, gostaria de receber esses cartazes?
-- Diálogo Léo: Bom dia, do que eles falam?
+- Diálogo Nilo: Bom dia, gostaria de receber esses cartazes?
+- Diálogo Leo: Bom dia! Sobre o que eles falam?
 - Diálogo Nilo: São cartazes para colar em alguns locais para lembrar a todos de economizar água!
-- Diálogo Léo: Caramba, legal! Adoraria ajudar!
+- Diálogo Leo: Nossa, legal! Adoraria ajudar!
 - Diálogo Nilo: E parabéns por lavar seu carro e limpar sua calçada de forma correta, você está ajudando o mundo! (Essa frase só deve ser usada caso o Léo faça a QUEST 003 corretamente.
 
 #### Quest 005 - Coletiva Seletiva (Optativa)
   
-Durante todo o trajeto Léo pode ir recolhendo lixo, guardando ou jogando em uma lixeira correta (mais pontos) ou uma lixeira errada. (menos pontos)
+Durante todo o trajeto Leo pode ir recolhendo lixo, guardando ou jogando em uma lixeira correta (mais pontos) ou uma lixeira errada. (menos pontos)
 
-- Diálogo Guto: Olha Léo, uma lixeira da coleta seletiva, que legal, nunca tinha visto uma dessa por aqui.
-- Diálogo Léo: É mesmo, nunca tinha percebido quanto lixo tem aqui no chão também, poderiamos ajudar de alguma.
-- Diálogo Guto: Verdade, vamos jogar esse lixo no local correto!
+- Diálogo Guto: Olha Leo, uma lixeira da coleta seletiva. Que legal, nunca tinha visto uma dessa por aqui!
+- Diálogo Leo: É mesmo, nunca tinha percebido quanto lixo tem aqui no chão também. Acho que poderíamos ajudar de alguma forma.
+- Diálogo Guto: Já sei como! Vamos jogar esse lixo no local correto!
 
 // Quando for jogar um objeto no lixo, seria necessário escolher a lixeira correta para ganhar mais pontos //
     
 #### Quest 006 - Cachorro (Optativa)
 
-  Ao olhar no final da rua, existe uma torneira que está aberta e um cachorro esta proximo, Leo tem que achar um osso/bola (esta nas proximidades) para distrair o cachorro e fechar a torneira.
+  Ao olhar no final da rua, existe uma torneira que está aberta e um cachorro está próximo, Leo tem que achar um osso/bola (está 
+  nas proximidades) para distrair o cachorro e fechar a torneira.
   
  // Caso o aluno demore, seria aconselhado Guto sugerir que ele distraia o cachorro.//
 - Diálogo Guto: Olha Léo! Uma bola, podemos usar para distrair ele!
