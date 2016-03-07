@@ -23,15 +23,15 @@ public class EscovarDentes : MonoBehaviour {
 
 	// Use this for initialization
 	Dropdown dd;
-	List<ItemEscovarDentes> items;
+	List<ItemEscovarDentes> itens;
 
 	public int[] template;
 	public int score;
 	void Start () {
 		dd = GameObject.Find("Dropdown").GetComponent<Dropdown>();
-		items = new List<ItemEscovarDentes>();
+		itens = new List<ItemEscovarDentes>();
 		template = new int[] {3, 1, 4, 2, 5, 1, 4};
-		score = template.Length*10;
+		score = template.Length*0;
 	}
 	
 	// Update is called once per frame
@@ -46,7 +46,7 @@ public class EscovarDentes : MonoBehaviour {
 		    Destroy(t.gameObject);
 	 	}
 
-		for(int i = 0; i < items.Count; i++) {
+		for(int i = 0; i < itens.Count; i++) {
 			Transform ist = Instantiate(mock);
 			ist.SetParent(root);
 			ist.gameObject.tag = "Untagged";
@@ -64,36 +64,84 @@ public class EscovarDentes : MonoBehaviour {
 			rt.anchorMax = new Vector2(1f,0.5f);
 			rt.pivot = new Vector2(0.5f,0.5f);
 
-			ist.Find("Text").GetComponent<Text>().text = items[i].text;
+			ist.Find("Text").GetComponent<Text>().text = itens[i].text;
 			int index = i;
-			items[i].index = index;
+			itens[i].index = index;
 			ist.Find("Button").GetComponent<Button>().onClick.AddListener(delegate { OnDelete(index); });
 		}
 	}
 
 	void OnDelete(int value){
-		items.RemoveAt(value);
+		itens.RemoveAt(value);
 		DrawListItem();
+	}
+
+	void OnClickSair(){
+		Application.LoadLevel("cidade");
 	}
 
 	public void OnAddItem() {
 
 		string text = dd.options[dd.value].text;
-		int value   = dd.value;
+		int value = dd.value;
 
 		if(value == 0) return;
 
-		items.Add(new ItemEscovarDentes(text, value));
+		itens.Add(new ItemEscovarDentes(text, value));
 		DrawListItem();
+	}
+
+	IEnumerator End(bool torneiraAberta) {
+		string text = "Parabens Voce deixou sempre a torneira fechada. Continue assim.";
+		if(torneiraAberta){
+			text = "Leo, da proxima vez feche a torneira sempre q abrir";
+		}
+
+		Transform panel = GameObject.Find("Cine").transform;
+		Text ctx = panel.Find("Text").GetComponent<Text>();
+		Transform button = panel.Find("Sair");
+		button.gameObject.active = true;
+		Button buttonClick = button.GetComponent<Button>();
+		ctx.text = "";
+		for(int i = 0; i < text.Length; i++){
+			try {
+				ctx.text += text[i];
+			} catch {
+
+			}
+			yield return new WaitForSeconds(0.05f);
+
+		}
+
+		buttonClick.onClick.AddListener(delegate { OnClickSair(); });
+		yield return null;
 	}
 
 	public void OnClickEscovar(){
 
-		for(int i = 0; i < items.Count; i++) {
-			if(i >= template.Length || items[i].value != template[i]){
+		bool torneiraAberta = false;
+		int past = 0;
+
+		for(int i = 0; i < itens.Count; i++) {
+			if(past == 1 && itens[i].value != 4){
+				torneiraAberta = true;
 				score -= 10;
+			} else {
+				if(itens[i].value == template[i]){
+					score += 10;
+				}
 			}
+			past = itens[i].value;
+			print(past);
 		}
+
+		int _score = PlayerPrefs.GetInt("Score");
+		PlayerPrefs.SetInt("Score", score+_score);
+		PlayerPrefs.Save();
+		Player.inventory.content.Add(new Item("Escovar os dentes"));
+		print(Player.inventory.content.Count);
+
+		StartCoroutine(End(torneiraAberta));
 
 	}
 }

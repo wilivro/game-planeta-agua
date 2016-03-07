@@ -8,7 +8,7 @@
 
   <dialogs>
 
-  	<dialog>
+  	<dialog> <!-- Dialogo antes da quest -->
       <speech player="true" expression="2">
         <text>Mãe?</text>
       </speech>
@@ -18,7 +18,7 @@
       </speech>
     </dialog>
 
-    <dialog>
+    <dialog><!-- Dialogo na quest mas sem requisito-->
 
       <speech player="true" expression="2">
         <text>Mãe posso brincar la fora?</text>
@@ -29,7 +29,7 @@
       </speech>
     </dialog>
 
-	  <dialog>
+	  <dialog><!-- Dialogo na quest correto-->
 
 	   <speech player="true" expression="2">
         <text>E agora mãe, posso brincar la fora?</text>
@@ -44,14 +44,14 @@
       </speech>
 
       <questLog>
-        <item>Escovar os Dentes</item>
-        <item>Tomar Banho</item>
+        <item>Escovar os dentes</item>
+        <item>Tomar banho</item>
         <item>Lavar a louça</item>
       </questLog>
 
 	  </dialog>
 
-	  <dialog>
+	  <dialog><!-- Dialogo depois quest-->
       <speech player="false" expression="2">
         <text>Leo, vá lá fora lavar o carro e limpar a calçada, depois pode brincar!</text>
       </speech>
