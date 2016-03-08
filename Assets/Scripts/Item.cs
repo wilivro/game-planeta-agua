@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Item
 {
-	string name;
+	public string name;
 
 	public Item(string _name) {
 		name = _name;

@@ -53,7 +53,7 @@ public class QuestHelper : MonoBehaviour {
 
 		}
 
-		if(total == questLoadArr.Length -1){
+		if(questLoadArr.Length > 1 && total == questLoadArr.Length -1) {
 			int subQuest = PlayerPrefs.GetInt("SubQuest");
 			PlayerPrefs.SetInt("SubQuest", subQuest+1);
 			PlayerPrefs.SetString("QuestLog", "");

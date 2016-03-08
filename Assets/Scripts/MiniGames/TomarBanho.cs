@@ -4,7 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-public class EscovarDentes : MiniGameEscolhas {
+public class TomarBanho : MiniGameEscolhas {
 
 	public void OnClickRun(){
 

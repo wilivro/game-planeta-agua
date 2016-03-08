@@ -35,6 +35,7 @@ public class Player : MonoBehaviour {
 
 		PlayerPrefs.SetInt("Quest", 0);
 		PlayerPrefs.SetInt("SubQuest", 1);
+		PlayerPrefs.SetString("QuestLog", "");
 
 		inventory = new Inventory();
 
