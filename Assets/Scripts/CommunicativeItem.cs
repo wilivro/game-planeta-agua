@@ -18,7 +18,7 @@ public class CommunicativeItem : Communicative {
 	void Update () {
 
 		if(GetDialogIndex() != 2){
-			if(actualColider != null) base.OnCollisionExit2D(actualColider);
+			if(actualColider != null) base.OnTriggerExit2D(actualColider);
 
 			gameObject.GetComponent<BoxCollider2D>().enabled = false;
 			Transform glow = gameObject.transform.Find("Glow");

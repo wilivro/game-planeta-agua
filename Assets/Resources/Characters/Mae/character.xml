@@ -2,24 +2,24 @@
 <Behaviour xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <characterName>Mãe</characterName>
   <interacatle>true</interacatle>
-  <quest>0</quest>
-  <subQuest>1</subQuest>
+  <quest>1</quest>
+  <subQuest>0</subQuest>
+  <total>0</total>
   <dismissible>true</dismissible>
 
   <dialogs>
 
   	<dialog> <!-- Dialogo antes da quest -->
-      <speech player="true" expression="2">
-        <text>Mãe?</text>
+     <speech player="true" expression="2">
+        <text>Mãe posso brincar la fora?</text>
       </speech>
 
-      <speech player="false" expression="2">
-      	<text>Estou ocupada menino.</text>
+      <speech player="false" expression="0">
+        <text>Primeiro va estudar um pouco,  você tem suas pesquisas pra fazer.</text>
       </speech>
     </dialog>
 
     <dialog><!-- Dialogo na quest mas sem requisito-->
-
       <speech player="true" expression="2">
         <text>Mãe posso brincar la fora?</text>
       </speech>

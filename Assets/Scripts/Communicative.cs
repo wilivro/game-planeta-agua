@@ -49,8 +49,8 @@ public class Communicative : Interactable {
 				dialogWindow.Destroy();
 
 				int dialogIndex = GetDialogIndex();
+				string questLog = "";
 				if(myBehaviour.dialogs[dialogIndex].questLog != null && myBehaviour.dialogs[dialogIndex].questLog.itens.Count > 0){
-					string questLog = "";
 					for(int i = 0; i < myBehaviour.dialogs[dialogIndex].questLog.itens.Count; i++) {
 						questLog += myBehaviour.dialogs[dialogIndex].questLog.itens[i]+"|";
 					}
@@ -58,15 +58,20 @@ public class Communicative : Interactable {
 					PlayerPrefs.SetString("QuestLog", questLog);
 					PlayerPrefs.Save();
 
-					return;
 				}
 
 				actualSpeech = 0;
 				int quest = PlayerPrefs.GetInt("Quest");
 				int subQuest = PlayerPrefs.GetInt("SubQuest");
+				
 				if(myBehaviour.subQuest == subQuest && myBehaviour.quest == quest){
 					PlayerPrefs.SetInt("SubQuest", subQuest+1);
 					PlayerPrefs.Save();
+				}
+
+				if(myBehaviour.dismissible && myBehaviour.quest == quest && questLog == ""){
+					PlayerPrefs.SetInt("Quest", quest+1);
+					PlayerPrefs.SetInt("SubQuest", 0);
 				}
 
 			} else {

@@ -2,8 +2,8 @@
 <Behaviour xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <characterName>Mãe</characterName>
   <interacatle>true</interacatle>
-  <quest>0</quest>
-  <subQuest>2</subQuest>
+  <quest>1</quest>
+  <subQuest>0</subQuest>
   <dismissible>true</dismissible>
 
   <dialogs>
@@ -14,7 +14,23 @@
       </speech>
     </dialog>
 
-    <dialog></dialog>
+    <dialog>
+      <speech player="false" expression="2">
+        <text>Ja terminou suas tarefas?</text>
+      </speech>
+    </dialog>
+
+    <dialog>
+      <speech player="false" expression="2">
+        <text>Ja terminou suas tarefas?</text>
+      </speech>
+    </dialog>
+
+    <dialog>
+      <speech player="false" expression="2">
+        <text>Ja terminou suas tarefas?</text>
+      </speech>
+    </dialog>
 
   </dialogs>
 

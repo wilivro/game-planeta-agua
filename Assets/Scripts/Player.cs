@@ -14,7 +14,7 @@ public class Player : MonoBehaviour {
 	public static Inventory inventory;
 	static Transform QuestHelper;
 
-	private static bool created = false;
+	public static bool created = false;
 
 	void Awake() {
         if (!created) {
@@ -33,11 +33,11 @@ public class Player : MonoBehaviour {
 		rbody = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
 
-		PlayerPrefs.SetInt("Quest", 0);
+		PlayerPrefs.SetInt("Quest", 1);
 		PlayerPrefs.SetInt("SubQuest", 1);
 		PlayerPrefs.SetString("QuestLog", "");
 
-		inventory = new Inventory();
+		inventory = GameObject.Find("Inventory").AddComponent<Inventory>() as Inventory;
 
 		print("player");
 
@@ -75,6 +75,7 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Movement();
+		print(inventory.content.Count);
 	}
 
 }

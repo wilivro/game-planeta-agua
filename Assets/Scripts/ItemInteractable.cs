@@ -4,9 +4,9 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class ItemInteractable : Interactable
 {
-	string name;
+	public string name;
 
-	Item self;
+	public Item self;
 
 	void Start() {
 		base.Start();
@@ -15,7 +15,10 @@ public class ItemInteractable : Interactable
 	}
 
 	void Update() {
-
+		if(CrossPlatformInputManager.GetButton("Submit")) {
+			Player.inventory.content.Add(self);
+			Destroy(transform.gameObject);
+		}
 	}
 	
 }

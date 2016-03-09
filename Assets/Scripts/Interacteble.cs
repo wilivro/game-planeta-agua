@@ -11,7 +11,7 @@ public class Interactable : MonoBehaviour {
 
 	// Use this for initialization
 
-	public Collision2D actualColider;
+	public Collider2D actualColider;
 	public TextAsset behaviourFile;
 	public Behaviour myBehaviour;
 	public bool initialInteractionCondition;
@@ -46,13 +46,23 @@ public class Interactable : MonoBehaviour {
 
 	public void OnCollisionEnter2D (Collision2D col)
     {
+		OnTriggerEnter2D(col.collider);
+    }
+
+    public void OnCollisionExit2D (Collision2D col)
+    {
+    	OnTriggerExit2D(col.collider);
+    }
+
+    public void OnTriggerEnter2D (Collider2D col)
+    {
 		if(col.gameObject.tag == "Player"){
 			GameObject.Find("Buttons").GetComponent<Animator>().SetTrigger("FadeIN");
         	actualColider = col;
 		}
     }
 
-    public void OnCollisionExit2D (Collision2D col)
+    public void OnTriggerExit2D (Collider2D col)
     {
     	actualColider = null;
 
@@ -62,4 +72,6 @@ public class Interactable : MonoBehaviour {
     		if(isNPC) myBehaviour.canInteract = initialInteractionCondition;
     	}
     }
+
+
 }

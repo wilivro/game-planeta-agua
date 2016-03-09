@@ -27,7 +27,7 @@ public class MiniGameEscolhas : MonoBehaviour {
 
 	public int[] template;
 	public int score;
-	public string giveItem;
+	public Item giveItem;
 
 	public string correctMsg;
 	public string wrongMsg;

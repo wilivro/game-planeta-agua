@@ -6,7 +6,7 @@ using UnityStandardAssets.CrossPlatformInput;
 public class Warp : Interactable {
 
 	// Use this for initialization
-	public GameObject warpTO;
+	public Warp warpTO;
 	public Vector3 offset;
 
 	public GameObject player;
@@ -41,14 +41,15 @@ public class Warp : Interactable {
 	}
 
 	public int GetDialogIndex() {
+		if(!isNPC) return -1;
 		int quest = PlayerPrefs.GetInt("Quest");
 		int subQuest = PlayerPrefs.GetInt("SubQuest");
 
-		if(quest > PlayerPrefs.GetInt("Quest")){
+		if(quest > myBehaviour.quest){
 			return -1; 
 		}
 
-		return (subQuest.CompareTo(myBehaviour.subQuest)+1);
+		return (subQuest.CompareTo(myBehaviour.subQuest)+2);
 
 	}
 
@@ -86,8 +87,13 @@ public class Warp : Interactable {
 		base.OnCollisionEnter2D(other);
 
 		if(other.gameObject.tag == "Player"){
-			if(isNPC && GetDialogIndex() == 0){
+			print(GetDialogIndex());
+			if(isNPC && GetDialogIndex() > 0){
 				dialogWindow.Show(GetSpeech(), null);
+				return;
+			}
+
+			if(!warpTO){
 				return;
 			}
 

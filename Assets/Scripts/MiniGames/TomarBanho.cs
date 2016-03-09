@@ -35,8 +35,8 @@ public class TomarBanho : MiniGameEscolhas {
 		PlayerPrefs.SetInt("Score", score+_score);
 		PlayerPrefs.Save();
 
-		if(giveItem != "")
-			Player.inventory.content.Add(new Item(giveItem));
+		if(giveItem != null)
+			Player.inventory.Add(giveItem);
 
 		print(Player.inventory.content.Count);
 

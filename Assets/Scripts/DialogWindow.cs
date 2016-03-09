@@ -39,6 +39,10 @@ public class DialogWindow : MonoBehaviour
 
 	public bool Show(Speech s, Communicative c) {
 
+		if (s.text == "") {
+			return false;
+		}
+
 		joyCanvas.transform.Find("MobileJoystick").GetComponent<Image>().enabled = false;
 
 		instatiation = GameObject.Instantiate(s.isLong ? winLong : win) as GameObject;
