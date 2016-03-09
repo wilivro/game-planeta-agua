@@ -8,9 +8,7 @@ public class Item : Interactable
 
     public bool unique;
 
-    void Awake() {
-        DontDestroyOnLoad(gameObject);
-    }
+    public Item self;
 
     public Item() {
 
@@ -23,7 +21,7 @@ public class Item : Interactable
     void Update() {
         if(actualColider == null || actualColider.gameObject.tag != "Player") return;
         if(CrossPlatformInputManager.GetButton("Submit")) {
-            Player.inventory.Add(this);
+            Player.inventory.Add(self);
             gameObject.active = false;
             actualColider = null;
         }
