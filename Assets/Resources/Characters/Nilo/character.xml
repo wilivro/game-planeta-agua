@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Behaviour xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <characterName>Nilo</characterName>
+  <interacatle>true</interacatle>
+  <quest>2</quest>
+  <subQuest>1</subQuest>
+  <total>0</total>
+  <dismissible>true</dismissible>
+
+  <dialogs>
+
+  	<dialog> <!-- Dialogo antes da quest -->
+      <speech player="true" expression="2">
+        <text></text>
+      </speech>
+    </dialog>
+
+    
+
+	  <dialog><!-- Dialogo na quest correto-->
+
+      <speech player="false"  expression="1">
+        <text>Bom dia, gostaria de receber esses cartazes?</text>
+      </speech>
+
+	    <speech player="true" expression="2">
+        <text>Bom dia! Sobre o que eles falam?</text>
+      </speech>
+
+	    <speech player="false"  expression="1">
+	    	<text>São cartazes para colar em alguns locais para lembrar a todos de economizar água!</text>
+	    </speech>
+
+	    <speech player="true" expression="2">
+        <text>Nessa, legal! Adoraria ajudar!</text>
+      </speech>
+
+	  </dialog>
+
+    <dialog> <!-- Dialogo antes da quest -->
+      <speech player="true" expression="2">
+        <text></text>
+      </speech>
+    </dialog>
+
+	  <dialog> <!-- Dialogo antes da quest -->
+      <speech player="true" expression="2">
+        <text></text>
+      </speech>
+    </dialog>
+      
+  </dialogs>
+
+</Behaviour>
+  

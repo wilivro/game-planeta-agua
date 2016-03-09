@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Behaviour xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <characterName>Mãe</characterName>
+  <interacatle>true</interacatle>
+  <quest>1</quest>
+  <subQuest>0</subQuest>
+  <total>0</total>
+  <dismissible>true</dismissible>
+
+  <dialogs>
+
+  	<dialog> <!-- Dialogo antes da quest -->
+     <speech player="true" expression="2">
+        <text>Mãe posso brincar la fora?</text>
+      </speech>
+
+      <speech player="false" expression="0">
+        <text>Primeiro va estudar um pouco,  você tem suas pesquisas pra fazer.</text>
+      </speech>
+    </dialog>
+
+    <dialog><!-- Dialogo na quest mas sem requisito-->
+      <speech player="true" expression="2">
+        <text>Mãe posso brincar la fora?</text>
+      </speech>
+
+      <speech player="false" expression="0">
+      	<text>Primeiro va estudar um pouco,  você tem suas pesquisas pra fazer.</text>
+      </speech>
+    </dialog>
+
+	  <dialog><!-- Dialogo na quest correto-->
+
+	   <speech player="true" expression="2">
+        <text>E agora mãe, posso brincar la fora?</text>
+      </speech>
+
+	    <speech player="false"  expression="1">
+	    	<text>Agora, não. Hoje é o seu dia de fazer as tarefas, esqueceu? Mãos à obra!</text>
+	    </speech>
+
+	    <speech player="true" expression="2">
+        <text>Poxa, eu só queria brincar.</text>
+      </speech>
+
+      <questLog>
+        <item>Escovar os dentes</item>
+        <item>Tomar banho</item>
+        <item>Lavar a louça</item>
+      </questLog>
+
+	  </dialog>
+
+	  <dialog><!-- Dialogo depois quest-->
+      <speech player="false" expression="2">
+        <text>Leo, vá lá fora lavar o carro e limpar a calçada, depois pode brincar!</text>
+      </speech>
+
+      <speech player="true" expression="2">
+        <text>Tudo eu, tudo eu...</text>
+      </speech>
+
+    </dialog>
+      
+  </dialogs>
+
+</Behaviour>
+  
