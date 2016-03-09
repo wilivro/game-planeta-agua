@@ -40,7 +40,7 @@
 
 *Léo acorda e tem um pesadelo relacionado ao planeta destruido devido a falta de água.*
 
-#### Quest 001 - Buscando Conhecimento
+#### Quest 000 - Buscando Conhecimento [MVP]
 
 - Busca de conhecimento (Estante de livros, computadores)
 	- Diálogo Livro: A Terra é um planeta quase todo coberto por água: água dos oceanos, água dos mares, rios e lagos, água das calotas polares, água da chuva, muita, muita água...Quando visto de cima, nosso planeta tem uma grande quantidade de cor azul. Essa cor representa as nossas águas, que cobrem 70% da nossa superfície. Por isso, algumas pessoas chamam a Terra de Planeta Azul e
@@ -49,7 +49,7 @@ até mesmo Planeta Água!
 *Guto aparece*
 -  Mas lembre-se, a maior parte de nossas águas é salgada. Por isso, devemos economizar e fazer seu uso consciente.
 
-#### Quest 002 - Tutorial (Pag 30)
+#### Quest 001 - Tutorial (Pag 30) [MVP]
 
 - Diálogo Leo: Mãe, posso brincar lá fora?
 - Diálogo Mãe: Agora, não. Hoje é o seu dia de fazer as tarefas, esqueceu? Mãos à obra!
@@ -61,7 +61,7 @@ até mesmo Planeta Água!
 	- Tomar banho
 	- Lavar a louça 
 
-#### Quest 003 - Saindo da casa 
+####  Saindo da casa (Optativa)
 
 - Diálogo Mãe: Leo, vá lá fora lavar o carro e limpar a calçada, depois pode brincar!
 - Diálogo Leo: Tudo eu, tudo eu...
@@ -76,7 +76,7 @@ até mesmo Planeta Água!
 
 *Lembrança do pesadelo e desejo de ajudar o mundo, devem ocorrer  andando na cidade e achando novos problemas relacionados a água.*
 	
-#### Quest 004 - Recebendo Cartazes (Optativa)
+#### Quest 004 - Recebendo Cartazes [MVP]
 
 Durante o momento que Leo está na calçada da sua casa, passa o Nilo e distribui cartazes para que Leo o ajude a colocar na cidade. (cartazes - ultima página)
 
@@ -86,7 +86,7 @@ Durante o momento que Leo está na calçada da sua casa, passa o Nilo e distribu
 - Diálogo Leo: Nossa, legal! Adoraria ajudar!
 - Diálogo Nilo: E parabéns por lavar seu carro e limpar sua calçada de forma correta, você está ajudando o mundo! (Essa frase só deve ser usada caso o Léo faça a QUEST 003 corretamente.
 
-#### Quest 005 - Coletiva Seletiva (Optativa)
+#### Quest 005 - Coletiva Seletiva [MVP]
   
 Durante todo o trajeto Leo pode ir recolhendo lixo, guardando ou jogando em uma lixeira correta (mais pontos) ou uma lixeira errada. (menos pontos)
 
@@ -136,7 +136,7 @@ Duas opções de Diálogo.
 
 *Ao chegar na fazenda, o fazendeiro pede a Léo que o ajude a fazer seu plantio.*
 
-#### Quest 008 - Plantio
+#### Quest 008 - Plantio [MVP]
 
 Ambiente plano/morro, Léo recebe as sementes e deve decidir onde ir plantando as sementes, ganhando pontos plantando no local correto e usando as ferramentas corretas. Vai ao Armazem. (pag 18)
   - Sementes
@@ -160,11 +160,11 @@ Nessa parte do RPG, a tela será dividida, um lado leva até a Nascente do rio, 
 
 ---
 
-### Estação de Tratamento
+### Estação de Tratamento [MVP]
   
 *Devido a um (evento) (dia da água), é permitido a entrada na estação de tratamento, nesse percurso Léo vai observando os passos a passos da estação.* 
 
-#### Quest 011 - Perguntas
+#### Quest 011 - Perguntas [MVP]
 
 Perguntas relacionadas ao passo-passo, saída da estação e ida para o lado da nascente.
 
@@ -172,6 +172,6 @@ Perguntas relacionadas ao passo-passo, saída da estação e ida para o lado da 
 
 ### Nascente
 
-#### Quest 011 - Montar Nascente
+#### Quest 011 - Montar Nascente [MVP]
 
 Nesse jogo Léo recebe informações de como se deve preservar uma nascente de um Rio.
