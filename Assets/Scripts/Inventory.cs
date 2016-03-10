@@ -30,7 +30,21 @@ public class Inventory : MonoBehaviour {
 			return i;
 		}
 
-		content.Add(i);
+		if(content.Contains(i) && i.acumulative){
+			Item it = content.Find(x => x.name == i.name);
+			it.qtd += i.qtd;
+
+			Destroy(i.gameObject);
+
+			return it;
+		}
+
+		GameObject it2 = Instantiate(i.gameObject) as GameObject;
+		it2.active = false;
+		Item itt = it2.GetComponent<Item>();
+		itt.gameObject.transform.parent = transform;
+
+		content.Add(itt);
 
 		return i;
 	}

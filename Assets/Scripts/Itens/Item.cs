@@ -5,10 +5,10 @@ using UnityStandardAssets.CrossPlatformInput;
 public class Item : Interactable
 {
 	public string name;
-
     public bool unique;
-
     public Item self;
+    public bool acumulative;
+    public int qtd;
 
     public Item() {
 
@@ -23,7 +23,9 @@ public class Item : Interactable
         if(CrossPlatformInputManager.GetButton("Submit")) {
             Player.inventory.Add(self);
             gameObject.active = false;
+            base.OnTriggerExit2D(actualColider);
             actualColider = null;
+            Destroy(gameObject);
         }
     }
 
@@ -31,8 +33,6 @@ public class Item : Interactable
 
     public bool Equals(Item other)
     {
-        
-
         return this.name == other.name;
     }
 

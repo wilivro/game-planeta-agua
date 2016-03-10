@@ -3,7 +3,7 @@
   <characterName>Nilo</characterName>
   <interacatle>true</interacatle>
   <quest>2</quest>
-  <subQuest>1</subQuest>
+  <subQuest>0</subQuest>
   <total>0</total>
   <dismissible>true</dismissible>
 
@@ -15,7 +15,11 @@
       </speech>
     </dialog>
 
-    
+    <dialog> <!-- Dialogo antes da quest -->
+      <speech player="true" expression="2">
+        <text></text>
+      </speech>
+    </dialog>
 
 	  <dialog><!-- Dialogo na quest correto-->
 
@@ -35,17 +39,21 @@
         <text>Nessa, legal! Adoraria ajudar!</text>
       </speech>
 
+      <give>
+        <item>Cartaz</item>
+      </give>
+
 	  </dialog>
 
     <dialog> <!-- Dialogo antes da quest -->
-      <speech player="true" expression="2">
+      <speech player="false" expression="2">
         <text></text>
       </speech>
     </dialog>
 
 	  <dialog> <!-- Dialogo antes da quest -->
-      <speech player="true" expression="2">
-        <text></text>
+      <speech player="false" expression="2">
+        <text>Oi, Leo ainda estou colando os cartazes.</text>
       </speech>
     </dialog>
       

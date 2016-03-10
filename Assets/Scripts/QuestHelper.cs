@@ -57,6 +57,7 @@ public class QuestHelper : MonoBehaviour {
 			int subQuest = PlayerPrefs.GetInt("SubQuest");
 			PlayerPrefs.SetInt("SubQuest", subQuest+1);
 			PlayerPrefs.SetString("QuestLog", "");
+			Player.hasQuestLog = false;
 			PlayerPrefs.Save();
 		}
 

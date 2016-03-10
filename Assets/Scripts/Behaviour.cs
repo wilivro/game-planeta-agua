@@ -41,15 +41,15 @@ public class Dialog
 
 	[XmlElement("questLog")]
 	public QuestItem questLog;
+
+	[XmlElement("give")]
+	public QuestItem give;
 }
 
 public class QuestItem
 {
 	[XmlElement("item")]
 	public List<string> itens;
-
-	// [XmlAttribute("score")]
-	// public int score;
 }
 
 public class Speech

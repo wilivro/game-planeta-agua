@@ -53,13 +53,24 @@
 
 	  <dialog><!-- Dialogo depois quest-->
       <speech player="false" expression="2">
-        <text>Leo, vá lá fora lavar o carro e limpar a calçada, depois pode brincar!</text>
+        <text>Pronto Leo, pode ir la fora.</text>
       </speech>
 
       <speech player="true" expression="2">
-        <text>Tudo eu, tudo eu...</text>
+        <text>Obrigado mãe. Te amo</text>
       </speech>
+    </dialog>
 
+    <dialog><!-- Dialogo depois quest-->
+      <speech player="false" expression="2">
+        <text>Leo, termine logo suas coisas</text>
+      </speech>
+    </dialog>
+
+    <dialog><!-- Dialogo depois quest-->
+      <speech player="false" expression="2">
+        <text>Oi Leo, beijos.</text>
+      </speech>
     </dialog>
       
   </dialogs>

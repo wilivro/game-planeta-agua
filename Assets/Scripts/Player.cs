@@ -16,6 +16,8 @@ public class Player : MonoBehaviour {
 
 	public static bool created = false;
 
+	public static bool hasQuestLog = false;
+
 	void Awake() {
         if (!created) {
          	// this is the first instance - make it persist
@@ -33,8 +35,8 @@ public class Player : MonoBehaviour {
 		rbody = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
 
-		PlayerPrefs.SetInt("Quest", 1);
-		PlayerPrefs.SetInt("SubQuest", 1);
+		PlayerPrefs.SetInt("Quest", 2);
+		PlayerPrefs.SetInt("SubQuest", 0);
 		PlayerPrefs.SetString("QuestLog", "");
 
 		inventory = GameObject.Find("Inventory").AddComponent<Inventory>() as Inventory;
@@ -75,7 +77,6 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Movement();
-		print(inventory.content.Count);
 	}
 
 }

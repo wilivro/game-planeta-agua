@@ -30,7 +30,7 @@ public class NPC : Communicative
 
 			WaitInteraction();
 		} else {
-			//Idle();
+			//TODO Idle();
 		}
 		
 	}
