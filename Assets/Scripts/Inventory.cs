@@ -48,4 +48,24 @@ public class Inventory : MonoBehaviour {
 
 		return i;
 	}
+
+	public Item Remove(Item i) {
+		Item it = content.Find(x => x.name == i.name);
+
+		if(it.acumulative){
+			it.qtd -= 1;
+
+			if(it.qtd == 0) content.Contains(it);
+
+			return it;
+		}
+
+		content.Remove(it);
+
+		return it;
+	}
+
+	public bool Contains(Item i){
+		return content.Contains(i);
+	}
 }

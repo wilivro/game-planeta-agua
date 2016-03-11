@@ -9,6 +9,7 @@ public class Item : Interactable
     public Item self;
     public bool acumulative;
     public int qtd;
+    public int score;
 
     public Item() {
 
