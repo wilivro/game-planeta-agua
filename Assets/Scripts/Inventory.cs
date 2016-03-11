@@ -12,11 +12,12 @@ public class Inventory : MonoBehaviour {
         if (!created) {
          	// this is the first instance - make it persist
      		DontDestroyOnLoad(this.gameObject);
+     		
      		created = true;
      	} else {
          	// this must be a duplicate from a scene reload - DESTROY!
          	Destroy(this.gameObject);
-     	} 
+     	}
     }
 
 	public Inventory() {
@@ -55,7 +56,7 @@ public class Inventory : MonoBehaviour {
 		if(it.acumulative){
 			it.qtd -= 1;
 
-			if(it.qtd == 0) content.Contains(it);
+			if(it.qtd == 0) content.Remove(it);
 
 			return it;
 		}
