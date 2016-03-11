@@ -1,0 +1,565 @@
+fileFormatVersion: 2
+guid: 695a29309659e4d15b3cb2559d1914f1
+timeCreated: 1457115770
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Leopng_0
+    21300002: Leopng_1
+    21300004: Leopng_2
+    21300006: Leopng_3
+    21300008: Leopng_4
+    21300010: Leopng_5
+    21300012: Leopng_6
+    21300014: Leopng_7
+    21300016: Leopng_8
+    21300018: Leopng_9
+    21300020: Leopng_10
+    21300022: Leopng_11
+    21300024: Leopng_12
+    21300026: Leopng_13
+    21300028: Leopng_14
+    21300030: Leopng_15
+    21300032: Leopng_16
+    21300034: Leopng_17
+    21300036: Leopng_18
+    21300038: Leopng_19
+    21300040: Leopng_20
+    21300042: Leopng_21
+    21300044: Leopng_22
+    21300046: Leopng_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Leopng_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.5, y: 22}
+        - {x: -18.5, y: 17}
+        - {x: -21.5, y: 14}
+        - {x: -21.5, y: -20}
+        - {x: -14.5, y: -32}
+        - {x: 15.5, y: -32}
+        - {x: 22.5, y: -11}
+        - {x: 22.5, y: 17}
+        - {x: 12.5, y: 22}
+    - name: Leopng_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.5, y: 22}
+        - {x: -21.5, y: 21}
+        - {x: -21.5, y: -14}
+        - {x: -9.5, y: -32}
+        - {x: 8.5, y: -32}
+        - {x: 8.5, y: -31}
+        - {x: 21.5, y: -18}
+        - {x: 21.5, y: 22}
+    - name: Leopng_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17.5, y: 22}
+        - {x: -12.5, y: 22}
+        - {x: -21.5, y: 7}
+        - {x: -21.5, y: -9}
+        - {x: -7.5, y: -32}
+        - {x: 3.5, y: -32}
+        - {x: 14.5, y: -22}
+        - {x: 22.5, y: -11}
+        - {x: 22.5, y: 8}
+    - name: Leopng_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.5, y: 24}
+        - {x: -14.5, y: 24}
+        - {x: -21.5, y: 14}
+        - {x: -21.5, y: 8}
+        - {x: -20.5, y: -1}
+        - {x: -11.5, y: -31}
+        - {x: 15.5, y: -31}
+        - {x: 22.5, y: -9}
+        - {x: 22.5, y: 21}
+        - {x: 17.5, y: 23}
+    - name: Leopng_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 24}
+        - {x: -21.5, y: 13}
+        - {x: -21.5, y: -7}
+        - {x: -15.5, y: -27}
+        - {x: -11.5, y: -31}
+        - {x: 9.5, y: -31}
+        - {x: 22.5, y: -10}
+        - {x: 22.5, y: 14}
+        - {x: 18.5, y: 24}
+    - name: Leopng_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 24}
+        - {x: -21.5, y: 19}
+        - {x: -21.5, y: -24}
+        - {x: -7.5, y: -31}
+        - {x: 7.5, y: -31}
+        - {x: 21.5, y: -16}
+        - {x: 21.5, y: 17}
+        - {x: 20.5, y: 24}
+    - name: Leopng_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 23}
+        - {x: -20.5, y: 17}
+        - {x: -21.5, y: 14}
+        - {x: -21.5, y: -11}
+        - {x: -9.5, y: -32}
+        - {x: 13.5, y: -32}
+        - {x: 22.5, y: -1}
+        - {x: 22.5, y: 18}
+        - {x: 12.5, y: 23}
+      - - {x: 0.5, y: 25}
+        - {x: 3.5, y: 26}
+        - {x: 3.5, y: 29}
+        - {x: 0.5, y: 30}
+        - {x: -1.5, y: 28}
+    - name: Leopng_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.5, y: 21}
+        - {x: 5.5, y: 23}
+        - {x: -16.5, y: 23}
+        - {x: -21.5, y: 14}
+        - {x: -21.5, y: -15}
+        - {x: -10.5, y: -31}
+        - {x: -8.5, y: -32}
+        - {x: 12.5, y: -32}
+        - {x: 19.5, y: -24}
+        - {x: 22.5, y: -5}
+        - {x: 22.5, y: 15}
+    - name: Leopng_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.5, y: 22}
+        - {x: -13.5, y: 22}
+        - {x: -20.5, y: 19}
+        - {x: -20.5, y: -5}
+        - {x: -15.5, y: -25}
+        - {x: -2.5, y: -32}
+        - {x: 15.5, y: -32}
+        - {x: 20.5, y: -28}
+        - {x: 22.5, y: -20}
+        - {x: 22.5, y: 17}
+    - name: Leopng_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 21}
+        - {x: -21.5, y: 10}
+        - {x: -21.5, y: -7}
+        - {x: -10.5, y: -32}
+        - {x: 8.5, y: -32}
+        - {x: 22.5, y: -12}
+        - {x: 22.5, y: 17}
+        - {x: 8.5, y: 21}
+    - name: Leopng_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.5, y: 21}
+        - {x: -13.5, y: 21}
+        - {x: -20.5, y: 10}
+        - {x: -20.5, y: -7}
+        - {x: -11.5, y: -31}
+        - {x: -9.5, y: -32}
+        - {x: 9.5, y: -32}
+        - {x: 22.5, y: -14}
+        - {x: 22.5, y: 14}
+        - {x: 20.5, y: 20}
+    - name: Leopng_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19.5, y: 21}
+        - {x: -15.5, y: 21}
+        - {x: -20.5, y: 11}
+        - {x: -20.5, y: -4}
+        - {x: -9.5, y: -32}
+        - {x: 10.5, y: -32}
+        - {x: 23.5, y: -9}
+        - {x: 23.5, y: 12}
+    - name: Leopng_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.5, y: 21}
+        - {x: -21.5, y: -16}
+        - {x: -7.5, y: -32}
+        - {x: 10.5, y: -32}
+        - {x: 22.5, y: -1}
+        - {x: 22.5, y: 19}
+        - {x: 21.5, y: 21}
+      - - {x: -5.5, y: 24}
+        - {x: -4.5, y: 21}
+        - {x: 4.5, y: 21}
+        - {x: 6.5, y: 23}
+        - {x: 5.5, y: 26}
+        - {x: -3.5, y: 26}
+    - name: Leopng_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.5, y: 21}
+        - {x: -21.5, y: 17}
+        - {x: -21.5, y: -18}
+        - {x: -8.5, y: -32}
+        - {x: 14.5, y: -32}
+        - {x: 21.5, y: -11}
+        - {x: 21.5, y: 19}
+        - {x: 18.5, y: 21}
+    - name: Leopng_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.5, y: 21}
+        - {x: -6.5, y: 21}
+        - {x: -15.5, y: 18}
+        - {x: -21.5, y: 12}
+        - {x: -21.5, y: -13}
+        - {x: -7.5, y: -32}
+        - {x: 9.5, y: -32}
+        - {x: 13.5, y: -30}
+        - {x: 22.5, y: -10}
+        - {x: 22.5, y: 10}
+    - name: Leopng_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 21}
+        - {x: -20.5, y: 19}
+        - {x: -20.5, y: -5}
+        - {x: -12.5, y: -27}
+        - {x: -5.5, y: -32}
+        - {x: 7.5, y: -32}
+        - {x: 23.5, y: -15}
+        - {x: 23.5, y: 19}
+        - {x: 15.5, y: 21}
+    - name: Leopng_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.5, y: 21}
+        - {x: -6.5, y: 21}
+        - {x: -20.5, y: 12}
+        - {x: -20.5, y: 0}
+        - {x: -17.5, y: -11}
+        - {x: -10.5, y: -32}
+        - {x: 19.5, y: -32}
+        - {x: 23.5, y: -11}
+        - {x: 23.5, y: 13}
+        - {x: 16.5, y: 19}
+    - name: Leopng_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 21}
+        - {x: -20.5, y: 13}
+        - {x: -20.5, y: -4}
+        - {x: -11.5, y: -30}
+        - {x: -6.5, y: -32}
+        - {x: 16.5, y: -32}
+        - {x: 23.5, y: -13}
+        - {x: 23.5, y: 15}
+        - {x: 12.5, y: 21}
+    - name: Leopng_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: 21}
+        - {x: -20.5, y: -12}
+        - {x: -5.5, y: -32}
+        - {x: 11.5, y: -32}
+        - {x: 23.5, y: -23}
+        - {x: 23.5, y: 21}
+    - name: Leopng_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.5, y: 21}
+        - {x: -20.5, y: 14}
+        - {x: -20.5, y: -28}
+        - {x: -16.5, y: -32}
+        - {x: 20.5, y: -32}
+        - {x: 23.5, y: -13}
+        - {x: 23.5, y: 13}
+        - {x: 14.5, y: 21}
+    - name: Leopng_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: -17}
+        - {x: -15.5, y: -32}
+        - {x: 17.5, y: -32}
+        - {x: 23.5, y: -29}
+        - {x: 23.5, y: 14}
+        - {x: 19.5, y: 21}
+        - {x: -6.5, y: 21}
+        - {x: -20.5, y: 11}
+    - name: Leopng_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 21}
+        - {x: -20.5, y: 9}
+        - {x: -20.5, y: -10}
+        - {x: -10.5, y: -32}
+        - {x: 12.5, y: -32}
+        - {x: 23.5, y: -10}
+        - {x: 23.5, y: 11}
+        - {x: 11.5, y: 21}
+    - name: Leopng_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.5, y: 21}
+        - {x: -20.5, y: 8}
+        - {x: -20.5, y: -14}
+        - {x: -10.5, y: -30}
+        - {x: -5.5, y: -32}
+        - {x: 10.5, y: -32}
+        - {x: 22.5, y: -16}
+        - {x: 22.5, y: 11}
+        - {x: 18.5, y: 21}
+    - name: Leopng_23
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64.333336
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 21}
+        - {x: -20.5, y: 19}
+        - {x: -20.5, y: -13}
+        - {x: -16.5, y: -32}
+        - {x: 8.5, y: -32}
+        - {x: 23.5, y: -13}
+        - {x: 23.5, y: 15}
+        - {x: 9.5, y: 21}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -6,52 +6,51 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.IO;
 using System.Text;
+using UnityStandardAssets.CrossPlatformInput;
 
 
-public class Character : MonoBehaviour {
+public class Character : Interactable {
 
 	Rigidbody2D rbody;
-	Animator anim;
-
-	public TextAsset behaviourFile;
-	public bool isNPC;
-
-	private GameObject actualColider;
-	private bool initialInteractionCondition;
-	private Behaviour myBehaviour;
+	public Animator anim;
 
 	
-	bool LoadBehaviour() {
-		if(behaviourFile == null){
-			return false;
-		}
+	private bool wait;
 
-		try {
-			XmlSerializer serializer = new XmlSerializer(typeof(Behaviour));
-			MemoryStream stream = new MemoryStream(behaviourFile.bytes);
-	 		myBehaviour = serializer.Deserialize(stream) as Behaviour;
-	 		initialInteractionCondition = myBehaviour.canInteract;
-	 		return true;
- 		} catch {
- 			return false;
- 		}
-	}
+	
 
 	void Start () {
-		isNPC = LoadBehaviour();
+		//isNPC = LoadBehaviour();
+
+		base.Start();
+
+		print(isNPC);
 
 		rbody = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
-		
+		//if(isNPC) StartCoroutine("Idle");
+
+		if(!isNPC){
+			PlayerPrefs.SetInt("Quest", 0);
+			PlayerPrefs.SetInt("SubQuest", 0);
+		}
+
 	}
 
-	void Movement() {
-		Vector2 movement_vector = new Vector2();
-		Vector2 axis = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-		if (Input.GetMouseButtonDown(0) && axis == Vector2.zero) {
-            Vector3 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            print(mouse);
+	void Movement() {
+
+		if(SmoothCamera.isFading) {
+			anim.SetBool("isWalking", false);
+			return;
+		};
+
+		Vector2 movement_vector = new Vector2();
+        Vector2 axis = new Vector2(CrossPlatformInputManager.GetAxis("Horizontal"), CrossPlatformInputManager.GetAxis("Vertical"));
+
+        if (axis == Vector2.zero) {
+            //Vector3 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            //print(mouse);
             //movement_vector = new Vector2(mouse.x, mouse.y);
         } else if(axis != Vector2.zero){
         	movement_vector = axis;
@@ -70,44 +69,42 @@ public class Character : MonoBehaviour {
 		rbody.MovePosition(rbody.position + movement_vector*Time.deltaTime);
 
 	}
-	
-	void WaitInteraction() {
-		if(actualColider == null || actualColider.tag != "Player") return;
-
-		if(Input.GetKey("space") && myBehaviour.canInteract) {
-			myBehaviour.canInteract = false;
-			print("Oi eu sou "+ myBehaviour.charName);
-			//TODO Open window;
-			return;
-		}
-
-		if(Input.GetKey("escape") && !myBehaviour.canInteract) {
-			myBehaviour.canInteract = true;
-			//TODO close window;
-			return;
-		}
-	}
 
 	// Update is called once per frame
 	void Update () {
-		if(!isNPC){
+
+        if (!isNPC){
 			Movement();
+			//int subQuest = PlayerPrefs.GetInt("SubQuest");
+			// print(subQuest);
 		} else {
-			WaitInteraction();
+			
+			// if(myBehaviour.isItem){
+			// 	if(GetDialogIndex() < 2){
+			// 		gameObject.GetComponent<BoxCollider2D>().enabled = false;
+			// 		Transform glow = gameObject.transform.Find("Glow");
+			// 		if(glow) glow.gameObject.active = false;
+			// 		return;
+			// 	} else {
+			// 		gameObject.GetComponent<BoxCollider2D>().enabled = true;
+			// 		Transform glow = gameObject.transform.Find("Glow");
+			// 		if(glow) glow.gameObject.active = true;
+			// 	}
+			// }
+
+			// if(actualColider){
+			// 	if(anim){
+			// 		Vector3 lookAt = actualColider.transform.position-transform.position;
+			// 		anim.SetBool("isWalking", false);
+			// 		anim.SetFloat("input_x", lookAt.x);
+			// 		anim.SetFloat("input_y", lookAt.y);
+			// 	}
+
+			// 	WaitInteraction();
+			// } else {
+			// 	//Idle();
+			// }
 		}
 	}
 
-	void OnCollisionEnter (Collision col)
-    {
-        actualColider = col.gameObject;
-    }
-
-    void OnCollisionExit (Collision col)
-    {
-    	actualColider = null;
-
-    	if(isNPC){
-    		myBehaviour.canInteract = initialInteractionCondition;
-    	}
-    }
 }

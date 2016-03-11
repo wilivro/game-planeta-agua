@@ -6,10 +6,16 @@ public class SmoothCamera : MonoBehaviour {
 	// Use this for initialization
 	private Camera cam;
 	private GameObject player;
+
+	public static bool isFading;
+
 	void Start () {
 		cam = GetComponent<Camera>();
 		player = GameObject.Find("Player");
+		Time.timeScale = 1;
+		isFading = false;
 	}
+
 	
 	// Update is called once per frame
 	void Update () {
