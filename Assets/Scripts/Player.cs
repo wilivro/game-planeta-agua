@@ -40,9 +40,6 @@ public class Player : MonoBehaviour {
 		PlayerPrefs.SetString("QuestLog", "");
 
 		inventory = GameObject.Find("Inventory").AddComponent<Inventory>() as Inventory;
-
-		print("player");
-
 	}
 
 
