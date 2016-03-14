@@ -1,35 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Behaviour xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <characterName>Cartilha Planeta Agua</characterName>
+  <characterName>Cartilha planeta agua</characterName>
   <interacatle>true</interacatle>
   <quest>0</quest>
   <subQuest>0</subQuest>
   <dismissible>true</dismissible>
   <collectable>false</collectable>
-  <isItem>true</isItem>
+  <item>true</item>
 
   <dialogs>
 
-  	<dialog>
+    <dialog></dialog>
+
+    <dialog></dialog>
+
+    <dialog>
       <speech player="false" expression="2" long="true">
-      	<text>
-Livro Pagina 1
-asdasdAsd
-ASdAsdASd
-AsAsd
+        <text>
+A Terra é um planeta quase todo coberto por água: água dos oceanos, água dos mares, rios e lagos, água das calotas polares, água da chuva, muita, muita água...Quando visto de cima, nosso planeta tem uma grande quantidade de cor azul. Essa cor representa as nossas águas, que cobrem 70% da nossa superfície. Por isso, algumas pessoas chamam a Terra de Planeta Azul e até mesmo Planeta Água!
+
+Mas lembre-se, a maior parte de nossas águas é salgada. Por isso, devemos economizar e fazer seu uso consciente.
         </text>
-      </speech>
-
-      <speech player="false" expression="2" long="true">
-        <text>Livro Pagina 2</text>
-      </speech>
-
-      <speech player="false" expression="2" long="true">
-        <text>Livro Pagina 3</text>
       </speech>
     </dialog>
     
   </dialogs>
 
+  <dialog></dialog>
+
 </Behaviour>
-  

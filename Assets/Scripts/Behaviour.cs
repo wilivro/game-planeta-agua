@@ -39,17 +39,17 @@ public class Dialog
 	[XmlElement("speech")]
 	public List<Speech> speechs;
 
-	[XmlElement("questLoad")]
-	public List<QuestItem> questLog;
+	[XmlElement("questLog")]
+	public QuestItem questLog;
+
+	[XmlElement("give")]
+	public QuestItem give;
 }
 
 public class QuestItem
 {
 	[XmlElement("item")]
-	public string text;
-
-	[XmlAttribute("score")]
-	public int score;
+	public List<string> itens;
 }
 
 public class Speech

@@ -9,9 +9,10 @@ public class SmoothCamera : MonoBehaviour {
 
 	public static bool isFading;
 
-	void Start () {
+	void Awake () {
 		cam = GetComponent<Camera>();
 		player = GameObject.Find("Player");
+		
 		Time.timeScale = 1;
 		isFading = false;
 	}
@@ -19,8 +20,8 @@ public class SmoothCamera : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		cam.orthographicSize = ((Screen.height/100f) / 4f);
+		cam.orthographicSize = ((Screen.height/Screen.dpi) / 2f);
 
-		transform.position = Vector3.Lerp(transform.position, player.transform.position, 0.1f) + new Vector3(0, 0, -10);
+		transform.position = Vector3.Lerp(transform.position, player.transform.position, 0.4f) + new Vector3(0, 0, -10);
 	}
 }

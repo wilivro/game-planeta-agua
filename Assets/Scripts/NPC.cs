@@ -20,7 +20,7 @@ public class NPC : Communicative
 	
 	// Update is called once per frame
 	void Update () {
-		if(actualColider){
+		if(actualColider != null){
 			if(anim){
 				Vector3 lookAt = actualColider.transform.position-transform.position;
 				anim.SetBool("isWalking", false);
@@ -30,7 +30,7 @@ public class NPC : Communicative
 
 			WaitInteraction();
 		} else {
-			//Idle();
+			//TODO Idle();
 		}
 		
 	}

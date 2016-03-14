@@ -11,11 +11,12 @@ public class Interactable : MonoBehaviour {
 
 	// Use this for initialization
 
-	public GameObject actualColider;
+	public Collider2D actualColider;
 	public TextAsset behaviourFile;
 	public Behaviour myBehaviour;
 	public bool initialInteractionCondition;
 	public bool isNPC;
+
 
 	bool LoadBehaviour() {
 		if(behaviourFile == null){
@@ -36,7 +37,6 @@ public class Interactable : MonoBehaviour {
 
 	public void Start () {
 		isNPC = LoadBehaviour();
-		print("oi");
 	}
 	
 	// Update is called once per frame
@@ -44,22 +44,34 @@ public class Interactable : MonoBehaviour {
 	
 	}
 
-	void OnCollisionEnter2D (Collision2D col)
+	public void OnCollisionEnter2D (Collision2D col)
+    {
+		OnTriggerEnter2D(col.collider);
+    }
+
+    public void OnCollisionExit2D (Collision2D col)
+    {
+    	OnTriggerExit2D(col.collider);
+    }
+
+    public void OnTriggerEnter2D (Collider2D col)
     {
 		if(col.gameObject.tag == "Player"){
-			GameObject.Find("Buttons").GetComponent<Animator>().SetTrigger("FadeIN");
-        	actualColider = col.gameObject;
+			//GameObject.Find("Buttons").GetComponent<Animator>().SetTrigger("FadeIN");
+        	actualColider = col;
 		}
     }
 
-    void OnCollisionExit2D (Collision2D col)
+    public void OnTriggerExit2D (Collider2D col)
     {
     	actualColider = null;
 
     	if(col.gameObject.tag == "Player"){
-    		GameObject.Find("Buttons").GetComponent<Animator>().SetTrigger("FadeOUT");
+    		//GameObject.Find("Buttons").GetComponent<Animator>().SetTrigger("FadeOUT");
     		//dialogWindow.Destroy();
-    		myBehaviour.canInteract = initialInteractionCondition;
+    		if(isNPC) myBehaviour.canInteract = initialInteractionCondition;
     	}
     }
+
+
 }

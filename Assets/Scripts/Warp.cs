@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
+using UnityStandardAssets.CrossPlatformInput;
 
-public class Warp : MonoBehaviour {
+public class Warp : Interactable {
 
 	// Use this for initialization
-	public GameObject warpTO;
+	public Warp warpTO;
 	public Vector3 offset;
 
 	public GameObject player;
@@ -13,17 +15,48 @@ public class Warp : MonoBehaviour {
 
 	public GameObject warpFade;
 	public Animator anim;
+	public DialogWindow dialogWindow;
 
-	void Start () {
+	public void Start () {
+
+		base.Start();
+
 		warpFade = GameObject.Find("Fade");
 		anim = warpFade.GetComponent<Animator>();
 		player = GameObject.Find("Player");
 		animPlayer = player.GetComponent<Animator>();
+
+		if(isNPC) {
+			dialogWindow = gameObject.AddComponent<DialogWindow>() as DialogWindow;
+ 			dialogWindow.Config(myBehaviour.charName, "Characters/Leo/face");
+		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if(actualColider == null || actualColider.gameObject.tag != "Player") return;
+		if(CrossPlatformInputManager.GetButton("Submit")||CrossPlatformInputManager.GetButton("Cancel")){
+			if(isNPC) dialogWindow.Destroy();
+		}
+	}
+
+	public int GetDialogIndex() {
+		if(!isNPC) return -1;
+		int quest = PlayerPrefs.GetInt("Quest");
+		int subQuest = PlayerPrefs.GetInt("SubQuest");
+
+		if(quest > myBehaviour.quest){
+			return -1; 
+		}
+
+		return (subQuest.CompareTo(myBehaviour.subQuest)+2);
+
+	}
+
+	public Speech GetSpeech(){
+		int dialog = GetDialogIndex(); 
+
+		return myBehaviour.dialogs[dialog].speechs[0];
 	}
 
 	IEnumerator WarpPlayer() {
@@ -51,7 +84,19 @@ public class Warp : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D other) {
 
+		base.OnCollisionEnter2D(other);
+
 		if(other.gameObject.tag == "Player"){
+			print(GetDialogIndex());
+			if(isNPC && GetDialogIndex() > 0){
+				dialogWindow.Show(GetSpeech(), null);
+				return;
+			}
+
+			if(!warpTO){
+				return;
+			}
+
 			StartCoroutine("WarpPlayer");
 		}
 			

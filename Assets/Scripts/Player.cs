@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,15 +11,38 @@ public class Player : MonoBehaviour {
 	Rigidbody2D rbody;
 	public Animator anim;
 
-	public List<Item> inventory;
+	public static Inventory inventory;
+	static Transform QuestHelper;
+
+	public static bool created = false;
+
+	public static bool hasQuestLog = false;
+
+	void Awake() {
+        if (!created) {
+         	// this is the first instance - make it persist
+         	QuestHelper = GameObject.Find("QuestHelper").transform;
+     		DontDestroyOnLoad(this.gameObject);
+     		created = true;
+     	} else {
+         	// this must be a duplicate from a scene reload - DESTROY!
+         	Destroy(this.gameObject);
+     	} 
+    }
 
 	void Start () {
 
 		rbody = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
 
-			PlayerPrefs.SetInt("Quest", 0);
-			PlayerPrefs.SetInt("SubQuest", 0);
+		PlayerPrefs.SetInt("Quest", 2);
+		PlayerPrefs.SetInt("SubQuest", 0);
+		PlayerPrefs.SetString("QuestLog", "");
+
+		inventory = GameObject.Find("Inventory").AddComponent<Inventory>() as Inventory;
+
+		print("player");
+
 	}
 
 
@@ -44,6 +68,10 @@ public class Player : MonoBehaviour {
 
 		rbody.MovePosition(rbody.position + movement_vector*Time.deltaTime);
 
+	}
+
+	public static bool CheckQuestIsCompleted() {
+		return false;
 	}
 	
 	// Update is called once per frame

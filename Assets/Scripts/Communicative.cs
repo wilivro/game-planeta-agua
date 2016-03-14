@@ -8,9 +8,9 @@ public class Communicative : Interactable {
 	public DialogWindow dialogWindow;
 	public int actualSpeech;
 	public bool inChoice;
+	
 
 	public void Start(){
-
 		base.Start();
 
 		dialogWindow = gameObject.AddComponent<DialogWindow>() as DialogWindow;
@@ -21,7 +21,19 @@ public class Communicative : Interactable {
 		int quest = PlayerPrefs.GetInt("Quest");
 		int subQuest = PlayerPrefs.GetInt("SubQuest");
 
-		return (subQuest.CompareTo(myBehaviour.subQuest) +2)*Convert.ToInt32(myBehaviour.quest==quest);
+		if(quest < myBehaviour.quest){
+			return 0;
+		}
+
+		if(quest > myBehaviour.quest){
+			return 5;
+		}
+
+		if(Player.hasQuestLog && PlayerPrefs.GetString("QuestLog") != ""){
+			return 4;
+		}
+
+		return (subQuest.CompareTo(myBehaviour.subQuest) +2);
 
 	}
 
@@ -38,7 +50,7 @@ public class Communicative : Interactable {
 	}
 
 	public void WaitInteraction() {
-		if(actualColider == null || actualColider.tag != "Player") return;
+		if(actualColider == null || actualColider.gameObject.tag != "Player") return;
 
 		if(CrossPlatformInputManager.GetButton("Submit") && myBehaviour.canInteract) {
 
@@ -46,14 +58,51 @@ public class Communicative : Interactable {
 			myBehaviour.canInteract = false;
 			
 			if(DialogEnd()) {
-				actualSpeech = 0;
+
 				dialogWindow.Destroy();
+
+				int dialogIndex = GetDialogIndex();
+				string questLog = "";
+				if(myBehaviour.dialogs[dialogIndex].questLog != null && myBehaviour.dialogs[dialogIndex].questLog.itens.Count > 0){
+					Player.hasQuestLog = true;
+					for(int i = 0; i < myBehaviour.dialogs[dialogIndex].questLog.itens.Count; i++) {
+						questLog += myBehaviour.dialogs[dialogIndex].questLog.itens[i]+"|";
+					}
+
+					PlayerPrefs.SetString("QuestLog", questLog);
+					PlayerPrefs.Save();
+
+				}
+
+				if(myBehaviour.dialogs[dialogIndex].give != null && myBehaviour.dialogs[dialogIndex].give.itens.Count > 0){
+
+					for(int i = 0; i < myBehaviour.dialogs[dialogIndex].give.itens.Count; i++) {
+						GameObject it = Resources.Load("Prefabs/Itens/"+myBehaviour.dialogs[dialogIndex].give.itens[i]) as GameObject;
+						it = Instantiate(it);
+						it.active = false;
+						Item itt = it.GetComponent<Item>();
+						Player.inventory.Add(itt);
+						Destroy(it);
+					}
+
+				}
+
+				actualSpeech = 0;
 				int quest = PlayerPrefs.GetInt("Quest");
 				int subQuest = PlayerPrefs.GetInt("SubQuest");
+
+				questLog = PlayerPrefs.GetString("QuestLog");
+				
 				if(myBehaviour.subQuest == subQuest && myBehaviour.quest == quest){
 					PlayerPrefs.SetInt("SubQuest", subQuest+1);
 					PlayerPrefs.Save();
 				}
+
+				if(myBehaviour.dismissible && myBehaviour.quest == quest && questLog == ""){
+					PlayerPrefs.SetInt("Quest", quest+1);
+					PlayerPrefs.SetInt("SubQuest", 0);
+				}
+
 			} else {
 				bool hasChioces = dialogWindow.Show(this);
 				if(!hasChioces) actualSpeech++;

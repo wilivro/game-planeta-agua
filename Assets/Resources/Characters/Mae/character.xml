@@ -2,24 +2,24 @@
 <Behaviour xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <characterName>Mãe</characterName>
   <interacatle>true</interacatle>
-  <quest>0</quest>
-  <subQuest>1</subQuest>
+  <quest>1</quest>
+  <subQuest>0</subQuest>
+  <total>0</total>
   <dismissible>true</dismissible>
 
   <dialogs>
 
-  	<dialog>
-      <speech player="true" expression="2">
-        <text>Mãe?</text>
+  	<dialog> <!-- Dialogo antes da quest -->
+     <speech player="true" expression="2">
+        <text>Mãe posso brincar la fora?</text>
       </speech>
 
-      <speech player="false" expression="2">
-      	<text>Estou ocupada menino.</text>
+      <speech player="false" expression="0">
+        <text>Primeiro va estudar um pouco,  você tem suas pesquisas pra fazer.</text>
       </speech>
     </dialog>
 
-    <dialog>
-
+    <dialog><!-- Dialogo na quest mas sem requisito-->
       <speech player="true" expression="2">
         <text>Mãe posso brincar la fora?</text>
       </speech>
@@ -29,7 +29,7 @@
       </speech>
     </dialog>
 
-	  <dialog>
+	  <dialog><!-- Dialogo na quest correto-->
 
 	   <speech player="true" expression="2">
         <text>E agora mãe, posso brincar la fora?</text>
@@ -44,22 +44,33 @@
       </speech>
 
       <questLog>
-        <item>Escovar os Dentes</item>
-        <item>Tomar Banho</item>
+        <item>Escovar os dentes</item>
+        <item>Tomar banho</item>
         <item>Lavar a louça</item>
       </questLog>
 
 	  </dialog>
 
-	  <dialog>
+	  <dialog><!-- Dialogo depois quest-->
       <speech player="false" expression="2">
-        <text>Leo, vá lá fora lavar o carro e limpar a calçada, depois pode brincar!</text>
+        <text>Pronto Leo, pode ir la fora.</text>
       </speech>
 
       <speech player="true" expression="2">
-        <text>Tudo eu, tudo eu...</text>
+        <text>Obrigado mãe. Te amo</text>
       </speech>
+    </dialog>
 
+    <dialog><!-- Dialogo depois quest-->
+      <speech player="false" expression="2">
+        <text>Leo, termine logo suas coisas</text>
+      </speech>
+    </dialog>
+
+    <dialog><!-- Dialogo depois quest-->
+      <speech player="false" expression="2">
+        <text>Oi Leo, beijos.</text>
+      </speech>
     </dialog>
       
   </dialogs>

@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class DialogWindow : MonoBehaviour
 {
@@ -33,6 +34,14 @@ public class DialogWindow : MonoBehaviour
 
 	public bool Show(Communicative c) {
 		Speech s = c.GetSpeech();
+		return Show(s, c);
+	}
+
+	public bool Show(Speech s, Communicative c) {
+
+		if (s.text == "") {
+			return false;
+		}
 
 		joyCanvas.transform.Find("MobileJoystick").GetComponent<Image>().enabled = false;
 
@@ -42,7 +51,7 @@ public class DialogWindow : MonoBehaviour
 		Transform ctx = instatiation.transform.Find("ContainerText");
 		Transform ctxName = ctx.Find("NamePanel");
 
-		object[] parms = new object[3]{formatted, ctx.transform.Find("Text").GetComponent<UnityEngine.UI.Text>(), c};
+		object[] parms = new object[3]{formatted, ctx.transform.Find("Text").GetComponent<Text>(), c};
 		StartCoroutine(Write(parms));
 
 		ctxName.transform.Find("Name").GetComponent<Text>().text = s.isPlayer ? "Leo" : NpcName;
@@ -107,14 +116,26 @@ public class DialogWindow : MonoBehaviour
 		Text ctx = (Text)parms[1];
 		Communicative c = (Communicative)parms[2];
 
+		float speed = 0.05f;
 
 		for(int i = 0; i < text.Length; i++){
 			if(!ctx) yield return null;
-			yield return new WaitForSeconds(0.05f);
-			ctx.text += text[i];
+			try {
+				if(CrossPlatformInputManager.GetButtonDown("Submit")) {
+					speed = 0.01f;
+				}
+				if(CrossPlatformInputManager.GetButtonUp("Submit")) {
+					speed = 0.05f;
+				}
+				ctx.text += text[i];
+			} catch {
+
+			}
+			yield return new WaitForSeconds(speed);
+
 		}
 
-		c.myBehaviour.canInteract = true;
+		if(c) c.myBehaviour.canInteract = true;
 	}
 
 	public void Destroy() {
@@ -123,11 +144,16 @@ public class DialogWindow : MonoBehaviour
 	}
 
 	public void OnChoice(Choice ch, Communicative c) {
-		int score = PlayerPrefs.GetInt("Score");
-		PlayerPrefs.SetInt("Score", score+ch.addScore);
-		c.actualSpeech = ch.gotoSpeech;
-		Destroy();
-		Show(c);
+
+		try {
+			int score = PlayerPrefs.GetInt("Score");
+			PlayerPrefs.SetInt("Score", score+ch.addScore);
+			c.actualSpeech = ch.gotoSpeech;
+			Destroy();
+			Show(c);
+		} catch {
+
+		}
 	}
 
 }
