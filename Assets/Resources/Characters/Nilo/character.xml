@@ -23,19 +23,19 @@
 
 	  <dialog><!-- Dialogo na quest correto-->
 
-      <speech player="false"  expression="1">
+      <speech player="false"  expression="0">
         <text>Bom dia, gostaria de receber esses cartazes?</text>
       </speech>
 
-	    <speech player="true" expression="2">
+	    <speech player="true" expression="3">
         <text>Bom dia! Sobre o que eles falam?</text>
       </speech>
 
-	    <speech player="false"  expression="1">
+	    <speech player="false"  expression="0">
 	    	<text>São cartazes para colar em alguns locais para lembrar a todos de economizar água!</text>
 	    </speech>
 
-	    <speech player="true" expression="2">
+	    <speech player="true" expression="0">
         <text>Nessa, legal! Adoraria ajudar!</text>
       </speech>
 

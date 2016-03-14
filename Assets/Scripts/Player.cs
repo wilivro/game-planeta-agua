@@ -18,6 +18,8 @@ public class Player : MonoBehaviour {
 
 	public static bool hasQuestLog = false;
 
+	public static bool interacting = false;
+
 	void Awake() {
         if (!created) {
          	// this is the first instance - make it persist
@@ -45,7 +47,7 @@ public class Player : MonoBehaviour {
 
 	void Movement() {
 
-		if(SmoothCamera.isFading) {
+		if(SmoothCamera.isFading || Player.interacting) {
 			anim.SetBool("isWalking", false);
 			return;
 		};

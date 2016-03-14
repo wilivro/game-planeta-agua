@@ -43,6 +43,8 @@ public class DialogWindow : MonoBehaviour
 			return false;
 		}
 
+		Player.interacting = true;
+
 		joyCanvas.transform.Find("MobileJoystick").GetComponent<Image>().enabled = false;
 
 		instatiation = GameObject.Instantiate(s.isLong ? winLong : win) as GameObject;
@@ -141,6 +143,8 @@ public class DialogWindow : MonoBehaviour
 	public void Destroy() {
 		joyCanvas.transform.Find("MobileJoystick").GetComponent<Image>().enabled = true;
 		GameObject.Destroy(instatiation);
+
+		Player.interacting = false;
 	}
 
 	public void OnChoice(Choice ch, Communicative c) {

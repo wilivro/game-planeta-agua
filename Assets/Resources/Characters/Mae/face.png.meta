@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 11d07d59cff35f7438d75a99193cfd49
-timeCreated: 1457990263
+guid: 849ef77278a2d744cbbf72028a552ad5
+timeCreated: 1457990298
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,10 +8,6 @@ TextureImporter:
     21300002: face_1
     21300004: face_2
     21300006: face_3
-    21300008: face_4
-    21300010: face_5
-    21300012: face_6
-    21300014: face_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -62,45 +58,31 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 96
         width: 96
         height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 20, y: 48}
-        - {x: -40, y: 48}
-        - {x: -45, y: 37}
-        - {x: -45, y: -30}
-        - {x: -32, y: -48}
-        - {x: 26, y: -48}
-        - {x: 26, y: -47}
-        - {x: 44, y: -9}
-        - {x: 44, y: 34}
+      - - {x: 35, y: 48}
+        - {x: -33, y: 48}
+        - {x: -44, y: 37}
+        - {x: -48, y: 32}
+        - {x: -48, y: -6}
+        - {x: -47, y: -9}
+        - {x: -44, y: -9}
+        - {x: -48, y: -19}
+        - {x: -48, y: -48}
+        - {x: 28, y: -48}
+        - {x: 27, y: -45}
+        - {x: 48, y: -24}
+        - {x: 48, y: 37}
     - name: face_1
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -31, y: 48}
-        - {x: -43, y: 37}
-        - {x: -43, y: -48}
-        - {x: 40, y: -48}
-        - {x: 43, y: -38}
-        - {x: 43, y: 33}
-        - {x: 11, y: 48}
-    - name: face_2
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
+        y: 96
         width: 96
         height: 96
       alignment: 0
@@ -108,42 +90,64 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -33, y: 48}
-        - {x: -47, y: 21}
-        - {x: -47, y: -38}
-        - {x: -35, y: -48}
-        - {x: 46, y: -48}
-        - {x: 46, y: 39}
-        - {x: 19, y: 48}
-    - name: face_3
+        - {x: -44, y: 37}
+        - {x: -48, y: 32}
+        - {x: -48, y: -6}
+        - {x: -47, y: -9}
+        - {x: -44, y: -9}
+        - {x: -48, y: -19}
+        - {x: -48, y: -48}
+        - {x: 39, y: -48}
+        - {x: 48, y: -24}
+        - {x: 48, y: 39}
+        - {x: 39, y: 48}
+    - name: face_2
       rect:
         serializedVersion: 2
-        x: 288
-        y: 0
+        x: 192
+        y: 96
         width: 96
         height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 30, y: 46}
-        - {x: 28, y: 44}
-        - {x: 28, y: 41}
-        - {x: 3, y: 48}
-        - {x: -42, y: 48}
-        - {x: -44, y: 33}
-        - {x: -44, y: -42}
-        - {x: -41, y: -48}
-        - {x: 44, y: -48}
-        - {x: 44, y: 44}
-        - {x: 42, y: 47}
-      - - {x: -35, y: -19}
-        - {x: -45, y: -19}
-        - {x: -45, y: -30}
-        - {x: -44, y: -34}
-        - {x: -41, y: -35}
-        - {x: -36, y: -35}
-        - {x: -33, y: -30}
-        - {x: -33, y: -22}
+      - - {x: -33, y: 48}
+        - {x: -44, y: 37}
+        - {x: -48, y: 32}
+        - {x: -48, y: -6}
+        - {x: -47, y: -9}
+        - {x: -44, y: -9}
+        - {x: -48, y: -19}
+        - {x: -48, y: -48}
+        - {x: 32, y: -48}
+        - {x: 48, y: -37}
+        - {x: 48, y: 40}
+        - {x: 45, y: 48}
+    - name: face_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 35, y: 48}
+        - {x: -33, y: 48}
+        - {x: -44, y: 37}
+        - {x: -48, y: 32}
+        - {x: -48, y: -6}
+        - {x: -47, y: -9}
+        - {x: -44, y: -9}
+        - {x: -48, y: -19}
+        - {x: -48, y: -48}
+        - {x: 28, y: -48}
+        - {x: 27, y: -45}
+        - {x: 48, y: -24}
+        - {x: 48, y: 37}
     outline: []
   spritePackingTag: 
   userData: 
