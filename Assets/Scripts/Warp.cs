@@ -83,8 +83,11 @@ public class Warp : Interactable {
 	}
 
 	void OnCollisionEnter2D(Collision2D other) {
+		OnTriggerEnter2D(other.collider);
+	}
+	void OnTriggerEnter2D(Collider2D other) {
 
-		base.OnCollisionEnter2D(other);
+		base.OnTriggerEnter2D(other);
 
 		if(other.gameObject.tag == "Player"){
 			print(GetDialogIndex());
