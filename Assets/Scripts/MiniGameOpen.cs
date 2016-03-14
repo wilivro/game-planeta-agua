@@ -40,7 +40,7 @@ public class MiniGameOpen : Warp {
 		}
 	}
 
-	IEnumerator WarpScene() {
+	public IEnumerator WarpScene() {
 		SmoothCamera.isFading = true;
 		anim.SetTrigger("FadeIn");
 
@@ -55,7 +55,7 @@ public class MiniGameOpen : Warp {
 		StartCoroutine("FadeOut");
 	}
 
-	IEnumerator WarpPlayer() {
+	public IEnumerator WarpPlayer() {
 		yield return null;
 	}
 }

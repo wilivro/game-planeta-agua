@@ -12,11 +12,12 @@ public class Inventory : MonoBehaviour {
         if (!created) {
          	// this is the first instance - make it persist
      		DontDestroyOnLoad(this.gameObject);
+     		
      		created = true;
      	} else {
          	// this must be a duplicate from a scene reload - DESTROY!
          	Destroy(this.gameObject);
-     	} 
+     	}
     }
 
 	public Inventory() {
@@ -47,5 +48,26 @@ public class Inventory : MonoBehaviour {
 		content.Add(itt);
 
 		return i;
+	}
+
+	public Item Remove(Item i) {
+		Item it = content.Find(x => x.name == i.name);
+
+		if(it.acumulative){
+			it.qtd -= 1;
+
+			if(it.qtd == 0) content.Remove(it);
+
+			return it;
+		}
+
+		content.Remove(it);
+		Destroy (it.gameObject);
+
+		return it;
+	}
+
+	public bool Contains(Item i){
+		return content.Contains(i);
 	}
 }

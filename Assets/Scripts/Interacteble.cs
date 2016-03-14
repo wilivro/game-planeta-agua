@@ -57,7 +57,7 @@ public class Interactable : MonoBehaviour {
     public void OnTriggerEnter2D (Collider2D col)
     {
 		if(col.gameObject.tag == "Player"){
-			GameObject.Find("Buttons").GetComponent<Animator>().SetTrigger("FadeIN");
+			//GameObject.Find("Buttons").GetComponent<Animator>().SetTrigger("FadeIN");
         	actualColider = col;
 		}
     }
@@ -67,7 +67,7 @@ public class Interactable : MonoBehaviour {
     	actualColider = null;
 
     	if(col.gameObject.tag == "Player"){
-    		GameObject.Find("Buttons").GetComponent<Animator>().SetTrigger("FadeOUT");
+    		//GameObject.Find("Buttons").GetComponent<Animator>().SetTrigger("FadeOUT");
     		//dialogWindow.Destroy();
     		if(isNPC) myBehaviour.canInteract = initialInteractionCondition;
     	}
