@@ -62,6 +62,7 @@ public class Inventory : MonoBehaviour {
 		}
 
 		content.Remove(it);
+		Destroy (it.gameObject);
 
 		return it;
 	}
