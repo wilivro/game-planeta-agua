@@ -9,25 +9,25 @@
   <dialogs>
 
     <dialog>
-      <speech player="false" expression="2">
+      <speech player="false" expression="0">
         <text>Ja terminou suas tarefas?</text>
       </speech>
     </dialog>
 
     <dialog>
-      <speech player="false" expression="2">
+      <speech player="false" expression="0">
         <text>Ja terminou suas tarefas?</text>
       </speech>
     </dialog>
 
     <dialog>
-      <speech player="false" expression="2">
+      <speech player="false" expression="0">
         <text>Ja terminou suas tarefas?</text>
       </speech>
     </dialog>
 
     <dialog>
-      <speech player="false" expression="2">
+      <speech player="false" expression="0">
         <text>Ja terminou suas tarefas?</text>
       </speech>
     </dialog>

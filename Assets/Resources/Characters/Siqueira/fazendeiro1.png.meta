@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 452e4416cc9aa914d9dcd11862c00466
-timeCreated: 1458153067
+timeCreated: 1458231969
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -57,53 +57,20 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 94
-        width: 64
-        height: 94
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -30, y: 47}
-        - {x: -30, y: -35}
-        - {x: -25, y: -47}
-        - {x: 32, y: -47}
-        - {x: 32, y: 47}
-    - name: fazendeiro1_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 94
-        width: 64
-        height: 94
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -30, y: 47}
-        - {x: -30, y: -46}
-        - {x: -27, y: -47}
-        - {x: 32, y: -47}
-        - {x: 32, y: 47}
-    - name: fazendeiro1_2
-      rect:
-        serializedVersion: 2
-        x: 0
         y: 0
         width: 64
-        height: 94
+        height: 92
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -32, y: 39}
-        - {x: -32, y: -43}
-        - {x: -27, y: -47}
-        - {x: 12, y: -47}
-        - {x: 23, y: -43}
-        - {x: 30, y: -5}
-        - {x: 30, y: 36}
-        - {x: 19, y: 39}
+      - - {x: 20, y: 46}
+        - {x: -31, y: 46}
+        - {x: -31, y: -35}
+        - {x: -25, y: -46}
+        - {x: 32, y: -46}
+        - {x: 32, y: 42}
+        - {x: 25, y: 45}
     outline: []
   spritePackingTag: 
   userData: 

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Behaviour xmlns:xsi="http://www.w3.org/0001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/0001/XMLSchema">
+  <characterName>Siqueira</characterName>
+  <interacatle>true</interacatle>
+  <quest>6</quest>
+  <subQuest>0</subQuest>
+  <total>0</total>
+  <dismissible>true</dismissible>
+
+  <dialogs>
+
+    <dialog> <!-- Dialogo antes da quest -->
+      <speech player="false" expression="0">
+        <text>Oi, Como vai você</text>
+      </speech>
+    </dialog>
+
+    <dialog> <!-- Dialogo antes da quest -->
+      <speech player="false" expression="0">
+        <text>Oi, Como vai você</text>
+      </speech>
+    </dialog>
+
+    <dialog> <!-- Dialogo antes da quest -->
+       <speech player="false" expression="0">
+        <text>Oi Leo, quando estava procurando a nascente, perdi meu manual de instruções de como recuperar a nascente, voce pode me ajudar?</text>
+      </speech>
+
+      <speech player="true" expression="3">
+        <text>Recuperar a nascente, como assim?</text>
+      </speech>
+
+      <speech player="false" expression="0">
+        <text>É para ter uma boa qualidade da água na fazendo e no rio inteiro é bom que construirmos uma nascente.</text>
+      </speech>
+
+      <speech player="true" expression="0">
+        <text>Sim claro, entendi! irei procurá-lo</text>
+      </speech>
+
+       <questLog>
+        <item>Manual de instruções</item>
+      </questLog>
+
+    </dialog>
+
+    <dialog> <!-- Dialogo antes da quest -->
+      <speech player="false" expression="0">
+        <text>Obrigado Leo, não sei o que faria sem voce.</text>
+      </speech>
+    </dialog>
+
+    <dialog> <!-- Dialogo antes da quest -->
+      <speech player="false" expression="0">
+        <text>Ainda não encontrei.</text>
+      </speech>
+    </dialog>
+
+    <dialog> <!-- Dialogo antes da quest -->
+      <speech player="false" expression="0">
+        <text>A nascente ficou muito boa, isso vai melhora nossa qualidade de vida tanto na fazenda quanto na cidade inteira.</text>
+      </speech>
+    </dialog>
+      
+  </dialogs>
+
+</Behaviour>
+  

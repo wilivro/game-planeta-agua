@@ -10,6 +10,8 @@ public class MiniGameOpen : Warp {
 	public int quest;
 	public int subQuest;
 	public string miniGame;
+
+	public bool permanent;
 	void Start () {
 		base.Start();
 	}
@@ -22,7 +24,7 @@ public class MiniGameOpen : Warp {
 	
 	// Update is called once per frame
 	void Update () {
-		if(getSatus() != 2){
+		if(getSatus() != 2 && !(gameObject.GetComponent<BoxCollider2D>().enabled && permanent)){
 			gameObject.GetComponent<BoxCollider2D>().enabled = false;
 			Transform glow = gameObject.transform.Find("Glow");
 			if(glow) glow.gameObject.active = false;

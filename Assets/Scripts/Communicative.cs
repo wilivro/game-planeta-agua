@@ -14,7 +14,7 @@ public class Communicative : Interactable {
 		base.Start();
 
 		dialogWindow = gameObject.AddComponent<DialogWindow>() as DialogWindow;
- 		dialogWindow.Config(myBehaviour.charName, "Characters/"+myBehaviour.charName+"/face");
+		dialogWindow.Config(myBehaviour.charName, "Characters/"+myBehaviour.charName+"/face");
 	}
 
 	public int GetDialogIndex() {
@@ -93,6 +93,7 @@ public class Communicative : Interactable {
 		if(myBehaviour.dismissible && myBehaviour.quest == quest && questLog == ""){
 			PlayerPrefs.SetInt("Quest", quest+1);
 			PlayerPrefs.SetInt("SubQuest", 0);
+			PlayerPrefs.Save();
 		}
 
 

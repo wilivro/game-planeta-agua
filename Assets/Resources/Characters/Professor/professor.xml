@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Behaviour xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <characterName>Feirante</characterName>
+  <interacatle>true</interacatle>
+  <quest>5</quest>
+  <subQuest>0</subQuest>
+  <total>0</total>
+  <dismissible>false</dismissible>
+
+  <dialogs>
+
+    <dialog> <!-- Dialogo antes da quest -->
+      <speech player="false" expression="2">
+        <text>Oi, Como vai você</text>
+      </speech>
+    </dialog>
+
+    <dialog> <!-- Dialogo antes da quest -->
+      <speech player="false" expression="2">
+        <text>Oi, Como vai você</text>
+      </speech>
+    </dialog>
+
+    <dialog> <!-- Dialogo antes da quest -->
+
+      <speech player="false" expression="2">
+        <text>Na primeira etapa a água que chega dos rios ou represa passa por uma grade de proteção, qual o objetivo dessa grade? Remover ______________!</text>
+        <choice correct="false" addScore="0" goto="1">a lama</choice>
+        <choice correct="false" addScore="0" goto="1">o sal</choice>
+        <choice correct="true" addScore="10" goto="2">lixo, peixes e plantas</choice>
+        <choice correct="false" addScore="0" goto="1">a onda</choice>
+      </speech>
+
+      <speech player="false" expression="2" goto="3">
+        <text>Que pena, você errou! a resposta correta é remover o lixo, peixes e plantas.</text>
+      </speech>
+
+      <speech player="false" expression="2">
+        <text>Parabens, você Acertou!</text>
+      </speech>
+
+      <speech player="false" expression="2">
+        <text>Fale com o próximo professor!</text>
+      </speech>
+
+    </dialog>
+
+    <dialog> <!-- Dialogo antes da quest -->
+      <speech player="false" expression="2">
+        <text>Oi, Está se divertindo aqui?</text>
+      </speech>
+    </dialog>
+
+    <dialog> <!-- Dialogo antes da quest -->
+      <speech player="false" expression="2">
+        <text>Oi, Está se divertindo aqui?</text>
+      </speech>
+    </dialog>
+
+  	<dialog> <!-- Dialogo antes da quest -->
+      <speech player="false" expression="2">
+        <text>Oi, Está se divertindo aqui?</text>
+      </speech>
+    </dialog>
+      
+  </dialogs>
+
+</Behaviour>
+  

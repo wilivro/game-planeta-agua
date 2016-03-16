@@ -152,6 +152,7 @@ public class DialogWindow : MonoBehaviour
 		try {
 			int score = PlayerPrefs.GetInt("Score");
 			PlayerPrefs.SetInt("Score", score+ch.addScore);
+			PlayerPrefs.Save();
 			c.actualSpeech = ch.gotoSpeech;
 			Destroy();
 			c.Next();

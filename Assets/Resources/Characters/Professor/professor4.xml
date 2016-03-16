@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Behaviour xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <characterName>Feirante</characterName>
+  <interacatle>true</interacatle>
+  <quest>5</quest>
+  <subQuest>3</subQuest>
+  <total>0</total>
+  <dismissible>true</dismissible>
+
+  <dialogs>
+
+    <dialog> <!-- Dialogo antes da quest -->
+      <speech player="false" expression="2">
+        <text>Oi, Como vai você</text>
+      </speech>
+    </dialog>
+
+    <dialog> <!-- Dialogo antes da quest -->
+      <speech player="false" expression="2">
+        <text>Oi, Como vai você</text>
+      </speech>
+    </dialog>
+
+    <dialog> <!-- Dialogo antes da quest -->
+
+      <speech player="false" expression="2">
+        <text>Para finalizar o tratamento, é adicionado ______________ para descontaminar a água e matar os microrganismos e até evitar cáries</text>
+        <choice correct="false" addScore="0" goto="1">sais minerais</choice>
+        <choice correct="false" addScore="0" goto="1">iodo</choice>
+        <choice correct="true" addScore="10" goto="2">cloro e flúor</choice>
+        <choice correct="false" addScore="0" goto="1">antibióticos</choice>
+      </speech>
+
+      <speech player="false" expression="2" goto="3">
+        <text>Que pena, você errou! a resposta correta é cloro e flúor.</text>
+      </speech>
+
+      <speech player="false" expression="2">
+        <text>Parabens, você Acertou!</text>
+      </speech>
+
+      <speech player="false" expression="2">
+        <text>Depois de todo esse processo, a água vai para os reservatórios e passa, através de túneis, para a estação de bombeamento, que lança através de tubulações a água sob pressão até as casas, fábricas e outros edifícios.</text>
+      </speech>
+
+      <speech player="false" expression="2">
+        <text>Agora que ja está por dentro do processo de tratamento da água, vou te encaminhar para a reconstrução da nascente</text>
+      </speech>
+
+    </dialog>
+
+    <dialog> <!-- Dialogo antes da quest -->
+      <speech player="false" expression="2">
+        <text>Oi, Está se divertindo aqui?</text>
+      </speech>
+    </dialog>
+
+    <dialog> <!-- Dialogo antes da quest -->
+      <speech player="false" expression="2">
+        <text>Oi, Está se divertindo aqui?</text>
+      </speech>
+    </dialog>
+
+  	<dialog> <!-- Dialogo antes da quest -->
+      <speech player="false" expression="2">
+        <text>Oi, Está se divertindo aqui?</text>
+      </speech>
+    </dialog>
+      
+  </dialogs>
+
+</Behaviour>
+  

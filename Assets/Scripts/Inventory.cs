@@ -70,4 +70,13 @@ public class Inventory : MonoBehaviour {
 	public bool Contains(Item i){
 		return content.Contains(i);
 	}
+
+	public bool Contains(string _name){
+
+		for(int i=0; i < content.Count; i++) {
+			if(content[i].name == _name) return true;
+		}
+
+		return false;
+	}
 }

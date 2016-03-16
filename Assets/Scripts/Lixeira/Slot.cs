@@ -32,6 +32,7 @@ public class Slot : MonoBehaviour, IDropHandler {
 
 		if (g.type == type) {
 			PlayerPrefs.SetInt ("Score", _score + 10);	
+			PlayerPrefs.Save();
 		}
 
 		Destroy (g.gameObject);

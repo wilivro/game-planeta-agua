@@ -1,6 +1,10 @@
 fileFormatVersion: 2
 guid: 510a6e785f4091f49bbee78ca0d625ff
+<<<<<<< HEAD
 timeCreated: 1457990298
+=======
+timeCreated: 1458164652
+>>>>>>> 19585f8... warp
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -42,7 +46,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0

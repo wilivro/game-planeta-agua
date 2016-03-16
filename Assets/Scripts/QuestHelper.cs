@@ -27,7 +27,7 @@ public class QuestHelper : MonoBehaviour {
 	 	int total = 0;
 
 		for(int itr = 0; itr < questLoadArr.Length -1; itr++) {
-			bool contains = Player.inventory.content.Contains(new Item(questLoadArr[itr]));
+			bool contains = Player.inventory.Contains(questLoadArr[itr]);
 
 			if(contains) total++;
 

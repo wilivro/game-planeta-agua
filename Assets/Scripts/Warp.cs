@@ -17,6 +17,8 @@ public class Warp : Interactable {
 	public Animator anim;
 	public DialogWindow dialogWindow;
 
+	public SpriteRenderer sprite;
+
 	public void Start () {
 
 		base.Start();
@@ -28,12 +30,21 @@ public class Warp : Interactable {
 
 		if(isNPC) {
 			dialogWindow = gameObject.AddComponent<DialogWindow>() as DialogWindow;
- 			dialogWindow.Config(myBehaviour.charName, "Characters/Leo/face");
+ 			dialogWindow.Config(myBehaviour.charName, "Characters/"+myBehaviour.charName+"/face");
 		}
+
+	 	sprite = GetComponent<SpriteRenderer>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		if(sprite){
+			if(isNPC && GetDialogIndex() > 0){
+				sprite.enabled = true;
+			} else {
+				sprite.enabled = false;
+			}
+		}
 		if(actualColider == null || actualColider.gameObject.tag != "Player") return;
 		if(CrossPlatformInputManager.GetButton("Submit")||CrossPlatformInputManager.GetButton("Cancel")){
 			if(isNPC) dialogWindow.Destroy();
@@ -84,6 +95,7 @@ public class Warp : Interactable {
 		SmoothCamera.isFading = false;
 	}
 	 public virtual void ColliderWithMe() {
+
 	 	if(isNPC && GetDialogIndex() > 0){
 			dialogWindow.Show(GetSpeech(), null);
 			return;

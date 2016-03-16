@@ -25,6 +25,7 @@ public class Placeable : Interactable {
         		placed = true;
         		int _score = PlayerPrefs.GetInt("Score");
         		PlayerPrefs.SetInt("Score", score + _score);
+        		PlayerPrefs.Save();
         	}
         }
 	}

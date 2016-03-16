@@ -38,8 +38,6 @@ public class LavarLouca : MiniGameEscolhas {
 		if(giveItem != null)
 			Player.inventory.Add(giveItem);
 
-		print(Player.inventory.content.Count);
-
 		StartCoroutine(End(torneiraAberta));
 
 	}
