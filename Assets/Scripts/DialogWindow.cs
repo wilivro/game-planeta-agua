@@ -56,7 +56,7 @@ public class DialogWindow : MonoBehaviour
 		object[] parms = new object[3]{formatted, ctx.transform.Find("Text").GetComponent<Text>(), c};
 		StartCoroutine(Write(parms));
 
-		ctxName.transform.Find("Name").GetComponent<Text>().text = s.isPlayer ? "Leo" : NpcName;
+		ctxName.transform.Find("Name").GetComponent<Text>().text = s.isPlayer ? "Leo" : (s.name != null ? s.name : NpcName);
 
 		if(s.isLong) return false;
 
@@ -154,7 +154,7 @@ public class DialogWindow : MonoBehaviour
 			PlayerPrefs.SetInt("Score", score+ch.addScore);
 			c.actualSpeech = ch.gotoSpeech;
 			Destroy();
-			Show(c);
+			c.Next();
 		} catch {
 
 		}

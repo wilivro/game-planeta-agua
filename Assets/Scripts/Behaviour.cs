@@ -63,11 +63,18 @@ public class Speech
 	[XmlAttribute("expression")]
 	public int expression;
 
+	[XmlAttribute("name")]
+	public string name;
+
+	[XmlAttribute("goto")]
+	public int gotoSpeech;
+
 	[XmlAttribute("long")]
 	public bool isLong;
 
 	[XmlElement("choice")]
 	public List<Choice> choices;
+
 
 }
 

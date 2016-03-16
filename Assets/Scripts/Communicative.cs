@@ -99,6 +99,14 @@ public class Communicative : Interactable {
 		return true;
 	}
 
+	public void Next() {
+		bool hasChioces = dialogWindow.Show(this);
+		if(!hasChioces) {
+			Speech s = GetSpeech();
+			actualSpeech = (s.gotoSpeech > 0) ? s.gotoSpeech : actualSpeech+1;
+		}
+	}
+
 	public void WaitInteraction() {
 		if(actualColider == null || actualColider.gameObject.tag != "Player") return;
 
@@ -108,8 +116,7 @@ public class Communicative : Interactable {
 			myBehaviour.canInteract = false;
 			
 			if(!DialogEnd()) {
-				bool hasChioces = dialogWindow.Show(this);
-				if(!hasChioces) actualSpeech++;
+				Next();	
 			}
 
 			return;

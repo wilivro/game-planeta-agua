@@ -35,8 +35,14 @@ public class MiniGameOpen : Warp {
 
 		if(CrossPlatformInputManager.GetButton("Submit")){
 			if(actualColider == null || actualColider.gameObject.tag != "Player") return;
-			if(miniGame != "")
-				StartCoroutine("WarpScene");
+			if(warpTO){
+				StartCoroutine("WarpPlayer");
+			} else {
+				if(miniGame != ""){
+					StartCoroutine("WarpScene");
+				}
+			}
+			
 		}
 	}
 
@@ -55,7 +61,7 @@ public class MiniGameOpen : Warp {
 		StartCoroutine("FadeOut");
 	}
 
-	public IEnumerator WarpPlayer() {
-		yield return null;
+	public override void ColliderWithMe() {
+		return;
 	}
 }

@@ -8,9 +8,10 @@ public class Events : MonoBehaviour
 		Application.LoadLevel("cidade");
 	}
 
-	void fadeComplete() {
+	public void fadeComplete() {
 		Time.timeScale = 1;
 		SmoothCamera.isFading = false;
+		print("oi");
 	}
 
 }

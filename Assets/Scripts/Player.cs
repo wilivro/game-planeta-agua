@@ -37,7 +37,7 @@ public class Player : MonoBehaviour {
 		rbody = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
 
-		PlayerPrefs.SetInt("Quest", 2);
+		PlayerPrefs.SetInt("Quest", 4);
 		PlayerPrefs.SetInt("SubQuest", 0);
 		PlayerPrefs.SetString("QuestLog", "");
 
@@ -47,10 +47,12 @@ public class Player : MonoBehaviour {
 
 	void Movement() {
 
+		print(SmoothCamera.isFading);
 		if(SmoothCamera.isFading || Player.interacting) {
 			anim.SetBool("isWalking", false);
 			return;
 		};
+
 
 		Vector2 movement_vector = new Vector2();
         Vector2 axis = new Vector2(CrossPlatformInputManager.GetAxis("Horizontal"), CrossPlatformInputManager.GetAxis("Vertical"));

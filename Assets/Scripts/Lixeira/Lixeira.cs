@@ -24,10 +24,14 @@ public class Lixeira : MonoBehaviour {
 		int left = -1;
 		for (int i = 0; i < count; i++) {
 
+
 			left += Convert.ToInt32 ((i % 5) == 0);
 
 			Item item = Player.inventory.content[i];
 			Garbage itemG = item.gameObject.GetComponent<Garbage> ();
+
+			if(!itemG) continue;
+
 			SpriteRenderer imgItem = item.gameObject.GetComponent<SpriteRenderer> ();
 
 			GameObject it = Instantiate(mock);

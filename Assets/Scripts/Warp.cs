@@ -59,7 +59,7 @@ public class Warp : Interactable {
 		return myBehaviour.dialogs[dialog].speechs[0];
 	}
 
-	IEnumerator WarpPlayer() {
+	public IEnumerator WarpPlayer() {
 		SmoothCamera.isFading = true;
 		anim.SetTrigger("FadeIn");
 
@@ -71,16 +71,30 @@ public class Warp : Interactable {
 		animPlayer.SetFloat("input_x", Direction.x);
 		animPlayer.SetFloat("input_y", Direction.y);
 
-		StartCoroutine("FadeOut");
+		anim.SetTrigger("FadeOut");
 	}
 
-	IEnumerator FadeOut() {
+	public IEnumerator FadeOut() {
 		SmoothCamera.isFading = true;
 		anim.SetTrigger("FadeOut");
 
 		while(SmoothCamera.isFading)
 			yield return null;
+
+		SmoothCamera.isFading = false;
 	}
+	 public virtual void ColliderWithMe() {
+	 	if(isNPC && GetDialogIndex() > 0){
+			dialogWindow.Show(GetSpeech(), null);
+			return;
+		}
+
+		if(!warpTO){
+			return;
+		}
+
+		StartCoroutine("WarpPlayer");
+	 }
 
 	void OnCollisionEnter2D(Collision2D other) {
 		OnTriggerEnter2D(other.collider);
@@ -88,20 +102,9 @@ public class Warp : Interactable {
 	void OnTriggerEnter2D(Collider2D other) {
 
 		base.OnTriggerEnter2D(other);
-
+		
 		if(other.gameObject.tag == "Player"){
-			print(GetDialogIndex());
-			if(isNPC && GetDialogIndex() > 0){
-				dialogWindow.Show(GetSpeech(), null);
-				return;
-			}
-
-			if(!warpTO){
-				return;
-			}
-
-			StartCoroutine("WarpPlayer");
+			ColliderWithMe();
 		}
-			
 	}
 }
