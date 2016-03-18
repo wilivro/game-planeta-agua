@@ -85,15 +85,7 @@ public class Warp : Interactable {
 		anim.SetTrigger("FadeOut");
 	}
 
-	public IEnumerator FadeOut() {
-		SmoothCamera.isFading = true;
-		anim.SetTrigger("FadeOut");
-
-		while(SmoothCamera.isFading)
-			yield return null;
-
-		SmoothCamera.isFading = false;
-	}
+	
 	 public virtual void ColliderWithMe() {
 
 	 	if(isNPC && GetDialogIndex() > 0){

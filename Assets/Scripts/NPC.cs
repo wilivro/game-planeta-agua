@@ -10,7 +10,6 @@ public class NPC : Communicative
 	public Rigidbody2D rbody;
 	public Animator anim;
 
-
 	void Start () {
 		base.Start();
 

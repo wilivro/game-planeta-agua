@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Behaviour xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Behaviour xmlns:xsi="http://www.w3.org/0001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/0001/XMLSchema">
   <characterName>Guto</characterName>
   <interacatle>true</interacatle>
   <quest>-1</quest>
@@ -10,33 +10,33 @@
   <dialogs>
 
     <dialog> <!-- Dialogo antes da quest -->
-      <speech player="false" expression="2">
+      <speech player="false" expression="0">
         <text></text>
       </speech>
     </dialog>
     <dialog> <!-- Dialogo antes da quest -->
-      <speech player="false" expression="2">
+      <speech player="false" expression="0">
         <text></text>
       </speech>
     </dialog>
     <dialog> <!-- Dialogo antes da quest -->
-      <speech player="false" expression="2">
+      <speech player="false" expression="0">
         <text></text>
       </speech>
     </dialog>
     <dialog> <!-- Dialogo antes da quest -->
-      <speech player="false" expression="2">
+      <speech player="false" expression="0">
         <text></text>
       </speech>
     </dialog>
     <dialog> <!-- Dialogo antes da quest -->
-      <speech player="false" expression="2">
+      <speech player="false" expression="0">
         <text></text>
       </speech>
     </dialog>
 
   	<dialog> <!-- Dialogo antes da quest -->
-      <speech player="false" expression="2">
+      <speech player="false" expression="0">
         <text>Oi leo, A cidade está muito suja, poderíamos coloca-los no lixo.</text>
       </speech>
     </dialog>

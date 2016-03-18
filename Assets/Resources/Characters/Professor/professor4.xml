@@ -2,7 +2,7 @@
 <Behaviour xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <characterName>Feirante</characterName>
   <interacatle>true</interacatle>
-  <quest>5</quest>
+  <quest>4</quest>
   <subQuest>3</subQuest>
   <total>0</total>
   <dismissible>true</dismissible>

@@ -2,10 +2,10 @@
 <Behaviour xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <characterName>Nilo</characterName>
   <interacatle>true</interacatle>
-  <quest>2</quest>
+  <quest>-1</quest>
   <subQuest>0</subQuest>
   <total>0</total>
-  <dismissible>true</dismissible>
+  <dismissible>false</dismissible>
 
   <dialogs>
 
@@ -22,27 +22,9 @@
     </dialog>
 
 	  <dialog><!-- Dialogo na quest correto-->
-
-      <speech player="false"  expression="0">
-        <text>Bom dia, gostaria de receber esses cartazes?</text>
+      <speech player="false" expression="0">
+        <text></text>
       </speech>
-
-	    <speech player="true" expression="3">
-        <text>Bom dia! Sobre o que eles falam?</text>
-      </speech>
-
-	    <speech player="false"  expression="0">
-	    	<text>São cartazes para colar em alguns locais para lembrar a todos de economizar água!</text>
-	    </speech>
-
-	    <speech player="true" expression="0">
-        <text>Nessa, legal! Adoraria ajudar!</text>
-      </speech>
-
-      <give>
-        <item>Cartaz</item>
-      </give>
-
 	  </dialog>
 
     <dialog> <!-- Dialogo antes da quest -->
@@ -52,6 +34,34 @@
     </dialog>
 
 	  <dialog> <!-- Dialogo antes da quest -->
+      <speech player="false" expression="0">
+        <text>Oi, Leo ainda estou colando os cartazes.</text>
+      </speech>
+    </dialog>
+
+    <dialog> <!-- Dialogo antes da quest -->
+      <speech player="false"  expression="0">
+        <text>Bom dia, gostaria de receber esses cartazes?</text>
+      </speech>
+
+      <speech player="true" expression="3">
+        <text>Bom dia! Sobre o que eles falam?</text>
+      </speech>
+
+      <speech player="false"  expression="0">
+        <text>São cartazes para colar em alguns locais para lembrar a todos de economizar água!</text>
+      </speech>
+
+      <speech player="true" expression="0">
+        <text>Nessa, legal! Adoraria ajudar!</text>
+      </speech>
+
+      <give>
+        <item>Cartaz</item>
+      </give>
+    </dialog>
+
+    <dialog> <!-- Dialogo antes da quest -->
       <speech player="false" expression="0">
         <text>Oi, Leo ainda estou colando os cartazes.</text>
       </speech>

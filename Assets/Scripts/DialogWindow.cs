@@ -53,7 +53,7 @@ public class DialogWindow : MonoBehaviour
 		Transform ctx = instatiation.transform.Find("ContainerText");
 		Transform ctxName = ctx.Find("NamePanel");
 
-		object[] parms = new object[3]{formatted, ctx.transform.Find("Text").GetComponent<Text>(), c};
+		object[] parms = new object[4]{formatted, ctx.transform.Find("Text").GetComponent<Text>(), c, s.choices.Count == 0};
 		StartCoroutine(Write(parms));
 
 		ctxName.transform.Find("Name").GetComponent<Text>().text = s.isPlayer ? "Leo" : (s.name != null ? s.name : NpcName);
@@ -117,6 +117,7 @@ public class DialogWindow : MonoBehaviour
 		string text = (string)parms[0];
 		Text ctx = (Text)parms[1];
 		Communicative c = (Communicative)parms[2];
+		bool noHasChoice = (bool)parms[3];
 
 		float speed = 0.05f;
 
@@ -137,7 +138,7 @@ public class DialogWindow : MonoBehaviour
 
 		}
 
-		if(c) c.myBehaviour.canInteract = true;
+		if(c && noHasChoice) c.myBehaviour.canInteract = true;
 	}
 
 	public void Destroy() {

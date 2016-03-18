@@ -50,17 +50,14 @@ public class MiniGameOpen : Warp {
 
 	public IEnumerator WarpScene() {
 		SmoothCamera.isFading = true;
-		anim.SetTrigger("FadeIn");
-
-		while(SmoothCamera.isFading)
-			yield return null;
+		
+		yield return new WaitForSeconds(0.5f);
 
 		Application.LoadLevel(miniGame);
 
 		animPlayer.SetFloat("input_x", Direction.x);
 		animPlayer.SetFloat("input_y", Direction.y);
 
-		StartCoroutine("FadeOut");
 	}
 
 	public override void ColliderWithMe() {

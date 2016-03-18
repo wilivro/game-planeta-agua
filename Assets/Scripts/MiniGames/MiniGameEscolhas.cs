@@ -105,6 +105,10 @@ public class MiniGameEscolhas : MonoBehaviour {
 		Transform panel = GameObject.Find("Cine").transform;
 		Text ctx = panel.Find("Text").GetComponent<Text>();
 		Transform button = panel.Find("Sair");
+		Transform buttonRun = panel.Find("Button");
+
+		Destroy(buttonRun.gameObject);
+
 		button.gameObject.active = true;
 		Button buttonClick = button.GetComponent<Button>();
 		ctx.text = "";

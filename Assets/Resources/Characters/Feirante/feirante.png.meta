@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 4607387568b2560468e4265fb8c8ffd2
-timeCreated: 1458149137
+timeCreated: 1458331668
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -47,7 +47,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 48
+  spritePixelsToUnits: 115
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
@@ -58,34 +58,61 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 15.333333
-        height: 24
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 9, y: 28}
+        - {x: -12, y: 28}
+        - {x: -18, y: 25}
+        - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: -13, y: -26}
+        - {x: 12, y: -26}
+        - {x: 19, y: -20}
+        - {x: 19, y: 18}
+        - {x: 15, y: 26}
     - name: feirante_1
       rect:
         serializedVersion: 2
-        x: 15
+        x: 64
         y: 0
-        width: 15.333332
-        height: 24
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 9, y: 28}
+        - {x: -12, y: 28}
+        - {x: -18, y: 25}
+        - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: -13, y: -26}
+        - {x: 12, y: -26}
+        - {x: 19, y: -20}
+        - {x: 19, y: 18}
+        - {x: 15, y: 26}
     - name: feirante_2
       rect:
         serializedVersion: 2
-        x: 30
+        x: 128
         y: 0
-        width: 15.333332
-        height: 24
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.49999988, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -5, y: 28}
+        - {x: -15, y: 24}
+        - {x: -18, y: 17}
+        - {x: -18, y: -5}
+        - {x: -8, y: -26}
+        - {x: 18, y: -26}
+        - {x: 18, y: 28}
     outline: []
   spritePackingTag: 
   userData: 

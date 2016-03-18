@@ -9,6 +9,7 @@ public class Communicative : Interactable {
 	public int actualSpeech;
 	public bool inChoice;
 	
+	public bool allreadySpeek;
 
 	public void Start(){
 		base.Start();
@@ -25,9 +26,15 @@ public class Communicative : Interactable {
 			return 0;
 		}
 
+
+		if(myBehaviour.quest == -1 && allreadySpeek){
+			return 6;
+		}
+
 		if(quest > myBehaviour.quest){
 			return 5;
 		}
+
 
 		if(Player.hasQuestLog && PlayerPrefs.GetString("QuestLog") != ""){
 			return 4;
@@ -113,11 +120,17 @@ public class Communicative : Interactable {
 
 		if(CrossPlatformInputManager.GetButton("Submit") && myBehaviour.canInteract) {
 
+
+
 			dialogWindow.Destroy();
 			myBehaviour.canInteract = false;
 			
 			if(!DialogEnd()) {
 				Next();	
+			}
+
+			if(myBehaviour.quest == -1 && !allreadySpeek) {
+				allreadySpeek = true;
 			}
 
 			return;

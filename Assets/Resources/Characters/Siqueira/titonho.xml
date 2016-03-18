@@ -2,7 +2,7 @@
 <Behaviour xmlns:xsi="http://www.w3.org/0001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/0001/XMLSchema">
   <characterName>Siqueira</characterName>
   <interacatle>true</interacatle>
-  <quest>6</quest>
+  <quest>5</quest>
   <subQuest>0</subQuest>
   <total>0</total>
   <dismissible>true</dismissible>
