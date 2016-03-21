@@ -39,7 +39,7 @@ public class Player : MonoBehaviour {
 		rbody = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
 
-		PlayerPrefs.SetInt("Quest", 5);
+		PlayerPrefs.SetInt("Quest", 6);
 		PlayerPrefs.SetInt("SubQuest", 0);
 		PlayerPrefs.SetString("QuestLog", "");
 		// PlayerPrefs.Save();

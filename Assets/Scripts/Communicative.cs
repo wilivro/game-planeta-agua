@@ -11,6 +11,8 @@ public class Communicative : Interactable {
 	
 	public bool allreadySpeek;
 
+	public GameObject LoadCinematics;
+
 	public void Start(){
 		base.Start();
 
@@ -101,7 +103,12 @@ public class Communicative : Interactable {
 			PlayerPrefs.SetInt("Quest", quest+1);
 			PlayerPrefs.SetInt("SubQuest", 0);
 			PlayerPrefs.Save();
+			if(LoadCinematics != null) {
+				Instantiate(LoadCinematics);
+			}
 		}
+
+
 
 
 		return true;

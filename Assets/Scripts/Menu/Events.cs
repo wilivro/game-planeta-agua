@@ -41,5 +41,14 @@ public class Events : MonoBehaviour
 		anim.SetFloat("speed", speed);
 	}
 
+	public void ToggleMenu(){
+		Canvas menu = GameObject.Find("Menu").GetComponent<Canvas>();
+		if(menu.enabled){
+			menu.enabled = false;
+		} else {
+			menu.enabled = true;
+		}
+	}
+
 
 }

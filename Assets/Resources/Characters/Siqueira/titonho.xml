@@ -45,20 +45,20 @@
     </dialog>
 
     <dialog> <!-- Dialogo antes da quest -->
-      <speech player="false" expression="0">
+      <speech player="false" expression="1">
         <text>Obrigado Leo, não sei o que faria sem voce.</text>
       </speech>
     </dialog>
 
     <dialog> <!-- Dialogo antes da quest -->
-      <speech player="false" expression="0">
+      <speech player="false" expression="1">
         <text>Ainda não encontrei.</text>
       </speech>
     </dialog>
 
     <dialog> <!-- Dialogo antes da quest -->
-      <speech player="false" expression="0">
-        <text>A nascente ficou muito boa, isso vai melhora nossa qualidade de vida tanto na fazenda quanto na cidade inteira.</text>
+      <speech player="false" expression="1">
+        <text>Se quiser ver novamente a reconstrução da nascente, Aperte o Botão A na nascente ao lado. Se não va pra casa, sua mãe ja deve está preocupada.</text>
       </speech>
     </dialog>
       

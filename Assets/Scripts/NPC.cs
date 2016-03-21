@@ -6,7 +6,6 @@ using System.Collections;
 public class NPC : Communicative 
 {
 
-
 	public Rigidbody2D rbody;
 	public Animator anim;
 
