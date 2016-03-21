@@ -19,7 +19,7 @@ public class LixeiraInteractable : MiniGameOpen {
 		if(actualColider == null || actualColider.gameObject.tag != "Player") return;
 		if(CrossPlatformInputManager.GetButton("Submit")){
 			if(miniGame != "")
-				StartCoroutine("WarpScene");
+				WarpScene();
 		}
 	}
 }

@@ -81,8 +81,11 @@ public class MiniGameEscolhas : MonoBehaviour {
 		DrawListItem();
 	}
 
-	void OnClickSair(){
-		Application.LoadLevel("cidade");
+	public void OnClickSair(){
+		Joystick.ShowJoy();
+		Joystick.ShowButtons();
+		Destroy(gameObject);
+		MiniGameOpen.opened = false;
 	}
 
 	public void OnAddItem() {

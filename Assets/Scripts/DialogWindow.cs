@@ -45,7 +45,7 @@ public class DialogWindow : MonoBehaviour
 
 		Player.interacting = true;
 
-		joyCanvas.transform.Find("MobileJoystick").GetComponent<Image>().enabled = false;
+		Joystick.HideJoy();
 
 		instatiation = GameObject.Instantiate(s.isLong ? winLong : win) as GameObject;
 
@@ -142,7 +142,7 @@ public class DialogWindow : MonoBehaviour
 	}
 
 	public void Destroy() {
-		joyCanvas.transform.Find("MobileJoystick").GetComponent<Image>().enabled = true;
+		Joystick.ShowJoy();;
 		GameObject.Destroy(instatiation);
 
 		Player.interacting = false;

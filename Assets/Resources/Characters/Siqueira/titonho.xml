@@ -10,19 +10,19 @@
   <dialogs>
 
     <dialog> <!-- Dialogo antes da quest -->
-      <speech player="false" expression="0">
+      <speech player="false" expression="1">
         <text>Oi, Como vai você</text>
       </speech>
     </dialog>
 
     <dialog> <!-- Dialogo antes da quest -->
-      <speech player="false" expression="0">
+      <speech player="false" expression="1">
         <text>Oi, Como vai você</text>
       </speech>
     </dialog>
 
     <dialog> <!-- Dialogo antes da quest -->
-       <speech player="false" expression="0">
+       <speech player="false" expression="1">
         <text>Oi Leo, quando estava procurando a nascente, perdi meu manual de instruções de como recuperar a nascente, voce pode me ajudar?</text>
       </speech>
 
@@ -30,7 +30,7 @@
         <text>Recuperar a nascente, como assim?</text>
       </speech>
 
-      <speech player="false" expression="0">
+      <speech player="false" expression="1">
         <text>É para ter uma boa qualidade da água na fazendo e no rio inteiro é bom que construirmos uma nascente.</text>
       </speech>
 

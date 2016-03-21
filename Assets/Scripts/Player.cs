@@ -20,6 +20,8 @@ public class Player : MonoBehaviour {
 
 	public static bool interacting = false;
 
+	public static int layer = 11;
+
 	void Awake() {
         if (!created) {
          	// this is the first instance - make it persist
@@ -37,9 +39,9 @@ public class Player : MonoBehaviour {
 		rbody = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
 
-		// PlayerPrefs.SetInt("Quest", 4);
-		// PlayerPrefs.SetInt("SubQuest", 0);
-		// PlayerPrefs.SetString("QuestLog", "");
+		PlayerPrefs.SetInt("Quest", 5);
+		PlayerPrefs.SetInt("SubQuest", 0);
+		PlayerPrefs.SetString("QuestLog", "");
 		// PlayerPrefs.Save();
 
 		inventory = GameObject.Find("Inventory").AddComponent<Inventory>() as Inventory;

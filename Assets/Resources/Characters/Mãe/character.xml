@@ -39,7 +39,7 @@
 	    	<text>Agora, não. Hoje é o seu dia de fazer as tarefas, esqueceu? Mãos à obra!</text>
 	    </speech>
 
-	    <speech player="true" expression="0">
+	    <speech player="true" expression="1">
         <text>Poxa, eu só queria brincar.</text>
       </speech>
 

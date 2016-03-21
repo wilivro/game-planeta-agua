@@ -12,6 +12,7 @@ public class MiniGameOpen : Warp {
 	public string miniGame;
 
 	public bool permanent;
+	public static bool opened;
 	void Start () {
 		base.Start();
 	}
@@ -41,19 +42,25 @@ public class MiniGameOpen : Warp {
 				StartCoroutine("WarpPlayer");
 			} else {
 				if(miniGame != ""){
-					StartCoroutine("WarpScene");
+					WarpScene();
 				}
 			}
 			
 		}
 	}
 
-	public IEnumerator WarpScene() {
-		SmoothCamera.isFading = true;
-		
-		yield return new WaitForSeconds(0.5f);
+	public void WarpScene() {
 
-		Application.LoadLevel(miniGame);
+		if(opened) return;
+
+		Joystick.HideJoy();
+		Joystick.HideButtons();
+
+		GameObject game = Resources.Load("Prefabs/MiniGames/"+miniGame) as GameObject;
+		Instantiate(game);
+		opened = true;
+
+		// Application.LoadLevel(miniGame);
 
 		animPlayer.SetFloat("input_x", Direction.x);
 		animPlayer.SetFloat("input_y", Direction.y);

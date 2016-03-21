@@ -29,4 +29,17 @@ public class Events : MonoBehaviour
 		SmoothCamera.isFading = false;
 	}
 
+	public void SpeedTextIntro() {
+		Animator anim = GameObject.Find("Texto").GetComponent<Animator>();
+		float speed = anim.GetFloat("speed");
+		if(speed == 1.0f){
+			speed = 5.0f;
+		} else {
+			speed = 1.0f;
+		}
+
+		anim.SetFloat("speed", speed);
+	}
+
+
 }
