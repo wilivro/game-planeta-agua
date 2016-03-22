@@ -11,22 +11,26 @@ public class Joystick : MonoBehaviour {
 	public static Image joy;
 	public static Image aBtn;
 	public static Image bBtn;
+	public static Image menu;
 
 	void Start () {
 		joyCanvas = GameObject.Find("Joystick").GetComponent<Canvas>();
 		joy = joyCanvas.transform.Find("MobileJoystick").GetComponent<Image>();
 		aBtn = joyCanvas.transform.Find("Buttons").Find("AButton").GetComponent<Image>();
 		bBtn = joyCanvas.transform.Find("Buttons").Find("BButton").GetComponent<Image>();
+		menu = joyCanvas.transform.Find("Buttons").Find("MenuButton").GetComponent<Image>();
 	}
 	
 	// Update is called once per frame
 
 	public static void ShowJoy(){
 		joy.enabled = true;
+		menu.enabled = true;
 	}
 
 	public static void HideJoy(){
 		joy.enabled = false;
+		menu.enabled = false;
 	}
 
 	public static void HideButtons(){

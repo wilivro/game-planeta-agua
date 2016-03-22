@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Behaviour xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <characterName>Feirante</characterName>
+  <characterName>Professor</characterName>
   <interacatle>true</interacatle>
-  <quest>4</quest>
+  <quest>3</quest>
   <subQuest>1</subQuest>
   <total>0</total>
   <dismissible>false</dismissible>
@@ -11,7 +11,7 @@
 
     <dialog> <!-- Dialogo antes da quest -->
       <speech player="false" expression="2">
-        <text>Oi! O tratamento da água é importantíssimo para nossa saúde</text>
+        <text>Oi, Ja passou pela etapa do plantio</text>
       </speech>
     </dialog>
 
@@ -36,7 +36,7 @@
       </speech>
 
       <speech player="false" expression="2">
-        <text>Parabens, você Acertou!</text>
+        <text>Parabéns, você acertou!</text>
       </speech>
 
       <speech player="false" expression="2">
@@ -56,11 +56,11 @@
       </speech>
 
       <speech player="false" expression="2">
-        <text>Parabens, você Acertou!</text>
+        <text>Parabéns, você acertou!</text>
       </speech>
 
       <speech player="false" expression="2">
-        <text>Já acabei, fale com o próximo professor.</text>
+        <text>Finalizamos por aqui. Fale com o próximo professor.</text>
       </speech>
 
     </dialog>

@@ -13,6 +13,10 @@ public class Events : MonoBehaviour
 		Application.LoadLevel("cidade");
 	}
 
+	public void Intrucoes() {
+		Application.LoadLevel("instrucoes");
+	}
+
 	public void OnClickNewGameButton() {
 		PlayerPrefs.SetInt("Score", 0);
 		PlayerPrefs.SetInt("Quest", 0);

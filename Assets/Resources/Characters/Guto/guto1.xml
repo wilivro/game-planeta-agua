@@ -37,10 +37,16 @@
 
   	<dialog> <!-- Dialogo antes da quest -->
       <speech player="false" expression="0">
-        <text>Oi leo, A cidade está muito suja, poderíamos coloca-los no lixo.</text>
+        <text>Oi, Leo. Lembra quando você foi brincar na rua aquele dia e estava tudo alagado?</text>
+      </speech>
+      <speech player="false" expression="0">
+        <text>Isso aconteceu porque as pessoas jogaram todo esse lixo por aí, entupindo os bueiros e ocasionando esse problema. </text>
+      </speech>
+      <speech player="false" expression="0">
+        <text>O que você poderia fazer para ajudar a melhorar a situação?</text>
       </speech>
     </dialog>
-      
+    
   </dialogs>
 
 </Behaviour>

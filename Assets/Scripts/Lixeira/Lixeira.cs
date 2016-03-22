@@ -25,10 +25,11 @@ public class Lixeira : MiniGameEscolhas {
 		try {
 			int count = Player.inventory.content.Count;
 			int left = -1;
+			int top = 0;
 			for (int i = 0; i < count; i++) {
 
 
-				left += Convert.ToInt32 ((i % 5) == 0);
+				left += Convert.ToInt32 ((i % 3) == 0);
 
 				Item item = Player.inventory.content[i];
 				Garbage itemG = item.gameObject.GetComponent<Garbage> ();
@@ -50,7 +51,7 @@ public class Lixeira : MiniGameEscolhas {
 
 				//rt.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Right, 9.4f, 0f);
 				rt.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Left,  10f + (left*32f), 0);
-				rt.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Top, ((32f*(i%5))+10f), 0f);
+				rt.SetInsetAndSizeFromParentEdge(RectTransform.Edge.Top, ((32f*(i%3))+10f), 0f);
 				rt.sizeDelta = new Vector2(32f, 32f);
 
 				rt.localScale = new Vector3(1,1,1);

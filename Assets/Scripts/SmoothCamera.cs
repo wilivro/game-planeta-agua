@@ -19,7 +19,7 @@ public class SmoothCamera : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		cam.orthographicSize = ((Screen.height/Screen.dpi) / 2f);
+		cam.orthographicSize = ((Screen.height/Screen.dpi) / 1.5f);
 
 		transform.position = Vector3.Lerp(transform.position, player.transform.position, 0.4f) + new Vector3(0, 0, -10);
 	}

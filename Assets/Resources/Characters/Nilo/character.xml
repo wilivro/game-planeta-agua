@@ -35,7 +35,7 @@
 
 	  <dialog> <!-- Dialogo antes da quest -->
       <speech player="false" expression="0">
-        <text>Oi, Leo ainda estou colando os cartazes.</text>
+        <text></text>
       </speech>
     </dialog>
 
@@ -49,11 +49,11 @@
       </speech>
 
       <speech player="false"  expression="0">
-        <text>São cartazes para colar em alguns locais para lembrar a todos de economizar água!</text>
+        <text>São cartazes para colar nos locais marcados com X para lembrar a todos de economizar água!</text>
       </speech>
 
       <speech player="true" expression="0">
-        <text>Nessa, legal! Adoraria ajudar!</text>
+        <text>Nossa, legal! Adoraria ajudar!</text>
       </speech>
 
       <give>

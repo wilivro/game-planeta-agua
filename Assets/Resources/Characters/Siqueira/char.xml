@@ -2,7 +2,7 @@
 <Behaviour xmlns:xsi="http://www.w3.org/0001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/0001/XMLSchema">
   <characterName>Siqueira</characterName>
   <interacatle>true</interacatle>
-  <quest>3</quest>
+  <quest>-1</quest>
   <subQuest>0</subQuest>
   <total>0</total>
   <dismissible>true</dismissible>
@@ -20,10 +20,28 @@
         <text>Oi, Como vai você</text>
       </speech>
     </dialog>
+    
+    <dialog> <!-- Dialogo antes da quest -->
+      <speech player="false" expression="0">
+        <text>Oi, Como vai você</text>
+      </speech>
+    </dialog>
+
+    <dialog> <!-- Dialogo antes da quest -->
+      <speech player="false" expression="0">
+        <text>Oi, Como vai você</text>
+      </speech>
+    </dialog>
+
+    <dialog> <!-- Dialogo antes da quest -->
+      <speech player="false" expression="0">
+        <text>Oi, Como vai você</text>
+      </speech>
+    </dialog>
 
     <dialog> <!-- Dialogo antes da quest -->
        <speech player="false" expression="0">
-        <text>Oi rapaz você veio, na sua cartilha você ja leu sobre as boas práticas agrícolas, está na hora de práticar, tome aqui umas sementes de melancia, pode plantar um pouco mais acima.</text>
+        <text>Oi rapaz, você veio! Você já leu sobre as boas práticas agrícolas na sua cartilha? Está na hora de praticar! Aqui estão algumas sementes de melancia, ajude-me a plantar.</text>
       </speech>
       <give>
         <item>Seed</item>
@@ -31,18 +49,6 @@
     </dialog>
 
     <dialog> <!-- Dialogo antes da quest -->
-      <speech player="false" expression="0">
-        <text>Fala Leo, nossas melancias vão crescer supimpas.</text>
-      </speech>
-    </dialog>
-
-    <dialog> <!-- Dialogo antes da quest -->
-      <speech player="false" expression="0">
-        <text>Fala Leo, nossas melancias vão crescer supimpas.</text>
-      </speech>
-    </dialog>
-
-  	<dialog> <!-- Dialogo antes da quest -->
       <speech player="false" expression="0">
         <text>Fala Leo, nossas melancias vão crescer supimpas.</text>
       </speech>

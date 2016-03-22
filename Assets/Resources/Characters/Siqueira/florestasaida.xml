@@ -2,7 +2,7 @@
 <Behaviour xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <characterName>Siqueira</characterName>
   <interacatle>true</interacatle>
-  <quest>4</quest>
+  <quest>3</quest>
   <subQuest>4</subQuest>
   <total>0</total>
   <dismissible>true</dismissible>
@@ -11,25 +11,41 @@
 
     <dialog>
       <speech player="false" expression="1" name="Titonho">
-        <text>A passagem pra a mascente está bloqueda leo, mas ja estou arrumando. Enquanto isso vai dar uma olhada na estaçao de tratamento na ponte ao sul</text>
+        <text>A passagem para a nascente está bloqueda Leo, mas já estou pensando em uma forma de remover o tronco.</text>
+      </speech>
+
+      <speech player="false" expression="1" name="Titonho">
+        <text>Enquanto isso, que tal dar uma olhada na estação de tratamento na ponte ao Sul?</text>
       </speech>
     </dialog>
 
     <dialog>
       <speech player="false" expression="1" name="Titonho">
-        <text>A passagem pra a mascente está bloqueda leo, mas ja estou arrumando. Enquanto isso vai dar uma olhada na estaçao de tratamento na ponte ao sul</text>
+        <text>A passagem para a nascente está bloqueda Leo, mas já estou pensando em uma forma de remover o tronco.</text>
+      </speech>
+
+      <speech player="false" expression="1" name="Titonho">
+        <text>Enquanto isso, que tal dar uma olhada na estação de tratamento na ponte ao Sul?</text>
       </speech>
     </dialog>
 
     <dialog>
       <speech player="false" expression="1" name="Titonho">
-        <text>A passagem pra a mascente está bloqueda leo, mas ja estou arrumando. Enquanto isso vai dar uma olhada na estaçao de tratamento na ponte ao sul</text>
+        <text>A passagem para a nascente está bloqueda Leo, mas já estou pensando em uma forma de remover o tronco.</text>
+      </speech>
+
+      <speech player="false" expression="1" name="Titonho">
+        <text>Enquanto isso, que tal dar uma olhada na estação de tratamento na ponte ao Sul?</text>
       </speech>
     </dialog>
 
     <dialog>
       <speech player="false" expression="1" name="Titonho">
-        <text>A passagem pra a mascente está bloqueda leo, mas ja estou arrumando. Enquanto isso vai dar uma olhada na estaçao de tratamento na ponte ao sul</text>
+        <text>A passagem para a nascente está bloqueda Leo, mas já estou pensando em uma forma de remover o tronco.</text>
+      </speech>
+
+      <speech player="false" expression="1" name="Titonho">
+        <text>Enquanto isso, que tal dar uma olhada na estação de tratamento na ponte ao Sul?</text>
       </speech>
     </dialog>
 

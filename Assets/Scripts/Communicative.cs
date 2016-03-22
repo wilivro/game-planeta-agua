@@ -13,11 +13,14 @@ public class Communicative : Interactable {
 
 	public GameObject LoadCinematics;
 
+	public int score = 10;
+
 	public void Start(){
 		base.Start();
 
 		dialogWindow = gameObject.AddComponent<DialogWindow>() as DialogWindow;
 		dialogWindow.Config(myBehaviour.charName, "Characters/"+myBehaviour.charName+"/face");
+		score = 10;
 	}
 
 	public int GetDialogIndex() {
@@ -102,6 +105,8 @@ public class Communicative : Interactable {
 		if(myBehaviour.dismissible && myBehaviour.quest == quest && questLog == ""){
 			PlayerPrefs.SetInt("Quest", quest+1);
 			PlayerPrefs.SetInt("SubQuest", 0);
+			int _score = PlayerPrefs.GetInt("Score");
+			PlayerPrefs.SetInt("Score", score+_score);
 			PlayerPrefs.Save();
 			if(LoadCinematics != null) {
 				Instantiate(LoadCinematics);
@@ -109,7 +114,9 @@ public class Communicative : Interactable {
 		}
 
 
-
+		if(myBehaviour.quest == -1 && !allreadySpeek) {
+			allreadySpeek = true;
+		}
 
 		return true;
 	}
@@ -127,17 +134,11 @@ public class Communicative : Interactable {
 
 		if(CrossPlatformInputManager.GetButton("Submit") && myBehaviour.canInteract) {
 
-
-
 			dialogWindow.Destroy();
 			myBehaviour.canInteract = false;
 			
 			if(!DialogEnd()) {
 				Next();	
-			}
-
-			if(myBehaviour.quest == -1 && !allreadySpeek) {
-				allreadySpeek = true;
 			}
 
 			return;

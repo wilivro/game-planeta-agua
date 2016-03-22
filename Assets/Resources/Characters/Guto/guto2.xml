@@ -37,7 +37,7 @@
 
   	<dialog> <!-- Dialogo antes da quest -->
       <speech player="false" expression="0">
-        <text>Leo, Parece que está avendo uma discursão sobre qual alimento possui mais água.</text>
+        <text>Leo, Parece que está havendo uma discussão sobre qual alimento possui mais água.</text>
       </speech>
     </dialog>
       

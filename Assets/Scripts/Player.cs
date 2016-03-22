@@ -31,9 +31,9 @@ public class Player : MonoBehaviour {
 		rbody = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
 
-		PlayerPrefs.SetInt("Quest", 6);
-		PlayerPrefs.SetInt("SubQuest", 0);
-		PlayerPrefs.SetString("QuestLog", "");
+		// PlayerPrefs.SetInt("Quest", 4);
+		// PlayerPrefs.SetInt("SubQuest", 0);
+		// PlayerPrefs.SetString("QuestLog", "");
 		// PlayerPrefs.Save();
 
 		inventory = GameObject.Find("Inventory").AddComponent<Inventory>() as Inventory;

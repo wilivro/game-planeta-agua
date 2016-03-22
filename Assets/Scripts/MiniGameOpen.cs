@@ -13,6 +13,8 @@ public class MiniGameOpen : Warp {
 
 	public bool permanent;
 	public static bool opened;
+
+	public bool hideJoy = true;
 	void Start () {
 		base.Start();
 	}
@@ -53,8 +55,10 @@ public class MiniGameOpen : Warp {
 
 		if(opened) return;
 
-		Joystick.HideJoy();
-		Joystick.HideButtons();
+		if(hideJoy){
+			Joystick.HideJoy();
+			Joystick.HideButtons();
+		}
 
 		GameObject game = Resources.Load("Prefabs/MiniGames/"+miniGame) as GameObject;
 		Instantiate(game);

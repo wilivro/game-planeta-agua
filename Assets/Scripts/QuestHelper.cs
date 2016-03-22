@@ -6,11 +6,14 @@ public class QuestHelper : MonoBehaviour {
 
 	// Use this for initialization
 	Transform root;
+	Text score;
 	void Start () {
 		root = transform;
+		score = root.Find("Score").gameObject.GetComponent<Text>();
 	}
 
 	public void UpdateQuestHelper(){
+		score.text = "Pontuação: "+ PlayerPrefs.GetInt("Score").ToString();
 		string questLog = PlayerPrefs.GetString("QuestLog");
 
 		string[] questLoadArr = questLog.Split('|');
@@ -21,7 +24,8 @@ public class QuestHelper : MonoBehaviour {
 		    	mock = t;
 		    	continue;
 		    };
-		    Destroy(t.gameObject);
+		    if(t.gameObject.name != "Score")
+		    	Destroy(t.gameObject);
 	 	}
 
 	 	int total = 0;

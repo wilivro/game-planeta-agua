@@ -1,0 +1,101 @@
+fileFormatVersion: 2
+guid: a746f3a9a8eeec741a3a700b20f50b75
+timeCreated: 1458663790
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: button2_0
+    21300002: button2_1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: button2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 206
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 85.5}
+        - {x: -54, y: 84.5}
+        - {x: -83, y: 32.5}
+        - {x: -83, y: -36.5}
+        - {x: -75, y: -67.5}
+        - {x: -28, y: -84.5}
+        - {x: 48, y: -84.5}
+        - {x: 87, y: -52.5}
+        - {x: 87, y: 45.5}
+        - {x: 45, y: 85.5}
+    - name: button2_1
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 0
+        width: 206
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 85.5}
+        - {x: -54, y: 81.5}
+        - {x: -85, y: 32.5}
+        - {x: -85, y: -42.5}
+        - {x: -48, y: -84.5}
+        - {x: 39, y: -84.5}
+        - {x: 54, y: -80.5}
+        - {x: 85, y: -34.5}
+        - {x: 85, y: 43.5}
+        - {x: 48, y: 85.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

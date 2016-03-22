@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Behaviour xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <characterName>Feirante</characterName>
+  <characterName>Professor</characterName>
   <interacatle>true</interacatle>
-  <quest>4</quest>
+  <quest>3</quest>
   <subQuest>2</subQuest>
   <total>0</total>
   <dismissible>false</dismissible>
@@ -10,40 +10,40 @@
   <dialogs>
 
     <dialog> <!-- Dialogo antes da quest -->
-      <speech player="false" expression="2">
-        <text>Oi! O tratamento da água é importantíssimo para nossa saúde</text>
+      <speech player="false" expression="4">
+        <text>Oi! O tratamento da água é importantíssimo para nossa saúde, ja passou pela etapa do plantio</text>
       </speech>
     </dialog>
 
     <dialog> <!-- Dialogo antes da quest -->
-      <speech player="false" expression="2">
+      <speech player="false" expression="4">
         <text>Passe pela etapa anterior.</text>
       </speech>
     </dialog>
 
     <dialog> <!-- Dialogo antes da quest -->
 
-      <speech player="false" expression="2">
-        <text>Em qual processo do tratamento , a água passa por um filtro com várias camadas, onde ficam retidas as impurezas?</text>
+      <speech player="false" expression="4">
+        <text>Em qual processo do tratamento, a água passa por um filtro com várias camadas, onde ficam retidas as impurezas?</text>
         <choice correct="false" addScore="0" goto="1">coagulação</choice>
         <choice correct="false" addScore="0" goto="1">floculação</choice>
         <choice correct="false" addScore="0" goto="1">decantação</choice>
         <choice correct="true"  addScore="10" goto="2">filtração</choice>
       </speech>
 
-      <speech player="false" expression="2" goto="3">
+      <speech player="false" expression="4" goto="3">
         <text>Que pena, você errou! a resposta correta é filtração</text>
       </speech>
 
-      <speech player="false" expression="2">
-        <text>Parabens, você Acertou!</text>
+      <speech player="false" expression="4">
+        <text>Parabéns, você acertou!</text>
       </speech>
 
-      <speech player="false" expression="2">
+      <speech player="false" expression="4">
         <text>Proxima pergunta</text>
       </speech>
 
-      <speech player="false" expression="2">
+      <speech player="false" expression="4">
         <text>Em qual processo do tratamento a água fica parada e a sujeira, que é mais pesada, vai para baixo?</text>
         <choice correct="false" addScore="0" goto="5">coagulação</choice>
         <choice correct="false" addScore="0" goto="5">floculação</choice>
@@ -51,35 +51,35 @@
         <choice correct="false" addScore="0" goto="5">filtração</choice>
       </speech>
 
-      <speech player="false" expression="2" goto="7">
+      <speech player="false" expression="4" goto="7">
         <text>Que pena, você errou! a resposta correta é decantação</text>
       </speech>
 
-      <speech player="false" expression="2">
-        <text>Parabens, você Acertou!</text>
+      <speech player="false" expression="4">
+        <text>Parabéns, você acertou!</text>
       </speech>
 
-      <speech player="false" expression="2">
-        <text>Já acabei, fale com o próximo professor.</text>
+      <speech player="false" expression="4">
+        <text>Agora já não é mais comigo. Fale com o próximo professor.</text>
       </speech>
 
 
     </dialog>
 
     <dialog> <!-- Dialogo antes da quest -->
-      <speech player="false" expression="2">
+      <speech player="false" expression="4">
         <text>Oi, Está se divertindo aqui?</text>
       </speech>
     </dialog>
 
     <dialog> <!-- Dialogo antes da quest -->
-      <speech player="false" expression="2">
+      <speech player="false" expression="4">
         <text>Oi, Está se divertindo aqui?</text>
       </speech>
     </dialog>
 
   	<dialog> <!-- Dialogo antes da quest -->
-      <speech player="false" expression="2">
+      <speech player="false" expression="4">
         <text>Oi, Está se divertindo aqui?</text>
       </speech>
     </dialog>
