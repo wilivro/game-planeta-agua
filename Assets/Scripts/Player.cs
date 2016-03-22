@@ -23,15 +23,7 @@ public class Player : MonoBehaviour {
 	public static int layer = 11;
 
 	void Awake() {
-        if (!created) {
-         	// this is the first instance - make it persist
-         	QuestHelper = GameObject.Find("QuestHelper").transform;
-     		DontDestroyOnLoad(this.gameObject);
-     		created = true;
-     	} else {
-         	// this must be a duplicate from a scene reload - DESTROY!
-         	Destroy(this.gameObject);
-     	} 
+       	QuestHelper = GameObject.Find("QuestHelper").transform;
     }
 
 	void Start () {

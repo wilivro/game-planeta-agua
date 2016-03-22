@@ -13,7 +13,7 @@ public class Video : MonoBehaviour {
 		// video = GetComponent<RawImage>().mainTexture as MovieTexture;
 		// audio = GetComponent<AudioSource>();
 		// video.Play();
-		Handheld.PlayFullScreenMovie ("NascenteVideo.mp4", Color.black, FullScreenMovieControlMode.CancelOnInput);
+		Handheld.PlayFullScreenMovie ("NascenteVideo.mp4", Color.black, FullScreenMovieControlMode.Full, FullScreenMovieScalingMode.Fill);
 		isPlayingBefore = true;
 	}
 	

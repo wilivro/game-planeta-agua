@@ -5,6 +5,7 @@ public class Events : MonoBehaviour
 {
 
 	public void EndAnimation() {
+	 	
 		Application.LoadLevel("newGame");
 	}
 
