@@ -1,0 +1,24 @@
+{
+	"name": "Cartilha água",
+	"description": "This item increase your health up to 100 points",
+	"iconIndex": 27,
+	"imageName": "potion",
+	"acumulative": true,
+	"consumible": true,
+	"unique": true,
+	"permanent": true,
+	"receive": true,
+	"autoOpen": true,
+	"preRequirements":["q01s00"],
+	"registerLog": [
+		{
+			"key": "q01s02",
+			"message": ""
+		}
+	],
+	"book": [
+		"pagina 1 texto texto {{DataBase/Items/Images/potion}} texto texto {{DataBase/Items/Images/potion}}",
+		"pagina 2"
+	]
+
+}

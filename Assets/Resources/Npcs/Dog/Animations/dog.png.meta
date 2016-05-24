@@ -1,0 +1,1917 @@
+fileFormatVersion: 2
+guid: e1225211faf524642a741835e6519321
+timeCreated: 1462277623
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: dog_0
+    21300002: dog_1
+    21300004: dog_2
+    21300006: dog_3
+    21300008: dog_4
+    21300010: dog_5
+    21300012: dog_6
+    21300014: dog_7
+    21300016: dog_8
+    21300018: dog_9
+    21300020: dog_10
+    21300022: dog_11
+    21300024: dog_12
+    21300026: dog_13
+    21300028: dog_14
+    21300030: dog_15
+    21300032: dog_16
+    21300034: dog_17
+    21300036: dog_18
+    21300038: dog_19
+    21300040: dog_20
+    21300042: dog_21
+    21300044: dog_22
+    21300046: dog_23
+    21300048: dog_24
+    21300050: dog_25
+    21300052: dog_26
+    21300054: dog_27
+    21300056: dog_28
+    21300058: dog_29
+    21300060: dog_30
+    21300062: dog_31
+    21300064: dog_32
+    21300066: dog_33
+    21300068: dog_34
+    21300070: dog_35
+    21300072: dog_36
+    21300074: dog_37
+    21300076: dog_38
+    21300078: dog_39
+    21300080: dog_40
+    21300082: dog_41
+    21300084: dog_42
+    21300086: dog_43
+    21300088: dog_44
+    21300090: dog_45
+    21300092: dog_46
+    21300094: dog_47
+    21300096: dog_48
+    21300098: dog_49
+    21300100: dog_50
+    21300102: dog_51
+    21300104: dog_52
+    21300106: dog_53
+    21300108: dog_54
+    21300110: dog_55
+    21300112: dog_56
+    21300114: dog_57
+    21300116: dog_58
+    21300118: dog_59
+    21300120: dog_60
+    21300122: dog_61
+    21300124: dog_62
+    21300126: dog_63
+    21300128: dog_64
+    21300130: dog_65
+    21300132: dog_66
+    21300134: dog_67
+    21300136: dog_68
+    21300138: dog_69
+    21300140: dog_70
+    21300142: dog_71
+    21300144: dog_72
+    21300146: dog_73
+    21300148: dog_74
+    21300150: dog_75
+    21300152: dog_76
+    21300154: dog_77
+    21300156: dog_78
+    21300158: dog_79
+    21300160: dog_80
+    21300162: dog_81
+    21300164: dog_82
+    21300166: dog_83
+    21300168: dog_84
+    21300170: dog_85
+    21300172: dog_86
+    21300174: dog_87
+    21300176: dog_88
+    21300178: dog_89
+    21300180: dog_90
+    21300182: dog_91
+    21300184: dog_92
+    21300186: dog_93
+    21300188: dog_94
+    21300190: dog_95
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: dog_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 8}
+        - {x: -10, y: -5}
+        - {x: -10, y: -24}
+        - {x: 9, y: -24}
+        - {x: 9, y: -2}
+        - {x: 6, y: 8}
+    - name: dog_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: 7}
+        - {x: -10, y: 7}
+        - {x: -10, y: -24}
+        - {x: 9, y: -24}
+        - {x: 9, y: -3}
+    - name: dog_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 8}
+        - {x: -4, y: 6}
+        - {x: -10, y: -2}
+        - {x: -10, y: -21}
+        - {x: -9, y: -24}
+        - {x: 9, y: -24}
+        - {x: 9, y: 4}
+        - {x: 4, y: 8}
+    - name: dog_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 10}
+        - {x: -13, y: 6}
+        - {x: -13, y: -19}
+        - {x: -12, y: -24}
+        - {x: 9, y: -24}
+        - {x: 12, y: -16}
+        - {x: 12, y: 0}
+        - {x: 6, y: 10}
+    - name: dog_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: 11}
+        - {x: -13, y: 4}
+        - {x: -13, y: -24}
+        - {x: 10, y: -24}
+        - {x: 12, y: -9}
+        - {x: 12, y: 2}
+        - {x: 7, y: 11}
+    - name: dog_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 10}
+        - {x: -13, y: 3}
+        - {x: -13, y: -22}
+        - {x: -11, y: -24}
+        - {x: 12, y: -24}
+        - {x: 12, y: 2}
+        - {x: 7, y: 10}
+    - name: dog_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 5}
+        - {x: -1, y: 5}
+        - {x: -10, y: -3}
+        - {x: -10, y: -24}
+        - {x: 9, y: -24}
+        - {x: 11, y: -21}
+        - {x: 11, y: -13}
+        - {x: 10, y: -6}
+    - name: dog_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 6}
+        - {x: -10, y: -4}
+        - {x: -10, y: -24}
+        - {x: 11, y: -24}
+        - {x: 11, y: -4}
+        - {x: 4, y: 6}
+    - name: dog_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 5}
+        - {x: -10, y: -9}
+        - {x: -10, y: -24}
+        - {x: 11, y: -24}
+        - {x: 11, y: -5}
+        - {x: 4, y: 5}
+    - name: dog_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: -7}
+        - {x: -8, y: -24}
+        - {x: 5, y: -24}
+        - {x: 6, y: -22}
+        - {x: 6, y: -10}
+        - {x: 1, y: -7}
+    - name: dog_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: -7}
+        - {x: -2, y: -6}
+        - {x: -8, y: -13}
+        - {x: -8, y: -24}
+        - {x: 6, y: -24}
+        - {x: 6, y: -11}
+    - name: dog_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 336
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: -7}
+        - {x: -8, y: -24}
+        - {x: 5, y: -24}
+        - {x: 6, y: -22}
+        - {x: 6, y: -10}
+        - {x: 1, y: -7}
+    - name: dog_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: -2}
+        - {x: -5, y: 0}
+        - {x: -12, y: 0}
+        - {x: -16, y: -6}
+        - {x: -16, y: -16}
+        - {x: -12, y: -24}
+        - {x: 13, y: -24}
+        - {x: 13, y: -12}
+        - {x: 12, y: -6}
+    - name: dog_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 1}
+        - {x: -12, y: 1}
+        - {x: -16, y: -4}
+        - {x: -16, y: -16}
+        - {x: -12, y: -24}
+        - {x: 11, y: -24}
+        - {x: 13, y: -22}
+        - {x: 13, y: -18}
+        - {x: 12, y: -5}
+    - name: dog_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 0}
+        - {x: -16, y: -18}
+        - {x: -14, y: -24}
+        - {x: 13, y: -24}
+        - {x: 13, y: -1}
+        - {x: 9, y: 0}
+    - name: dog_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 4}
+        - {x: -16, y: -21}
+        - {x: -15, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: 0}
+        - {x: 5, y: 4}
+    - name: dog_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 5}
+        - {x: -16, y: 4}
+        - {x: -16, y: -19}
+        - {x: -14, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: 1}
+        - {x: 13, y: 5}
+    - name: dog_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 4}
+        - {x: -16, y: 4}
+        - {x: -16, y: -19}
+        - {x: -11, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: 1}
+        - {x: 13, y: 3}
+    - name: dog_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: -2}
+        - {x: -15, y: -8}
+        - {x: -15, y: -18}
+        - {x: -12, y: -24}
+        - {x: 12, y: -24}
+        - {x: 12, y: -2}
+    - name: dog_19
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: -1}
+        - {x: -15, y: -2}
+        - {x: -15, y: -18}
+        - {x: -11, y: -24}
+        - {x: 12, y: -24}
+        - {x: 12, y: -1}
+    - name: dog_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: -2}
+        - {x: -15, y: -6}
+        - {x: -15, y: -19}
+        - {x: -12, y: -24}
+        - {x: 9, y: -24}
+        - {x: 12, y: -21}
+        - {x: 12, y: -2}
+    - name: dog_21
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -9}
+        - {x: -5, y: -9}
+        - {x: -10, y: -15}
+        - {x: -10, y: -20}
+        - {x: -6, y: -24}
+        - {x: 7, y: -24}
+        - {x: 13, y: -18}
+        - {x: 13, y: -16}
+        - {x: 4, y: -11}
+    - name: dog_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: -12}
+        - {x: 5, y: -10}
+        - {x: -4, y: -10}
+        - {x: -10, y: -14}
+        - {x: -10, y: -20}
+        - {x: -7, y: -24}
+        - {x: 8, y: -24}
+        - {x: 12, y: -18}
+        - {x: 12, y: -14}
+    - name: dog_23
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -9}
+        - {x: -5, y: -9}
+        - {x: -10, y: -15}
+        - {x: -10, y: -20}
+        - {x: -6, y: -24}
+        - {x: 7, y: -24}
+        - {x: 13, y: -18}
+        - {x: 13, y: -16}
+        - {x: 4, y: -11}
+    - name: dog_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 0}
+        - {x: -10, y: 0}
+        - {x: -13, y: -12}
+        - {x: -13, y: -24}
+        - {x: 12, y: -24}
+        - {x: 16, y: -18}
+        - {x: 16, y: -4}
+    - name: dog_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 1}
+        - {x: -13, y: -5}
+        - {x: -13, y: -23}
+        - {x: -12, y: -24}
+        - {x: 10, y: -24}
+        - {x: 16, y: -18}
+        - {x: 16, y: -4}
+        - {x: 14, y: 1}
+    - name: dog_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: -1}
+        - {x: 10, y: 0}
+        - {x: -3, y: 0}
+        - {x: -13, y: -4}
+        - {x: -13, y: -22}
+        - {x: -11, y: -24}
+        - {x: 10, y: -24}
+        - {x: 16, y: -18}
+        - {x: 16, y: -5}
+    - name: dog_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 4}
+        - {x: -16, y: -1}
+        - {x: -16, y: -24}
+        - {x: 14, y: -24}
+        - {x: 16, y: -19}
+        - {x: 16, y: 2}
+        - {x: 12, y: 4}
+    - name: dog_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 5}
+        - {x: -16, y: 1}
+        - {x: -16, y: -24}
+        - {x: 15, y: -24}
+        - {x: 16, y: -19}
+        - {x: 16, y: 3}
+        - {x: 11, y: 5}
+    - name: dog_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: 4}
+        - {x: -12, y: 2}
+        - {x: -16, y: 0}
+        - {x: -16, y: -24}
+        - {x: 15, y: -24}
+        - {x: 16, y: -18}
+        - {x: 16, y: 1}
+        - {x: 12, y: 4}
+    - name: dog_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: -2}
+        - {x: -12, y: -24}
+        - {x: 11, y: -24}
+        - {x: 15, y: -16}
+        - {x: 15, y: -2}
+    - name: dog_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: -2}
+        - {x: 5, y: -1}
+        - {x: -12, y: -1}
+        - {x: -12, y: -24}
+        - {x: 10, y: -24}
+        - {x: 15, y: -15}
+        - {x: 15, y: -12}
+        - {x: 13, y: -7}
+    - name: dog_32
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: -2}
+        - {x: -12, y: -22}
+        - {x: -11, y: -24}
+        - {x: 10, y: -24}
+        - {x: 15, y: -20}
+        - {x: 15, y: -2}
+    - name: dog_33
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: -9}
+        - {x: -13, y: -15}
+        - {x: -13, y: -20}
+        - {x: -9, y: -24}
+        - {x: 6, y: -24}
+        - {x: 10, y: -20}
+        - {x: 10, y: -14}
+        - {x: 6, y: -9}
+    - name: dog_34
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: -10}
+        - {x: -12, y: -20}
+        - {x: -10, y: -24}
+        - {x: 8, y: -24}
+        - {x: 10, y: -20}
+        - {x: 10, y: -16}
+        - {x: 6, y: -10}
+    - name: dog_35
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: -9}
+        - {x: -13, y: -15}
+        - {x: -13, y: -20}
+        - {x: -9, y: -24}
+        - {x: 6, y: -24}
+        - {x: 10, y: -20}
+        - {x: 10, y: -14}
+        - {x: 6, y: -9}
+    - name: dog_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 3}
+        - {x: -8, y: 0}
+        - {x: -10, y: -6}
+        - {x: -10, y: -18}
+        - {x: -9, y: -22}
+        - {x: -7, y: -24}
+        - {x: 7, y: -24}
+        - {x: 9, y: -22}
+        - {x: 9, y: -7}
+        - {x: 6, y: 3}
+    - name: dog_37
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 4}
+        - {x: -10, y: 3}
+        - {x: -10, y: -24}
+        - {x: 9, y: -24}
+        - {x: 9, y: -5}
+        - {x: 6, y: 4}
+    - name: dog_38
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 3}
+        - {x: -10, y: -24}
+        - {x: 8, y: -24}
+        - {x: 9, y: -23}
+        - {x: 9, y: -2}
+        - {x: 7, y: 3}
+    - name: dog_39
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 6}
+        - {x: -5, y: 6}
+        - {x: -13, y: 4}
+        - {x: -13, y: -19}
+        - {x: -12, y: -24}
+        - {x: 8, y: -24}
+        - {x: 12, y: -21}
+        - {x: 12, y: 2}
+    - name: dog_40
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 7}
+        - {x: -12, y: 7}
+        - {x: -13, y: 6}
+        - {x: -13, y: -20}
+        - {x: -12, y: -24}
+        - {x: 9, y: -24}
+        - {x: 12, y: -21}
+        - {x: 12, y: 6}
+    - name: dog_41
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 3}
+        - {x: 10, y: 6}
+        - {x: -7, y: 6}
+        - {x: -13, y: 4}
+        - {x: -13, y: -21}
+        - {x: -9, y: -24}
+        - {x: 7, y: -24}
+        - {x: 9, y: -22}
+        - {x: 11, y: -17}
+        - {x: 12, y: -13}
+    - name: dog_42
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 0}
+        - {x: -10, y: -5}
+        - {x: -10, y: -24}
+        - {x: 11, y: -24}
+        - {x: 11, y: -7}
+        - {x: 8, y: 0}
+    - name: dog_43
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 1}
+        - {x: -10, y: -22}
+        - {x: -9, y: -24}
+        - {x: 11, y: -24}
+        - {x: 11, y: -1}
+        - {x: 10, y: 1}
+    - name: dog_44
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 0}
+        - {x: -7, y: 0}
+        - {x: -10, y: -5}
+        - {x: -10, y: -24}
+        - {x: 9, y: -24}
+        - {x: 11, y: -19}
+        - {x: 11, y: -6}
+    - name: dog_45
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -7}
+        - {x: -10, y: -13}
+        - {x: -10, y: -18}
+        - {x: -6, y: -24}
+        - {x: 6, y: -24}
+        - {x: 7, y: -20}
+        - {x: 7, y: -7}
+    - name: dog_46
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: -8}
+        - {x: -11, y: -12}
+        - {x: -11, y: -17}
+        - {x: -7, y: -24}
+        - {x: 6, y: -24}
+        - {x: 7, y: -21}
+        - {x: 7, y: -9}
+        - {x: 6, y: -8}
+    - name: dog_47
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 192
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -7}
+        - {x: -10, y: -13}
+        - {x: -10, y: -18}
+        - {x: -6, y: -24}
+        - {x: 6, y: -24}
+        - {x: 7, y: -20}
+        - {x: 7, y: -7}
+    - name: dog_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 8}
+        - {x: -11, y: -21}
+        - {x: -8, y: -24}
+        - {x: 12, y: -24}
+        - {x: 12, y: 8}
+    - name: dog_49
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 9}
+        - {x: -11, y: 8}
+        - {x: -11, y: -20}
+        - {x: -9, y: -24}
+        - {x: 10, y: -24}
+        - {x: 12, y: -21}
+        - {x: 12, y: 9}
+    - name: dog_50
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 8}
+        - {x: -11, y: -22}
+        - {x: -10, y: -24}
+        - {x: 12, y: -24}
+        - {x: 12, y: 8}
+    - name: dog_51
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 6}
+        - {x: -14, y: 0}
+        - {x: -14, y: -15}
+        - {x: -12, y: -24}
+        - {x: 12, y: -24}
+        - {x: 13, y: -23}
+        - {x: 13, y: 2}
+        - {x: 11, y: 6}
+    - name: dog_52
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 7}
+        - {x: -8, y: 7}
+        - {x: -14, y: 2}
+        - {x: -14, y: -16}
+        - {x: -12, y: -24}
+        - {x: 12, y: -24}
+        - {x: 13, y: -18}
+        - {x: 13, y: 2}
+        - {x: 9, y: 6}
+    - name: dog_53
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 6}
+        - {x: -9, y: 5}
+        - {x: -14, y: 0}
+        - {x: -14, y: -14}
+        - {x: -11, y: -24}
+        - {x: 12, y: -24}
+        - {x: 13, y: -18}
+        - {x: 13, y: 0}
+        - {x: 6, y: 6}
+    - name: dog_54
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 6}
+        - {x: -14, y: 0}
+        - {x: -14, y: -15}
+        - {x: -12, y: -24}
+        - {x: 12, y: -24}
+        - {x: 13, y: -23}
+        - {x: 13, y: 2}
+        - {x: 11, y: 6}
+    - name: dog_55
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 7}
+        - {x: -8, y: 7}
+        - {x: -14, y: 2}
+        - {x: -14, y: -16}
+        - {x: -12, y: -24}
+        - {x: 12, y: -24}
+        - {x: 13, y: -18}
+        - {x: 13, y: 2}
+        - {x: 9, y: 6}
+    - name: dog_56
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 6}
+        - {x: -9, y: 5}
+        - {x: -14, y: 0}
+        - {x: -14, y: -14}
+        - {x: -11, y: -24}
+        - {x: 12, y: -24}
+        - {x: 13, y: -18}
+        - {x: 13, y: 0}
+        - {x: 6, y: 6}
+    - name: dog_57
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 6}
+        - {x: -14, y: 0}
+        - {x: -14, y: -15}
+        - {x: -12, y: -24}
+        - {x: 12, y: -24}
+        - {x: 13, y: -23}
+        - {x: 13, y: 2}
+        - {x: 11, y: 6}
+    - name: dog_58
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 7}
+        - {x: -8, y: 7}
+        - {x: -14, y: 2}
+        - {x: -14, y: -16}
+        - {x: -12, y: -24}
+        - {x: 12, y: -24}
+        - {x: 13, y: -18}
+        - {x: 13, y: 2}
+        - {x: 9, y: 6}
+    - name: dog_59
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 144
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 6}
+        - {x: -9, y: 5}
+        - {x: -14, y: 0}
+        - {x: -14, y: -14}
+        - {x: -11, y: -24}
+        - {x: 12, y: -24}
+        - {x: 13, y: -18}
+        - {x: 13, y: 0}
+        - {x: 6, y: 6}
+    - name: dog_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 6}
+        - {x: -14, y: 5}
+        - {x: -16, y: -3}
+        - {x: -16, y: -18}
+        - {x: -13, y: -24}
+        - {x: 15, y: -24}
+        - {x: 16, y: -23}
+        - {x: 16, y: -5}
+        - {x: 5, y: 6}
+    - name: dog_61
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 7}
+        - {x: -14, y: 6}
+        - {x: -16, y: -3}
+        - {x: -16, y: -12}
+        - {x: -10, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: -4}
+        - {x: 5, y: 7}
+    - name: dog_62
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 6}
+        - {x: -16, y: 0}
+        - {x: -16, y: -20}
+        - {x: -11, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: -2}
+        - {x: 6, y: 6}
+    - name: dog_63
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 4}
+        - {x: -16, y: 2}
+        - {x: -16, y: -21}
+        - {x: -13, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: -3}
+        - {x: 1, y: 4}
+    - name: dog_64
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 5}
+        - {x: -16, y: 3}
+        - {x: -16, y: -21}
+        - {x: -13, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: -2}
+        - {x: 1, y: 5}
+    - name: dog_65
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 4}
+        - {x: -16, y: 2}
+        - {x: -16, y: -22}
+        - {x: -14, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: -3}
+        - {x: 1, y: 4}
+    - name: dog_66
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 4}
+        - {x: -13, y: 4}
+        - {x: -16, y: 0}
+        - {x: -16, y: -20}
+        - {x: -12, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: -3}
+        - {x: 13, y: -1}
+    - name: dog_67
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 5}
+        - {x: -14, y: 5}
+        - {x: -16, y: 3}
+        - {x: -16, y: -21}
+        - {x: -15, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: 0}
+        - {x: 15, y: 3}
+    - name: dog_68
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 4}
+        - {x: -14, y: 4}
+        - {x: -16, y: 1}
+        - {x: -16, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: -4}
+        - {x: 13, y: -1}
+    - name: dog_69
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 4}
+        - {x: -16, y: 2}
+        - {x: -16, y: -21}
+        - {x: -13, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: -3}
+        - {x: 1, y: 4}
+    - name: dog_70
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 5}
+        - {x: -16, y: 3}
+        - {x: -16, y: -21}
+        - {x: -13, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: -2}
+        - {x: 1, y: 5}
+    - name: dog_71
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 4}
+        - {x: -16, y: 2}
+        - {x: -16, y: -22}
+        - {x: -14, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: -3}
+        - {x: 1, y: 4}
+    - name: dog_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 6}
+        - {x: -16, y: -2}
+        - {x: -16, y: -23}
+        - {x: -15, y: -24}
+        - {x: 14, y: -24}
+        - {x: 16, y: -19}
+        - {x: 16, y: 5}
+        - {x: 11, y: 6}
+    - name: dog_73
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 7}
+        - {x: -14, y: -1}
+        - {x: -16, y: -4}
+        - {x: -16, y: -24}
+        - {x: 15, y: -24}
+        - {x: 16, y: -20}
+        - {x: 16, y: 5}
+        - {x: 9, y: 7}
+    - name: dog_74
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 6}
+        - {x: -16, y: -4}
+        - {x: -16, y: -24}
+        - {x: 13, y: -24}
+        - {x: 16, y: -17}
+        - {x: 16, y: 6}
+    - name: dog_75
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 4}
+        - {x: -13, y: -1}
+        - {x: -16, y: -3}
+        - {x: -16, y: -24}
+        - {x: 13, y: -24}
+        - {x: 16, y: -20}
+        - {x: 16, y: 1}
+        - {x: 12, y: 4}
+    - name: dog_76
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 5}
+        - {x: -13, y: 0}
+        - {x: -16, y: -2}
+        - {x: -16, y: -24}
+        - {x: 12, y: -24}
+        - {x: 16, y: -19}
+        - {x: 16, y: 2}
+        - {x: 12, y: 5}
+    - name: dog_77
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 4}
+        - {x: -16, y: -2}
+        - {x: -16, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: 4}
+    - name: dog_78
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 4}
+        - {x: -15, y: 1}
+        - {x: -16, y: -1}
+        - {x: -16, y: -24}
+        - {x: 13, y: -24}
+        - {x: 16, y: -20}
+        - {x: 16, y: 1}
+        - {x: 13, y: 4}
+    - name: dog_79
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 5}
+        - {x: -15, y: 2}
+        - {x: -16, y: 0}
+        - {x: -16, y: -24}
+        - {x: 12, y: -24}
+        - {x: 16, y: -19}
+        - {x: 16, y: 2}
+        - {x: 13, y: 5}
+    - name: dog_80
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 4}
+        - {x: -14, y: 1}
+        - {x: -16, y: -1}
+        - {x: -16, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: 4}
+    - name: dog_81
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 4}
+        - {x: -13, y: -1}
+        - {x: -16, y: -3}
+        - {x: -16, y: -24}
+        - {x: 13, y: -24}
+        - {x: 16, y: -20}
+        - {x: 16, y: 1}
+        - {x: 12, y: 4}
+    - name: dog_82
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 5}
+        - {x: -13, y: 0}
+        - {x: -16, y: -2}
+        - {x: -16, y: -24}
+        - {x: 12, y: -24}
+        - {x: 16, y: -19}
+        - {x: 16, y: 2}
+        - {x: 12, y: 5}
+    - name: dog_83
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 4}
+        - {x: -16, y: -2}
+        - {x: -16, y: -24}
+        - {x: 16, y: -24}
+        - {x: 16, y: 4}
+    - name: dog_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 11}
+        - {x: -11, y: 7}
+        - {x: -11, y: -24}
+        - {x: 13, y: -24}
+        - {x: 13, y: 11}
+    - name: dog_85
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 12}
+        - {x: -11, y: 9}
+        - {x: -11, y: -21}
+        - {x: -8, y: -24}
+        - {x: 10, y: -24}
+        - {x: 12, y: -22}
+        - {x: 12, y: 12}
+    - name: dog_86
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 11}
+        - {x: -12, y: -24}
+        - {x: 8, y: -24}
+        - {x: 12, y: -21}
+        - {x: 12, y: 11}
+    - name: dog_87
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: 7}
+        - {x: -11, y: 7}
+        - {x: -14, y: -1}
+        - {x: -14, y: -17}
+        - {x: -8, y: -24}
+        - {x: 11, y: -24}
+        - {x: 13, y: -18}
+        - {x: 13, y: -1}
+        - {x: 9, y: 6}
+    - name: dog_88
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 8}
+        - {x: -10, y: 8}
+        - {x: -14, y: -3}
+        - {x: -14, y: -18}
+        - {x: -11, y: -24}
+        - {x: 11, y: -24}
+        - {x: 13, y: -18}
+        - {x: 13, y: 0}
+        - {x: 9, y: 7}
+    - name: dog_89
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 7}
+        - {x: -11, y: 7}
+        - {x: -14, y: 0}
+        - {x: -14, y: -16}
+        - {x: -12, y: -24}
+        - {x: 12, y: -24}
+        - {x: 13, y: -19}
+        - {x: 13, y: -1}
+        - {x: 9, y: 6}
+    - name: dog_90
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 7}
+        - {x: -14, y: -19}
+        - {x: -9, y: -24}
+        - {x: 10, y: -24}
+        - {x: 13, y: -18}
+        - {x: 13, y: 1}
+        - {x: 9, y: 7}
+    - name: dog_91
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 8}
+        - {x: -14, y: -15}
+        - {x: -11, y: -24}
+        - {x: 11, y: -24}
+        - {x: 13, y: -18}
+        - {x: 13, y: 5}
+        - {x: 12, y: 8}
+    - name: dog_92
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 7}
+        - {x: -14, y: -18}
+        - {x: -13, y: -24}
+        - {x: 10, y: -24}
+        - {x: 13, y: -15}
+        - {x: 13, y: 3}
+        - {x: 12, y: 7}
+    - name: dog_93
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: 7}
+        - {x: -11, y: 7}
+        - {x: -14, y: -1}
+        - {x: -14, y: -17}
+        - {x: -8, y: -24}
+        - {x: 11, y: -24}
+        - {x: 13, y: -18}
+        - {x: 13, y: -1}
+        - {x: 9, y: 6}
+    - name: dog_94
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 8}
+        - {x: -10, y: 8}
+        - {x: -14, y: -3}
+        - {x: -14, y: -18}
+        - {x: -11, y: -24}
+        - {x: 11, y: -24}
+        - {x: 13, y: -18}
+        - {x: 13, y: 0}
+        - {x: 9, y: 7}
+    - name: dog_95
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 7}
+        - {x: -11, y: 7}
+        - {x: -14, y: 0}
+        - {x: -14, y: -16}
+        - {x: -12, y: -24}
+        - {x: 12, y: -24}
+        - {x: 13, y: -19}
+        - {x: 13, y: -1}
+        - {x: 9, y: 6}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

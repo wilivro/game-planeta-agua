@@ -1,0 +1,44 @@
+{
+	"name": "Vovó",
+	"questList": [
+		1,
+		2
+	],
+	"dialogue": [
+		{
+			"quest" : 1,
+			"preRequirements":["q01s00"],
+			"requirements": [],
+			"request": [],
+			"before": [
+				{
+					"name": "{{player}}",
+					"text": "Merda"
+				}
+			],
+			"after": [],
+			"inProgress": [
+				{
+					"name": "{{player}}",
+					"text": "{{name}}, Mãe disse pra eu falar com vc."
+				},
+				{
+					"name": "{{name}}",
+					"text": "Vai chorar?",
+					"registerLog": [
+						{
+							"key": "q01s02",
+							"message": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"dummyDialogue": [
+		{
+			"name": "{{name}}",
+			"text": "Oi netinho."
+		}
+	]
+}

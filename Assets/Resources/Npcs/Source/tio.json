@@ -1,0 +1,39 @@
+{
+	"name": "Tio José",
+	"questList": [
+		1,
+		2
+	],
+	"dialogue": [
+		{
+			"quest" : 1,
+			"preRequirements":["q01s00"],
+			"requirements": [],
+			"request": [],
+			"before": [
+				{
+					"name": "{{player}}",
+					"text": "Merda"
+				}
+			],
+			"after": [],
+			"inProgress": [
+				{
+					"name": "{{player}}",
+					"text": "{{name}}, Mãe disse pra eu falar com vc."
+				},
+				{
+					"name": "{{name}}",
+					"text": "Ja ta falando, va embora",
+					"registerLog": [
+						{
+							"key": "q01s01",
+							"message": "{{player}} falou com o tio."
+						}
+					]
+				}
+			]
+		}
+	],
+	"dummyDialogue": []
+}

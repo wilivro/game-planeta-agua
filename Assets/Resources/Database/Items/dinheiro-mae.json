@@ -1,0 +1,20 @@
+{
+	"name": "dinheiro pras frutas",
+	"description": "Voce poderar comprar qualquer coisa com esse dinheiro",
+	"iconIndex": 0,
+	"imageName": "potion",
+	"acumulative": true,
+	"consumible": false,
+	"unique": true,
+	"permanent": false,
+	"receive": true,
+	"autoOpen": false,
+	"preRequirements":["q03"],
+	"registerLog": [
+		{
+			"key": "q03s01",
+			"message": ""
+		}
+	]
+
+}

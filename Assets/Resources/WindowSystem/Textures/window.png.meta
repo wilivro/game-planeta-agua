@@ -1,0 +1,358 @@
+fileFormatVersion: 2
+guid: 428475c02a63dc34bb90f3bf31e80a0d
+timeCreated: 1459442388
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: window_0
+    21300002: window_3
+    21300004: window_6
+    21300006: window_9
+    21300008: window_11
+    21300010: window_13
+    21300012: window_15
+    21300014: window_42
+    21300016: window_44
+    21300018: window_46
+    21300020: window_48
+    21300022: window_50
+    21300024: window_51
+    21300026: window_52
+    21300028: window_53
+    21300030: window_63
+    21300032: window_64
+    21300034: window_65
+    21300036: window_69
+    21300038: window_73
+    21300040: window_54
+    21300042: window_66
+    21300044: window_67
+    21300046: window_70
+    21300048: window_74
+    21300050: window_84
+    21300052: window_1
+    21300054: window_2
+    21300056: window_4
+    21300058: window_5
+    21300060: window_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 64
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: window_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 156
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 32, y: 32, z: 32, w: 32}
+      outline:
+      - - {x: -48, y: 48}
+        - {x: -48, y: -48}
+        - {x: 46, y: -48}
+        - {x: 48, y: -46}
+        - {x: 48, y: 48}
+      - - {x: 32, y: 32}
+        - {x: 32, y: -31}
+        - {x: 31, y: -32}
+        - {x: -32, y: -32}
+    - name: window_3
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 162
+        width: 82
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 41.5}
+        - {x: -41, y: -41.5}
+        - {x: 41, y: -41.5}
+        - {x: 41, y: 41.5}
+    - name: window_6
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 161
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42.5, y: 42.5}
+        - {x: -42.5, y: -42.5}
+        - {x: 42.5, y: -42.5}
+        - {x: 42.5, y: 42.5}
+    - name: window_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 124
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 10}
+        - {x: -14, y: -2}
+        - {x: -14, y: -10}
+        - {x: 14, y: -10}
+        - {x: 14, y: -2}
+        - {x: 7, y: 10}
+    - name: window_51
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 124
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 14}
+        - {x: -9, y: 12}
+        - {x: -9, y: -14}
+        - {x: -2, y: -14}
+        - {x: 9, y: -8}
+        - {x: 9, y: 2}
+        - {x: -1, y: 12}
+    - name: window_52
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 124
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 9}
+        - {x: -13, y: 3}
+        - {x: -5, y: -9}
+        - {x: 6, y: -9}
+        - {x: 13, y: 0}
+        - {x: 13, y: 9}
+    - name: window_53
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 124
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 7}
+        - {x: -13, y: 1}
+        - {x: -5, y: -11}
+        - {x: 6, y: -11}
+        - {x: 13, y: -2}
+        - {x: 13, y: 7}
+    - name: window_54
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 92
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 7, y: 7, z: 7, w: 7}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: window_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 92
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 13}
+        - {x: 8, y: 14}
+        - {x: 4, y: 14}
+        - {x: -10, y: 1}
+        - {x: -10, y: -5}
+        - {x: 0, y: -14}
+        - {x: 8, y: -14}
+        - {x: 10, y: -12}
+    - name: window_67
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 92
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 8}
+        - {x: -11, y: 6}
+        - {x: -11, y: 1}
+        - {x: -1, y: -8}
+        - {x: 3, y: -8}
+        - {x: 12, y: 0}
+        - {x: 12, y: 6}
+        - {x: 11, y: 8}
+    - name: window_84
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 92
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 7, y: 7, z: 7, w: 7}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: window_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 92
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 7, y: 7, z: 7, w: 7}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: window_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 92
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 7, y: 7, z: 7, w: 7}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: window_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 92
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 7, y: 7, z: 7, w: 7}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: window_5
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 92
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 7, y: 7, z: 7, w: 7}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: window_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 156
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 16, z: 16, w: 16}
+      outline:
+      - - {x: -46, y: 48}
+        - {x: -48, y: 46}
+        - {x: -48, y: -46}
+        - {x: -46, y: -48}
+        - {x: 46, y: -48}
+        - {x: 48, y: -46}
+        - {x: 48, y: 46}
+        - {x: 46, y: 48}
+      - - {x: -32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: -32}
+        - {x: -32, y: -32}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

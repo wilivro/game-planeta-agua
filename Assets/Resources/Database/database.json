@@ -1,0 +1,107 @@
+{
+	"data": [
+		{
+			"key": "q01s01",
+			"label": "Fazer pesquisas"
+		},
+		{
+			"key": "q02s01",
+			"label": "Lavar a louça"
+		},
+		{
+			"key": "q03s01",
+			"label": "Dinheiro na comoda"
+		},
+		{
+			"key": "q03s02",
+			"label": "Comprar fruta na feira"
+		}
+	],
+
+	"quests": [
+		{
+			"key": "q01",
+			"path": "Database/Quests/",
+			"filename": "quest1",
+			"label": "Buscando Conhecimento"
+		},
+		{
+			"key": "q02",
+			"path": "Database/Quests/",
+			"filename": "quest2",
+			"label": "Meus afazeres"
+		}
+		,
+		{
+			"key": "q03",
+			"path": "Database/Quests/",
+			"filename": "quest3",
+			"label": "Comprar Alimento"
+		}
+	],
+
+	"items": [
+		{
+			"key": "i01",
+			"path": "Database/Items/",
+			"filename": "potion"
+		},
+
+		{
+			"key": "i02",
+			"path": "Database/Items/",
+			"filename": "mana"
+		},
+		
+		{
+			"key": "i03",
+			"path": "Database/Items/",
+			"filename": "cartilha"
+		},
+
+		{
+			"key": "pc",
+			"path": "Database/Items/",
+			"filename": "pc"
+		},
+
+		{
+			"key": "dinheiro-mae",
+			"path": "Database/Items/",
+			"filename": "dinheiro-mae"
+		}
+	],
+
+	"images": [
+		{
+			"key": "face-mae",
+			"source": "Npcs/Mãe/face",
+			"index": 0
+		},
+		{
+			"key": "face-tio",
+			"source": "Database/Images/faces",
+			"index": 1
+		},
+		{
+			"key": "face-player",
+			"source": "Player/Leo/face",
+			"index": 0
+		}
+	],
+
+	"warps": [
+		{
+			"key": "WarpPortaCasaDentro",
+			"path": "Database/Warps/w01"
+		},
+		{
+			"key": "saida-minigame-cachorro",
+			"path": "MinigameCachorro/warp"
+		},
+		{
+			"key": "lavar-louca",
+			"path": "Database/Warps/w02"
+		}
+	]
+}

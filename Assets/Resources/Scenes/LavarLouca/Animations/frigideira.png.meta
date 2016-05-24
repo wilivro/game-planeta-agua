@@ -1,0 +1,217 @@
+fileFormatVersion: 2
+guid: 06dc5695bcface34f87b64a1b4acdf97
+timeCreated: 1463060995
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: frigideira_0
+    21300002: frigideira_1
+    21300004: frigideira_2
+    21300006: frigideira_3
+    21300008: frigideira_4
+    21300010: frigideira_5
+    21300012: frigideira_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 50
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: frigideira_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 300
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -118.5, y: 46}
+        - {x: -146.5, y: 29}
+        - {x: -146.5, y: -11}
+        - {x: -120.5, y: -46}
+        - {x: 88.5, y: -46}
+        - {x: 133.5, y: -43}
+        - {x: 146.5, y: -27}
+        - {x: 146.5, y: 15}
+        - {x: 30.5, y: 46}
+    - name: frigideira_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 300
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -119.42859, y: 46}
+        - {x: -146.42859, y: 24}
+        - {x: -146.42859, y: -46}
+        - {x: 147.57141, y: -46}
+        - {x: 147.57141, y: 17}
+        - {x: 54.57141, y: 46}
+    - name: frigideira_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 300
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -146.35718, y: 46}
+        - {x: -146.35718, y: -38}
+        - {x: -140.35718, y: -46}
+        - {x: 121.64282, y: -46}
+        - {x: 146.64282, y: -43}
+        - {x: 146.64282, y: 31}
+        - {x: 53.642822, y: 46}
+      - - {x: 143.64282, y: -33}
+        - {x: 145.64282, y: -35}
+        - {x: 146.64282, y: -35}
+        - {x: 146.64282, y: -29}
+        - {x: 143.64282, y: -30}
+    - name: frigideira_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 300
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 147.7143, y: 18}
+        - {x: 3.7142944, y: 46}
+        - {x: -121.285706, y: 46}
+        - {x: -146.2857, y: 32}
+        - {x: -146.2857, y: -40}
+        - {x: -124.285706, y: -46}
+        - {x: -18.285706, y: -46}
+        - {x: -5.2857056, y: -41}
+        - {x: 11.714294, y: -30}
+        - {x: 147.7143, y: -26}
+      - - {x: -143.2857, y: -36}
+        - {x: -146.2857, y: -38}
+        - {x: -146.2857, y: -45}
+        - {x: -139.2857, y: -45}
+        - {x: -137.2857, y: -44}
+        - {x: -137.2857, y: -38}
+        - {x: -141.2857, y: -36}
+    - name: frigideira_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 300
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28.785645, y: 46}
+        - {x: -131.21436, y: 46}
+        - {x: -146.21436, y: 24}
+        - {x: -146.21436, y: -19}
+        - {x: -119.214355, y: -46}
+        - {x: 88.785645, y: -46}
+        - {x: 146.78564, y: -38}
+        - {x: 146.78564, y: 16}
+        - {x: 137.78564, y: 28}
+      - - {x: 6.7856445, y: -36}
+        - {x: 6.7856445, y: -44}
+        - {x: 9.785645, y: -45}
+        - {x: 15.785645, y: -45}
+        - {x: 16.785645, y: -44}
+        - {x: 16.785645, y: -39}
+        - {x: 14.785645, y: -36}
+    - name: frigideira_5
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 300
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -121.14282, y: 46}
+        - {x: -146.14282, y: 30}
+        - {x: -146.14282, y: -14}
+        - {x: -130.14282, y: -46}
+        - {x: 103.85718, y: -46}
+        - {x: 147.85718, y: -41}
+        - {x: 147.85718, y: 15}
+        - {x: 28.857178, y: 46}
+    - name: frigideira_6
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 300
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -122.07141, y: 46}
+        - {x: -146.07141, y: 33}
+        - {x: -146.07141, y: -17}
+        - {x: -132.07141, y: -46}
+        - {x: 16.928589, y: -46}
+        - {x: 146.92859, y: -28}
+        - {x: 146.92859, y: 10}
+        - {x: 23.928589, y: 46}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

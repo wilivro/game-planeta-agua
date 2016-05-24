@@ -1,0 +1,160 @@
+{
+	"name": "Mãe",
+	"dialogue": [
+		{
+			"quest" : "q01",
+			"preRequirements":[],
+			"requirements": ["q01s01"],
+			"finishHere": true,
+			"request": [
+				{
+					"name": "{{player}}",
+					"text":"Mãe posso brincar la fora?",
+					"image": "face-player"
+				},
+				{
+					"name": "{{name}}",
+					"text":"Primeiro vá estudar um pouco, você ainda tem susa pesquisas pra fazer.",
+					"giveQuest": ["q01"],
+					"image": "face-mae",
+					"registerLog": [
+						{
+							"key": "q01s00",
+							"message": "{{player}} recieve a new quest;"
+						}
+					]
+				}
+			],
+
+			"before": [
+				{
+					"name": "{{name}}",
+					"image": "face-mae",
+					"text": "Bom dia {{player}}! Ja viu que o dia está lindo?"
+				}
+			],
+			"after": [
+				{
+					"name": "{{player}}",
+					"text":"E agora mãe, posso brincar la fora?",
+					"image": "face-player"
+				},
+				{
+					"name": "{{name}}",
+					"image": "face-mae",
+					"text": "Agora, não. Hoje é o seu dia de fazer as tarefas, esqueceu? Mãos à obra!",
+					"giveQuest": ["q02"],
+					"registerLog": [
+						{
+							"key": "lavar-louca",
+							"message": "Mãe pede pra lavar louça;"
+						}
+					]
+				},
+				{
+					"name": "{{player}}",
+					"image": "face-player",
+					"text": "Poxa, eu só queria brincar."
+				}
+			],
+			"inProgress": [
+				{
+					"name": "{{name}}",
+					"image": "face-mae",
+					"text": "{{player}}, termine logo seus estudos"
+				}
+			]
+		},
+
+		{
+			"quest" : "q02",
+			"preRequirements":["q01"],
+			"requirements": ["q02s01"],
+			"finishHere": true,
+			
+			"before": [
+				{
+					"name": "{{name}}",
+					"image": "face-mae",
+					"text": "Bom dia {{player}}! Ja viu que o dia está lindo?"
+				}
+			],
+			"after": [
+				{
+					"name": "{{player}}",
+					"text":"E agora mãe, posso brincar la fora?",
+					"image": "face-player"
+				},
+				{
+					"name": "{{name}}",
+					"image": "face-mae",
+					"text": "Jaja, pegue um dinheiro que está na banca do meu quarto, e va comprar frutas na feira",
+					"giveQuest": ["q03"],
+					"registerLog": [
+						{
+							"key": "comprar-fruta",
+							"message": "Mãe pede pra comprar frutas;"
+						}
+					]
+				},
+				{
+					"name": "{{player}}",
+					"image": "face-player",
+					"text": "Certo mãe."
+				}
+			],
+			"inProgress": [
+				{
+					"name": "{{name}}",
+					"image": "face-mae",
+					"text": "{{player}}, termine logo suas coisas"
+				}
+			]
+		},
+
+		{
+			"quest" : "q03",
+			"preRequirements":["q02s01"],
+			"requirements": ["q03s01, q03s02"],
+			"finishHere": true,
+			
+			"before": [
+				{
+					"name": "{{name}}",
+					"image": "face-mae",
+					"text": "Bom dia {{player}}! Ja viu que o dia está lindo?"
+				}
+			],
+			"after": [
+				{
+					"name": "{{name}}",
+					"image": "face-mae",
+					"text": "Pronto {{player}}, pode ir passear um pouco.",
+					"giveQuest": ["q03"],
+					"registerLog": [
+						{
+							"key": "comprar-fruta",
+							"message": "Mãe pede pra comprar frutas;"
+						}
+					]
+				},
+				{
+					"name": "{{player}}",
+					"image": "face-player",
+					"text": "Obrigado mãe."
+				}
+			],
+			"inProgress": [
+				{
+					"name": "{{name}}",
+					"image": "face-mae",
+					"text": "{{player}}, estou precisando das frutas."
+				}
+			]
+		}
+	],
+	
+
+	"dummyDialogue": [
+	]
+}

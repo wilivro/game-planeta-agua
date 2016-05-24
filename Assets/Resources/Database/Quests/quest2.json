@@ -1,0 +1,11 @@
+{
+	"name": "Tarefas de casa",
+	"description": "Hoje é domingo, um otimo dia para brincar na rua. Para poder ir la fora é preciso que Leo termine suas atividades.",
+	"exp": 10,
+	"icon": "icon",
+	"image": "image",
+	"rewardName" : [],
+	"requirements": [
+		"q02s01"
+	]
+}

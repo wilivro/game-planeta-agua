@@ -1,0 +1,8 @@
+{
+	"name": "Mana Potion",
+	"description": "This item increase your mana up to 100 points",
+	"iconIndex": 30,
+	"imageName": "potion",
+	"acumulative": false,
+	"consumible": true
+}

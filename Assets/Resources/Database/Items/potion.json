@@ -1,0 +1,8 @@
+{
+	"name": "Health Potion",
+	"description": "This item increase your health up to 100 points",
+	"iconIndex": 27,
+	"imageName": "potion",
+	"acumulative": true,
+	"consumible": false
+}

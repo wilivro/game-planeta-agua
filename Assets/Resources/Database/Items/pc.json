@@ -1,0 +1,23 @@
+{
+	"name": "Cartilha planeta água",
+	"description": "This item increase your health up to 100 points",
+	"iconIndex": 0,
+	"imageName": "potion",
+	"acumulative": true,
+	"consumible": true,
+	"unique": true,
+	"permanent": true,
+	"receive": false,
+	"autoOpen": true,
+	"preRequirements":["q01s00"],
+	"registerLog": [
+		{
+			"key": "q01s01",
+			"message": ""
+		}
+	],
+	"book": [
+		"\tA Terra é um planeta quase todo coberto por água: água dos oceanos, água dos mares, rios e lagos, água das calotas polares, água da chuva, muita, muita água...Quando visto de cima, nosso planeta tem uma grande quantidade de cor azul. Essa cor representa as nossas águas, que cobrem 70% da nossa superfície. Por isso, algumas pessoas chamam a Terra de <color=\"#0000FF\">Planeta <b>Azul</b></color> e até mesmo Planeta Água!\n\n\tMas lembre-se, a maior parte de nossas águas é salgada. Por isso, devemos economizar e fazer seu uso consciente."
+	]
+
+}
