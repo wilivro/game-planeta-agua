@@ -101,10 +101,16 @@ namespace Rpg
 			return gold;
 		}
 
+		public bool HasEnoughGold(int _qtd) {
+			return gold >= _qtd;
+		}
+
 		public bool HasItem(string _name, int qtd = 1) {
-			Item[] it = items.Where(itt => itt.name == _name).ToArray();
-			if(it.Length >= qtd || it[0].qtd >= qtd) return false;
-			return true;
+			Item[] it = items.Where(itt => itt.id == _name).ToArray();
+			if(it.Length <= 0) return false;
+			if(it.Length == 1 && it[0].qtd >= qtd) return true;
+			if(it.Length >= qtd) return true;
+			return false;
 		}
 	}
 

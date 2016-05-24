@@ -32,6 +32,21 @@ namespace Rpg
 		}
 
 		[Serializable]
+		public class CheckItem
+		{
+			public string[] item;
+			public int[] qtd;
+			public int[] gotoSpeech;
+		}
+
+		[Serializable]
+		public class CheckGold
+		{
+			public int qtd;
+			public int[] gotoSpeech;
+		}
+
+		[Serializable]
 		public class Speech
 		{
 			public string name;
@@ -46,9 +61,10 @@ namespace Rpg
 			public string[] check;
 			public LogData[] registerLog;
 			public string image;
-		}
+			public CheckItem checkItem;
+			public CheckGold checkGold;
 
-		
+		}
 
 		[Serializable]
 		public class Choice
@@ -63,6 +79,8 @@ namespace Rpg
 			public string[] getItem;
 			public int[] completeQuest;
 			public LogData[] registerLog;
+			public CheckItem checkItem;
+			public CheckGold checkGold;
 		}
 
 		public class DialogueControl
@@ -334,6 +352,44 @@ namespace Rpg
 					Close();
 					return;
 				};
+				
+				if(dialogue[page].checkGold.gotoSpeech != null) {
+					if(Player.inventory.HasEnoughGold(dialogue[page].checkGold.qtd)) {
+						if(dialogue[page].checkGold.gotoSpeech[0] != page){
+							page = dialogue[page].checkGold.gotoSpeech[0];
+							ShowSpeech();
+							return;
+						}
+					} else {
+						Debug.Log("Falhou");
+						if(dialogue[page].checkGold.gotoSpeech[1] != page){
+							page = dialogue[page].checkGold.gotoSpeech[1];
+							ShowSpeech();
+							return;
+						}
+					}
+				}
+
+				if(dialogue[page].checkItem.item != null) {
+					Debug.Log("Item");
+					for(int n = 0; n < dialogue[page].checkItem.item.Length; n++) {
+						if(Player.inventory.HasItem(dialogue[page].checkItem.item[n], dialogue[page].checkItem.qtd[n])){
+							continue;
+						} else {
+							if(dialogue[page].checkItem.gotoSpeech[1] != page){
+								page = dialogue[page].checkItem.gotoSpeech[1];
+								ShowSpeech();
+								return;
+							}
+						}
+					}
+
+					if(dialogue[page].checkItem.gotoSpeech[0] != page){
+						page = dialogue[page].checkItem.gotoSpeech[0];
+						ShowSpeech();
+						return;
+					}
+				}
 
 				instance.transform.Find("Name").Find("Text").GetComponent<Text>().text = FormatText(dialogue[page].name);
 

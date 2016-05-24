@@ -15,14 +15,13 @@ public class GameController : MonoBehaviour {
 	public static QuestHelper helper;
 	public static Database database;
 	public static Rpg.Player player;
+	public static Transform canvas;
 
 	GameObject wrapper;
 
 	public static bool created = false;
 
 	void Awake () {
-
-		
 
 		wrapper = transform.Find("Wrapper").gameObject;
 
@@ -32,12 +31,14 @@ public class GameController : MonoBehaviour {
      		created = true;
 
      		database  = new Database("Database/database");
-				language  = new Scene.Language("pt-br");
-				journal   = new Journal(transform);
-				inventory = new Rpg.WindowSystem.Inventory(transform, false, false);
-				helper    = new QuestHelper();
+			language  = new Scene.Language("pt-br");
+			journal   = new Journal(transform);
+			inventory = new Rpg.WindowSystem.Inventory(transform, true, false);
+			helper    = new QuestHelper();
 
-				player = new Rpg.Player("Teste");
+			player = new Rpg.Player("Teste");
+
+			canvas = gameObject.transform;
 			
      	} else {
          	// this must be a duplicate from a scene reload - DESTROY!

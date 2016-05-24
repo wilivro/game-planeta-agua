@@ -1,0 +1,53 @@
+{
+	"name": "Feirante",
+	"dialogue": [
+		{
+			"quest" : "q03",
+			"preRequirements":["q03s01"],
+			"requirements": ["q03s01"],
+			"finishHere": false,
+			"before": [
+				{
+					"name": "{{name}}",
+					"image": "face-mae",
+					"text": "Bom dia jovem!"
+				}
+			],
+			"after": [
+				{
+					"name": "{{player}}",
+					"text":"E agora mãe, posso brincar la fora?",
+					"image": "face-player"
+				}
+			],
+			"inProgress": [
+				{
+					"name": "{{name}}",
+					"image": "face-mae",
+
+					"checkGold": {
+						"qtd":100,
+						"gotoSpeech":[0,1]
+					},
+
+					"checkItem": {
+						"item":["i01"],
+						"qtd":[2],
+						"gotoSpeech":[0,1]
+					},
+
+					"text": "{{player}}, Esse tem grana",
+					"giveItem": ["i01"]
+				},
+				{
+					"name": "{{name}}",
+					"image": "face-mae",
+					"text": "{{player}}, Tu ta é liso"
+				}
+			]
+		}
+	],
+
+	"dummyDialogue": [
+	]
+}

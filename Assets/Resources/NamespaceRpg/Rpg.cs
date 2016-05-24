@@ -94,8 +94,22 @@ namespace Rpg
 		void OnGiveItemCallback(object[] param) {
 			string[] give = (string[])param[0];
 
+			string[] itemMoney;
 			for(int i = 0; i < give.Length; i++) {
-				inventory.Add(new Item(give[i]));
+				itemMoney = give[i].Split('|');
+				if(itemMoney.Length == 1){
+					inventory.Add(new Item(itemMoney[0]));
+					continue;
+				}
+				if(itemMoney[1][0] == 'g') {
+					int val = Convert.ToInt32(itemMoney[1].Remove(0,1));
+					if(inventory.HasEnoughGold(val)){
+						inventory.GetGold(val);
+						inventory.Add(new Item(itemMoney[0]));
+					}
+					continue;
+				}
+
 			}
 		}
 
@@ -357,8 +371,10 @@ namespace Rpg
 				Player.activities[_key] = _value;
 			}
 			
-			Debug.Log("Logging "+_key+" , "+_value);
-			if(autoSave) GameController.player.Save();
+			if(autoSave) {
+				GameController.player.Save();
+				Debug.Log("Logging "+_key+" , "+_value);
+			}
 		}
 
 		public static bool HasKey(string _key) {
