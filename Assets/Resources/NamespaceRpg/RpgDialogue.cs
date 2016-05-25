@@ -70,7 +70,7 @@ namespace Rpg
 		public class Choice
 		{
 			public string text;
-			public int posImage;
+			public int posImage = 0;
 			public string imageBase;
 			public bool correct;
 			public int gotoSpeech = -1;
@@ -143,6 +143,7 @@ namespace Rpg
 
 				if(D.Length >= 1) {
 					actualDialogue = D[0].request;
+					if(actualDialogue == null) return false;
 					dialogueWindow.Open(actualDialogue);
 					return true;
 				}

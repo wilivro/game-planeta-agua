@@ -1,0 +1,10 @@
+{
+	"name": "Quest 4",
+	"description": "Colar cartazaes pelas ruas",
+	"exp": 10,
+	"icon": "icon",
+	"image": "image",
+	"rewardName" : [],
+	"requirements": [
+	]
+}

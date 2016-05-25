@@ -1,0 +1,299 @@
+fileFormatVersion: 2
+guid: 5b8e7cddd76750b4c83cb13bb7105b33
+timeCreated: 1464117446
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: nilo_0
+    21300002: nilo_1
+    21300004: nilo_2
+    21300006: nilo_3
+    21300008: nilo_4
+    21300010: nilo_5
+    21300012: nilo_6
+    21300014: nilo_7
+    21300016: nilo_8
+    21300018: nilo_9
+    21300020: nilo_10
+    21300022: nilo_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: nilo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 21}
+        - {x: -18, y: 19}
+        - {x: -18, y: -24}
+        - {x: 10, y: -24}
+        - {x: 17, y: -9}
+        - {x: 17, y: 16}
+        - {x: 12, y: 21}
+    - name: nilo_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 23}
+        - {x: -18, y: 18}
+        - {x: -18, y: -23}
+        - {x: -16, y: -24}
+        - {x: 16, y: -24}
+        - {x: 17, y: -17}
+        - {x: 17, y: 19}
+        - {x: 10, y: 23}
+    - name: nilo_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 22}
+        - {x: -18, y: 11}
+        - {x: -18, y: -10}
+        - {x: -7, y: -24}
+        - {x: 14, y: -24}
+        - {x: 17, y: -19}
+        - {x: 17, y: 12}
+        - {x: 10, y: 22}
+    - name: nilo_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 22}
+        - {x: -18, y: 12}
+        - {x: -18, y: -16}
+        - {x: -14, y: -24}
+        - {x: 12, y: -24}
+        - {x: 17, y: -13}
+        - {x: 17, y: 19}
+        - {x: 12, y: 22}
+    - name: nilo_4
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 23}
+        - {x: -18, y: 16}
+        - {x: -18, y: -12}
+        - {x: -12, y: -24}
+        - {x: 11, y: -24}
+        - {x: 17, y: -10}
+        - {x: 17, y: 18}
+        - {x: 10, y: 23}
+    - name: nilo_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 21}
+        - {x: -18, y: 15}
+        - {x: -18, y: -8}
+        - {x: -11, y: -24}
+        - {x: 9, y: -24}
+        - {x: 17, y: -11}
+        - {x: 17, y: 11}
+        - {x: 14, y: 21}
+    - name: nilo_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 22}
+        - {x: -18, y: 22}
+        - {x: -18, y: -19}
+        - {x: -11, y: -24}
+        - {x: 13, y: -24}
+        - {x: 17, y: -6}
+        - {x: 17, y: 14}
+        - {x: 13, y: 21}
+    - name: nilo_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 23}
+        - {x: -9, y: 23}
+        - {x: -18, y: 17}
+        - {x: -18, y: -9}
+        - {x: -11, y: -24}
+        - {x: 8, y: -24}
+        - {x: 17, y: -4}
+        - {x: 17, y: 10}
+        - {x: 15, y: 13}
+    - name: nilo_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 21}
+        - {x: -18, y: 11}
+        - {x: -18, y: -10}
+        - {x: -8, y: -24}
+        - {x: 9, y: -24}
+        - {x: 17, y: -8}
+        - {x: 17, y: 13}
+        - {x: 3, y: 21}
+    - name: nilo_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15, y: 21}
+        - {x: -18, y: 16}
+        - {x: -18, y: -21}
+        - {x: -12, y: -24}
+        - {x: 14, y: -24}
+        - {x: 17, y: -21}
+        - {x: 17, y: 16}
+        - {x: 8, y: 21}
+    - name: nilo_10
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 23}
+        - {x: -12, y: 23}
+        - {x: -18, y: 18}
+        - {x: -18, y: -14}
+        - {x: -14, y: -24}
+        - {x: 8, y: -24}
+        - {x: 14, y: -20}
+        - {x: 17, y: -9}
+        - {x: 17, y: 15}
+    - name: nilo_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 22}
+        - {x: -8, y: 22}
+        - {x: -18, y: 14}
+        - {x: -18, y: -23}
+        - {x: -15, y: -24}
+        - {x: 12, y: -24}
+        - {x: 17, y: -13}
+        - {x: 17, y: 9}
+        - {x: 12, y: 20}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

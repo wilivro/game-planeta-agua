@@ -30,13 +30,18 @@
 			"path": "Database/Quests/",
 			"filename": "quest2",
 			"label": "Meus afazeres"
-		}
-		,
+		},
 		{
 			"key": "q03",
 			"path": "Database/Quests/",
 			"filename": "quest3",
 			"label": "Comprar Alimento"
+		},
+		{
+			"key": "q04",
+			"path": "Database/Quests/",
+			"filename": "quest4",
+			"label": ""
 		}
 	],
 
@@ -86,6 +91,11 @@
 		{
 			"key": "face-player",
 			"source": "Player/Leo/face",
+			"index": 0
+		},
+		{
+			"key": "face-nilo",
+			"source": "Npcs/Nilo/face",
 			"index": 0
 		}
 	],
