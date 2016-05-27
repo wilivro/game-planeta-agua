@@ -28,9 +28,9 @@ public class ItemBehaviour : MonoBehaviour, IInteractable {
 
 		EventManager.AddListener("QuestHelperItemAdd", OnItemAdd);
 
-		if(Log.HasKey(self.preRequirements) && !Log.HasKey("q03s01")) {
-			glowInstance = Instantiate(glow);
-			glowInstance.transform.SetParent(transform, false);
+		string position = Log.GetValue("c"+self.id);
+		if(position == transform.position.ToString()) {
+			Destroy(gameObject);
 		}
 	}
 
@@ -52,7 +52,10 @@ public class ItemBehaviour : MonoBehaviour, IInteractable {
 
 		if(self.registerLog != null) Log.Register(self.registerLog);
 
-		if(!self.permanent) Destroy(gameObject);
+		if(!self.permanent) {
+				Log.Register("c"+self.id, transform.position.ToString());
+			Destroy(gameObject);
+		}
 
 		if(glowInstance != null) Destroy(glowInstance);
 	}

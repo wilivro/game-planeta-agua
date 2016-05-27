@@ -26,7 +26,7 @@
 					"image": "face-mae",
 
 					"checkGold": {
-						"qtd":1001,
+						"qtd":10,
 						"gotoSpeech":[0,1]
 					},
 
