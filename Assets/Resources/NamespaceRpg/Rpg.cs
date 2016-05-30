@@ -46,6 +46,7 @@ namespace Rpg
 	public class Player : Character
 	{
 		public static string name;
+		public int score;
 		public LogData[] logDataArr;
 		public static List<Quest> questLog;
 		public static Inventory inventory;

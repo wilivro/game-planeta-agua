@@ -16,12 +16,14 @@ public class WarpBehaviour : MonoBehaviour, IInteractable {
 	private GameObject fader;
 
 	public void Start () {
-		self = new Warp(name);
-		teleporting = false;
 
 		fader = Resources.Load("Effects/Prefabs/Fader") as GameObject;
 		OnFader = new UnityAction<object[]> (OnFaderCallback);
 		EventManager.AddListener("FadeToBlack", OnFader);
+
+		if(name == "") return;
+		self = new Warp(name);
+		teleporting = false;
 	}
 
 	void OnFaderCallback(object[] param) {
@@ -37,6 +39,7 @@ public class WarpBehaviour : MonoBehaviour, IInteractable {
 	}
 
 	public virtual void NotReady(){
+		if(name == "") return;
 		if(self.message == null) return;
 
 		Vector3 screenPos = Camera.main.WorldToScreenPoint(transform.position);
@@ -46,7 +49,7 @@ public class WarpBehaviour : MonoBehaviour, IInteractable {
 	}
 
 	public void OnInteractEnter(GameObject from) {
-		if(self.Ready()) {
+		if(name == "" || self.Ready()) {
 			if(teleporting) return;
 			teleporting = true;
 			GameObject it = Instantiate(fader);
@@ -58,6 +61,7 @@ public class WarpBehaviour : MonoBehaviour, IInteractable {
 	}
 
 	public void OnInteractExit(GameObject from){
+		if(name == "") return;
 		self.span.Close();
 	}
 

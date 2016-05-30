@@ -25,8 +25,7 @@ public class PlayerBehaviour : MonoBehaviour, IControlable, IInteractable {
          	// this is the first instance - make it persist
      		DontDestroyOnLoad(this.gameObject);
      		created = true;
-     		self = GameController.player;
-			self.Load();
+     		
 
      	} else {
          	// this must be a duplicate from a scene reload - DESTROY!
@@ -35,6 +34,9 @@ public class PlayerBehaviour : MonoBehaviour, IControlable, IInteractable {
     }
 
 	void Start () {
+
+		self = GameController.player;
+		self.Load();
 		
 		rbody = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();

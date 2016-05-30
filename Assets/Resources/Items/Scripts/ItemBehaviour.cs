@@ -28,6 +28,11 @@ public class ItemBehaviour : MonoBehaviour, IInteractable {
 
 		EventManager.AddListener("QuestHelperItemAdd", OnItemAdd);
 
+		if(self.preRequirements == null){
+			glowInstance = Instantiate(glow);
+			glowInstance.transform.SetParent(transform, false);
+		}
+
 		string position = Log.GetValue("c"+self.id);
 		if(position == transform.position.ToString()) {
 			Destroy(gameObject);
@@ -53,7 +58,7 @@ public class ItemBehaviour : MonoBehaviour, IInteractable {
 		if(self.registerLog != null) Log.Register(self.registerLog);
 
 		if(!self.permanent) {
-				Log.Register("c"+self.id, transform.position.ToString());
+			Log.Register("c"+self.id, transform.position.ToString());
 			Destroy(gameObject);
 		}
 

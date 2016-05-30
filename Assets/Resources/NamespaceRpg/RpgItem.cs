@@ -31,6 +31,7 @@ namespace Rpg
 		public bool autoOpen;
 		public bool permanent;
 		public LogData[] registerLog;
+		public string type = "metal";
 
 		Sprite[] icons;
 		public Sprite icon;
