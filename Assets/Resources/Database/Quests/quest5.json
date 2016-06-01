@@ -1,0 +1,10 @@
+{
+	"name": "Quest 5",
+	"description": "Brincar com o dog",
+	"exp": 10,
+	"icon": "icon",
+	"image": "image",
+	"rewardName" : [],
+	"requirements": [
+	]
+}

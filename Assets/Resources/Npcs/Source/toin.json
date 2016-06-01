@@ -1,0 +1,75 @@
+{
+	"name": "Toin",
+	"dialogue": [
+		{
+			"quest": "q011",
+			"preRequirements": [],
+			"requirements": ["mn01"],
+			"finishHere": true,
+			"before": [
+				{
+					"name":"{{name}}",
+					"image": "face-nilo",
+					"text":"Voce não deveria estar aqui agora",
+					"choice": [
+						{
+							"text": "quer?",
+							"imageBase": "Database/Items/Images/icons",
+							"posImage": 3,
+							"gotoSpeech":1
+						},
+						{
+							"text": "ou nao?",
+							"imageBase": "Database/Items/Images/icons",
+							"posImage": 0,
+							"gotoSpeech":2
+						}
+					]
+				},
+				{
+					"name":"{{name}}",
+					"image": "face-nilo",
+					"text":"Certo",
+					"exit":true
+				},
+				{
+					"name":"{{name}}",
+					"image": "face-nilo",
+					"text":"Errado"
+				},
+				{
+					"name":"{{name}}",
+					"image": "face-nilo",
+					"text":"Depois"
+				}
+			],
+			"inProgress":[
+				{
+					"name":"{{name}}",
+					"image": "face-nilo",
+					"text":"Ainda estou colando"
+				}
+			],
+			"after":[
+				{
+					"name":"{{name}}",
+					"image": "face-nilo",
+					"text":"Obrigado"
+				}
+			]
+		}
+	],
+	"dummyDialogue": [
+		{
+			"name":"{{name}}",
+			"image": "face-nilo",
+			"text":"vá brincar com o dog",
+			"registerLog": [
+				{
+					"key": "q04s01",
+					"message": "{{player}} recieve a new quest;"
+				}
+			]
+		}
+	]
+}

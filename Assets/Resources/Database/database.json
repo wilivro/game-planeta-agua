@@ -57,7 +57,7 @@
 			"path": "Database/Items/",
 			"filename": "mana"
 		},
-		
+
 		{
 			"key": "i03",
 			"path": "Database/Items/",
@@ -106,12 +106,20 @@
 			"path": "Database/Warps/w01"
 		},
 		{
+			"key": "WarpPortaCasaFora",
+			"path": "Database/Warps/w03"
+		},
+		{
 			"key": "saida-minigame-cachorro",
 			"path": "MinigameCachorro/warp"
 		},
 		{
 			"key": "lavar-louca",
 			"path": "Database/Warps/w02"
+		},
+		{
+			"key": "entrar-minigame-cachorro",
+			"path": "Database/Warps/w04"
 		}
 	]
 }

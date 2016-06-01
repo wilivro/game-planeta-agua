@@ -6,20 +6,21 @@ public class VazamentoBehaviour : MonoBehaviour, IInteractable {
 
 	// Use this for initialization
 	Animator[] anim;
-	SpriteRenderer sprite;
+	GameObject agua;
 	bool closed;
 
 	void Start () {
 		anim = GetComponentsInChildren<Animator>();
-		sprite = GetComponent<SpriteRenderer>();
+		agua = transform.Find("agua").gameObject;
 
-		string status = Log.GetValue("mn01pipe");
+		string status = Log.GetValue("mn01");
 		if(status != null){
-			sprite.color = new Color(255,255,255,0);
+			closed = true;
+			Destroy(agua);
 		}
-	
+
 	}
-	
+
 	public void OnInteractEnter(GameObject from) {
 		if(closed) return;
 		anim[0].SetTrigger("valve");
