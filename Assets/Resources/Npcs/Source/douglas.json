@@ -1,0 +1,26 @@
+{
+	"name": "Douglas",
+
+	"dialogue": [
+		{
+			"quest": "mg-dog",
+			"preRequirements":[],
+			"requirements": ["mn01"],
+			"finishHere": true,
+			"request": [
+				{
+					"name": "{{player}}",
+					"image": "face-player",
+					"text": "Bom dia moço, o que está acontecendo dentro desse cercado? vejo que está a disperdiçar muita água."
+				},
+				{
+					"name": "{{name}}",
+					"image": "face-nilo",
+					"text": "Bom dia jovem! O problema é que eu estou tentando fechar a torneira, mas é que tenho muito medo de cachorro, e tem um solto la dentro. Poderia me ajudar?"
+				}
+			]
+		}
+	],
+
+	"dummyDialogue": []
+}
