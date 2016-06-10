@@ -13,4 +13,8 @@ public class RioGarbageBehaviour : MonoBehaviour {
 		transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.right, 0.1f);
 		if(transform.position.x > 50) Destroy(gameObject);
 	}
+
+	void OnTriggerEnter(Collider col) {
+		Destroy(gameObject);
+	}
 }
