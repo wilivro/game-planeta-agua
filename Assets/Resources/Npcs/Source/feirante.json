@@ -4,7 +4,7 @@
 		{
 			"quest" : "q03",
 			"preRequirements":["q03s01"],
-			"requirements": ["q03s01"],
+			"requirements": ["q03s02"],
 			"finishHere": false,
 			"before": [
 				{
@@ -16,7 +16,7 @@
 			"after": [
 				{
 					"name": "{{player}}",
-					"text":"E agora mãe, posso brincar la fora?",
+					"text":"q03s01 after dialogue",
 					"image": "face-player"
 				}
 			],
@@ -31,23 +31,39 @@
 					},
 
 					"checkItem": {
-						"item":["i01"],
-						"qtd":[2],
-						"gotoSpeech":[0,1]
+						"item":["q03s01"],
+						"qtd":[1],
+						"gotoSpeech":[0,2]
 					},
 
-					"text": "{{player}}, Esse tem grana",
-					"giveItem": ["i01"]
+					"text": "{{player}}, Esse tem grana"
 				},
-				{
+        {
+          "name": "{{name}}",
+          "image": "face-mae",
+          "text": "{{player}}, Tu ta é liso"
+        },
+        {
 					"name": "{{name}}",
-					"image": "face-mae",
-					"text": "{{player}}, Tu ta é liso"
+					"image": "face-player",
+          "text": "{{player}}, Obrigado",
+
+          "registerLog": [
+						{
+							"key": "q03s02",
+							"message": ""
+						}
+					]
 				}
 			]
 		}
 	],
 
-	"dummyDialogue": [
-	]
+  "dummyDialogue": [
+    {
+		  "name": "{{name}}",
+			"text":"dummy dialogue",
+			"image": "face-mae"
+		}
+  ]
 }

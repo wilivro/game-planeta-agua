@@ -6,17 +6,18 @@
 			"preRequirements": [],
 			"requirements": [],
 			"finishHere": true,
-			"before": [
+			"request": [
 				{
 					"name":"{{name}}",
 					"image": "face-nilo",
-					"text":"Voce não deveria estar aqui agora",
+					"text":"Voce quer cartaz",
 					"choice": [
 						{
 							"text": "quer?",
 							"imageBase": "Database/Items/Images/icons",
 							"posImage": 3,
-							"gotoSpeech":1
+							"gotoSpeech":1,
+							"giveItem": ["i01", "i01", "i01"]
 						},
 						{
 							"text": "ou nao?",

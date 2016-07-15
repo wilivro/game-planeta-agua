@@ -372,7 +372,6 @@ namespace Rpg
 				}
 
 				if(dialogue[page].checkItem.item != null) {
-					Debug.Log("Item");
 					for(int n = 0; n < dialogue[page].checkItem.item.Length; n++) {
 						if(Player.inventory.HasItem(dialogue[page].checkItem.item[n], dialogue[page].checkItem.qtd[n])){
 							continue;

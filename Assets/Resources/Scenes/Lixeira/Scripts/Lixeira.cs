@@ -33,7 +33,7 @@ public class Lixeira : MonoBehaviour {
 		}
 	}
 
-	void OnClickSair() {
+	public void OnClickSair() {
 		Application.LoadLevel(2);
 	}
 }

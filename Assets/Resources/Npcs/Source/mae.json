@@ -114,10 +114,9 @@
 
 		{
 			"quest" : "q03",
-			"preRequirements":["q02s01"],
+			"preRequirements":["q02"],
 			"requirements": ["q03s01, q03s02"],
 			"finishHere": true,
-			
 			"before": [
 				{
 					"name": "{{name}}",
@@ -133,7 +132,7 @@
 					"giveQuest": ["q03"],
 					"registerLog": [
 						{
-							"key": "comprar-fruta",
+							"key": "q03s02",
 							"message": "Mãe pede pra comprar frutas;"
 						}
 					]
@@ -156,5 +155,10 @@
 	
 
 	"dummyDialogue": [
+				{
+					"name": "{{name}}",
+					"text":"dummy dialogue",
+					"image": "face-mae"
+				}
 	]
 }

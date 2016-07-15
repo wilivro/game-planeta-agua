@@ -12,7 +12,7 @@ public class RedeBehaviour : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		print(RioPaddleBehaviour.pos);
+		//print(RioPaddleBehaviour.pos);
 		transform.position = new Vector3(transform.position.x, transform.position.y, bound[0] + diff*RioPaddleBehaviour.pos);
 	}
 }

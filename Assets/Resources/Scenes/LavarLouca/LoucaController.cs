@@ -21,7 +21,7 @@ public class LoucaController : MonoBehaviour {
 		obj[1] = Resources.Load("Scenes/LavarLouca/Prefabs/frigideira") as GameObject;
 
 		water = transform.Find("Water").gameObject.GetComponent<RectTransform>();
-		
+
 		StartCoroutine("Walter");
 
 		win = false;
@@ -43,9 +43,9 @@ public class LoucaController : MonoBehaviour {
 		}
 
 		yield return null;
-		
+
 	}
-	
+
 	IEnumerator InvokeObj() {
 		float jitter;
 		GameObject n;

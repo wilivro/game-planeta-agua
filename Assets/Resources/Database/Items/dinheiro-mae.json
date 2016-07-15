@@ -9,7 +9,7 @@
 	"permanent": false,
 	"receive": true,
 	"autoOpen": false,
-	"preRequirements":["q03"],
+	"preRequirements":["lavar-louca"],
 	"registerLog": [
 		{
 			"key": "q03s01",

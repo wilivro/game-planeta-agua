@@ -13,7 +13,7 @@ public class IrrigacaoPaddle : MonoBehaviour {
 
 	RectTransform rt;
 
-	int[] positions; 
+	int[] positions;
 
 	void Start () {
 		rt = GetComponent<RectTransform>();
@@ -23,7 +23,7 @@ public class IrrigacaoPaddle : MonoBehaviour {
 		positions[2] = 228;
 		positions[3] = 333;
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		values = Convert.ToInt32(Mathf.Abs(valve[0].angle - gain.x) <= threshold) +
